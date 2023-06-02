@@ -1,0 +1,566 @@
+
+/* CONFIG PARA TODAS LAS PAGINAS */
+
+*{    
+    margin: 0;   
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+.logo{
+    width: 5rem;
+    height: 5rem;
+    display: inline-block;
+    margin: 10px 0px 10px 10px;
+}
+
+main{
+    background-color: #cdbdaa;
+    padding: 6rem 12rem;
+}
+
+/* HEADER */
+
+header{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0rem 8rem;
+    background-color: #271702;
+}
+
+
+.argonautas1{
+    display:flex;
+    align-items:center;
+}
+
+h1{
+    color:#edc99c;
+    display: inline-block;
+    margin-left: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h2{
+    font-size: xx-large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #0e0801;
+}
+
+h3{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    color: #271702;
+}
+
+h4{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #0e0801;
+}
+
+p{
+    font-size: medium;
+    font-family: 'Helvetica';
+    color:#271702
+}
+
+nav{
+    display:inline-block;
+    margin-top: 1.7em;
+}
+
+.mainul{
+    list-style-type: none;
+}
+
+.mainli{
+    display: inline-block;
+    font-size: small;
+    font-family: 'Helvetica';
+    margin: 0px 0px 10px 0px;
+    padding: 0rem 0.8rem;
+}
+
+a{
+    font-family: 'Helvetica';
+    text-decoration:none;
+    color:#edc99c;
+}
+
+.selected{
+    text-decoration: underline; /* Es la única modificación que pude hacerle. quise ponerle algun sombreado o algo más sutil, pero no pude */
+}
+
+
+/* FOOTER */
+
+footer{
+    background-color: #271702;
+    height: 4rem;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0rem 8rem;
+}
+
+.pfooter{
+    display:inline-block;
+    padding-top: 1rem;
+    color: #c0b19d;
+    font-size: small;   
+}
+
+.imgfooter{
+    display: inline-block;
+}
+
+.imgf{
+    display:inline-block;
+    height: 2.4rem;
+    padding-left: 0.8rem;
+}
+
+.imgf2{
+    display:inline-block;
+    height: 1.9rem;
+    padding-left: 0.8rem;
+}
+
+/* INDEX */
+
+.arriba{
+    display:flex;
+    height:54rem;
+    margin-bottom: 6rem;
+
+}
+
+/* Box izq con notas*/
+
+
+.notasPrincipales{
+    display: flex;
+    flex-direction: column;
+    width: 83%;
+    height: auto;
+    padding-right: 1.8rem;
+}
+
+.nota{
+    display: flex;
+    margin-bottom: 5.7rem;
+}
+
+.imgboxder{
+    display: inline-block;
+    height: 23.7rem;
+    width: 32.3rem;
+    border-radius: 10px;
+    
+}
+
+.boxPder{
+    display: flex; 
+    flex-direction: column;
+    padding: 2rem;
+    justify-content: space-between;
+}
+
+.linkboxderPadre{
+    display: flex;
+    justify-content: end;
+    padding: 4rem;
+}
+
+.linkboxder{
+    color:#0e0801;
+}
+
+/* Box der con imagenes */
+
+.boxDerecha{
+    display: flex;
+    width: 17%;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+.elemIzq{
+    height: 17rem;
+    width: auto;
+    background-image: url("../multimedia/mapuche.png");
+    background-size:cover;
+    background-repeat: none;
+    background-position: center;    
+    border-radius: 1rem;
+    font-size: large;
+    padding: 3rem;
+    
+}
+
+
+
+/* Colaborar */
+
+.colaborar{
+    height: 31rem;
+    background-color:  #c0b19d;
+    border-radius: 1rem;
+    padding: 4rem 7rem;
+}
+
+.tituloColab{
+    display:block;
+    padding-bottom: 2rem;
+}
+
+.pColab{
+    display:block;
+    font-size: 16px;
+}
+
+.botoncolab{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.aColab{
+    margin-top: 5rem;
+    padding: 1rem 2rem;
+    background-color: #55694a;
+    color: #fff;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+/* PROYECTOS */
+
+/* Mapa y Territorio */
+
+.MyT{
+    display: flex;
+    padding-bottom: 8rem;
+}
+
+.MyTt{
+    display: flex;
+    justify-content: center;
+    padding-top: 8rem;
+    border-radius: 1rem;
+    height: 30rem;
+    width: 50rem;
+    background-image: url(../multimedia/mtdibujo.jpeg);
+    background-size: cover;
+    background-repeat: none;
+    background-position: center;
+}
+
+.titulo{
+    width: 45rem;
+    height: 9rem;
+}
+
+.MyTp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem;
+    height: 23rem;
+}
+
+.botonleer{display:flex;
+    justify-content: end;
+    padding-right: 5rem;
+}
+
+.leer{
+    padding: 10px 20px;
+    background-color: #55694a;
+    color: #fff;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+/* Podcast */
+
+.podcast{
+    display: block;
+    padding: 5rem;
+    background-color: #c0b19d;
+    border-radius: 1;
+}
+
+.Tpodcast{
+    display:inline-block;
+    padding-bottom: 1.8rem;
+    
+}
+
+.Ppodcast{
+    padding-bottom: 8rem;
+}
+
+.boton{display:flex;
+    justify-content: end;
+}
+
+.escuchar{
+    padding: 10px 20px;
+    background-color: #55694a;
+    color: #fff;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+/* NOSOTROS */
+
+.miembro12{
+    display: flex;
+    justify-content: space-around;
+    padding: 3.2rem 0rem;
+}
+
+.miembro1{
+    display: flex;
+    padding: 3.2rem 5rem;
+}
+
+.miembro{
+    display: flex;
+    flex-direction: column;
+    background-color: #c0b19d;
+    width: 50rem;
+    border-radius: 10px;
+}
+
+.nombreCargo{
+    display: block;
+    padding: 1.6rem;
+}
+
+.cargo{
+    display: block;
+    padding-top: 0.3rem;
+}
+
+.imgparrafo{
+    display:flex;
+    flex-direction: row;
+    margin-bottom: 1.6rem;
+}
+
+.nosotrosimg{
+    margin-left: 1.6rem;
+    height: 15rem;
+    width: 15rem;
+    border-radius: 10px;
+}
+
+.nosotrosp{
+    padding: 0rem 1.6rem;
+}
+
+/* ARCHIVO */
+
+/* Última nota */
+
+.notaprincipal{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 8rem;
+    background-color: #c0b19d;
+}
+
+.ultimanota{
+    display: flex;
+    flex-direction: column;
+    margin: 2.4rem;
+    overflow: hidden;
+    height: 19rem;
+}
+
+
+.imgnota1{
+    height: 25.4rem;
+    width: 55rem;
+    border-radius: 10px;
+    margin: 2.4rem;
+}
+
+.autor1{
+    display: inline-block;
+    padding-bottom: 1.2rem;
+}
+
+/* Miniaturas otras notas */
+
+.miniaturas{
+    display: flex;
+    padding-bottom: 8rem;
+    justify-content: space-between; /* Este espaciado, cuando veo la pagina en otra pantalla con otro tamaño, queda mal (Se juntan las cards), no sé como arreglarlo */
+}
+
+.miniaturabox{
+    width: 33.5rem;
+    height: 40.4rem;
+    
+}
+
+.imgminiaturas{   /* Hay algunas imágenes que se deforman y no sé cómo acomodarlo */
+    width:33.5rem;
+    height: 20.4rem;
+    background-color: #c0b19d;
+    border-radius: 8px;
+} 
+
+.titulomini{
+    font-size: medium;
+}
+
+.miniaturatext{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 18rem;
+    margin: 1rem;
+}
+
+.miniaturadesc{
+    height: 14.5rem;
+    overflow: hidden;
+}
+
+.autormini{
+    padding: 0.4rem 0rem;
+}
+
+.linkminiatura{
+    display: flex;
+    justify-content: end;
+    color: #55694a;
+}
+
+.paginas{
+    display: flex;
+    justify-content: center;
+    font-size: medium;
+}
+
+.paginasinf{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    background-color: #55694a;
+    width: 20rem;
+    height: 3rem;
+    border-radius: 1rem;
+}
+
+#puntitos{
+    color: #cdbdaa;
+}
+
+/* SUMATE */ 
+
+.mainsumate{
+    padding:0rem;
+}
+
+.acciontitulo{
+    display: block;
+    margin-bottom:3rem;
+}
+
+.accion1{
+    margin-bottom: 6rem;
+    padding: 6rem 16rem;
+}
+
+.mision{
+    height: 28rem;
+    background-color:#c0b19d;
+    background-image: url(../multimedia/logo.png); /* probablemente vaya otra imagen */
+    background-blend-mode:soft-light; /* ver de poner la imagen mas suave aun */
+    background-position: center;
+    background-repeat:no-repeat;
+    background-size: cover;
+    padding: 5rem 16rem;
+    margin-bottom: 6rem;
+}
+
+.misiontitulo{
+    display: flex;
+    justify-content: end;
+}
+
+.misionP{
+    background-color:#55694a;
+    width: 70rem;
+    height: 20rem;
+    padding: 3rem 5rem;
+    position: relative;
+    top:7rem;
+    border-radius: 1rem;
+}
+
+.misioncolor{
+    color:#cdbdaa;
+}
+
+.beneficios{
+    padding: 6rem 16rem;
+}
+
+.beneficiostitulo{
+    display: block;
+    margin-bottom:3rem;   
+}
+
+.ulaportantes{
+    list-style-type:decimal;
+    font-size: large;
+    color:#271702;
+    font-family: 'Helvetica';
+    padding-left:2rem;
+}
+
+.liaportantes{
+    margin-bottom: 1rem;
+}
+
+.botonMP{
+    display: flex;
+    justify-content: end;
+    padding: 0rem 28rem 6rem 0rem;
+}
+
+.MP{
+    height: 3rem;
+    width: auto;
+    background-color: #55694a;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 16px;
+    padding: 2rem;
+}
