@@ -70,13 +70,14 @@ h4{
 p{
     font-size: medium;
     font-family: 'Helvetica';
-    color:#271702
+    color:#271702;
 }
 
 nav{
     display:inline-block;
     margin-top: 1.7em;
 }
+
 
 .mainul{
     list-style-type: none;
@@ -163,6 +164,17 @@ footer{
     display: flex;
 }
 
+.nota:hover{
+    display: flex;
+    background-color: #beaf9c;
+    border-radius: 1rem;
+}
+
+.Tnota{
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
 .imgboxder{
     display: inline-block;
     height: 23.7rem;
@@ -178,17 +190,23 @@ footer{
     justify-content: space-between;
 }
 
-.linkboxderPadre{
+.linkboxderPadre1{
     display: flex;
     justify-content: end;
-    margin: 8rem 7rem 0rem 0rem;
+    margin: 0rem 7rem 0rem 0rem;
+}
+
+.linkboxderPadre2{
+    display: flex;
+    justify-content: end;
+    margin: 0rem 7rem 0rem 0rem;
 }
 
 .linkboxder{
     color:#55694a;
 }
 
-/* Box der con imagenes */
+/* Box der del PODCAST */
 
 .boxDerecha{
     grid-area: miniaturas;
@@ -234,6 +252,7 @@ footer{
     color:#ecd4b5; 
     padding: 0.8rem;
     border-radius: 1rem;
+    text-overflow: clip;
 }
 
 .elemlistaprogrmas:hover{
@@ -248,8 +267,9 @@ footer{
 
 .playbutton{
     width: 2rem;
-    height: auto;
+    height: 2rem;
     margin-right: 0.8rem;
+    align-self: center;
 }
 
 /* Colaborar */
@@ -293,11 +313,55 @@ footer{
 
 /* PROYECTOS */
 
+
+
+/* Podcast */
+
+.podcast{
+    display: block;
+    padding: 5rem;
+    background-color: #c0b19d;
+    border-radius: 1rem;
+}
+
+.Tpodcast{
+    display:inline-block;
+    padding-bottom: 1.8rem;
+    
+}
+
+.Ppodcast{
+    padding-bottom: 8rem;
+}
+
+.boton{display:flex;
+    justify-content: end;
+}
+
+.escuchar{
+    padding: 10px 20px;
+    background-color: #55694a;
+    color: #fff;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
 /* Mapa y Territorio */
+
+
+.proyectospreviostitulo{
+    display:flex;
+    padding: 8rem 0rem 3rem 1rem;
+    justify-content: center;
+    font-style: italic;
+}
 
 .MyT{
     display: flex;
-    padding-bottom: 8rem;
 }
 
 .MyTt{
@@ -332,41 +396,6 @@ footer{
 }
 
 .leer{
-    padding: 10px 20px;
-    background-color: #55694a;
-    color: #fff;
-    border: none;
-    text-align: center;
-    text-decoration: none;
-    cursor: pointer;
-    border-radius: 4px;
-    font-size: 16px;
-}
-
-/* Podcast */
-
-.podcast{
-    display: block;
-    padding: 5rem;
-    background-color: #c0b19d;
-    border-radius: 1;
-}
-
-.Tpodcast{
-    display:inline-block;
-    padding-bottom: 1.8rem;
-    
-}
-
-.Ppodcast{
-    padding-bottom: 8rem;
-}
-
-.boton{display:flex;
-    justify-content: end;
-}
-
-.escuchar{
     padding: 10px 20px;
     background-color: #55694a;
     color: #fff;
