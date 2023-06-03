@@ -43,12 +43,16 @@ h1{
     display: inline-block;
     margin-left: 10px;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: large;
 }
 
 h2{
     font-size: xx-large;
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: #0e0801;
+    font-weight: bold;
+    
 }
 
 h3{
@@ -60,6 +64,7 @@ h3{
 h4{
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: #0e0801;
+    font-weight: bold;
 }
 
 p{
@@ -71,15 +76,6 @@ p{
 nav{
     display:inline-block;
     margin-top: 1.7em;
-}
-
-main{
-    display: grid;
-    grid-template-columns: 83% 17%;
-    grid-template-rows: 60% 40%;
-    grid-template-areas: 
-    "noticias miniaturas"
-    "colaborar colaborar";
 }
 
 .mainul{
@@ -141,6 +137,15 @@ footer{
 
 /* INDEX */
 
+.mainindex{
+    display: grid;
+    grid-template-columns: 83% 17%;
+    grid-template-rows: 60% 40%;
+    grid-template-areas: 
+    "noticias miniaturas"
+    "colaborar colaborar";
+}
+
 /* Box izq con notas*/
 
 
@@ -176,36 +181,76 @@ footer{
 .linkboxderPadre{
     display: flex;
     justify-content: end;
-    padding: 4rem;
+    margin: 8rem 7rem 0rem 0rem;
 }
 
 .linkboxder{
-    color:#0e0801;
+    color:#55694a;
 }
 
 /* Box der con imagenes */
 
 .boxDerecha{
     grid-area: miniaturas;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    
+    background-color:#7b6b57;
+    border-radius: 1rem;    
 }
 
-.elemIzq{
-    height: 17rem;
-    width: auto;
+.tituloimgpodcast{
+    display:flex;
+    padding: 1.6rem;
+    background-color: #4f4840;
+    border-radius: 0.9rem 0.9rem 0rem 0rem;
+}
+
+.elemDer{
+    height: 7rem;
+    width: 7rem;
     background-image: url("../multimedia/mapuche.png");
     background-size:cover;
     background-repeat: none;
     background-position: center;    
-    border-radius: 1rem;
-    font-size: large;
-    padding: 3rem;    
+    border-radius: 1rem;  
 }
 
+.titulopodcast{
+    margin-left: 1.6rem;
+    height: fit-content;
+    align-self: center;
+    color:#ead1b2;
+}
 
+.listaprogramas{
+    margin-top: 1.6rem;
+    list-style: none;
+    padding-right: 2rem;
+}
+
+.elemlistaprogrmas{
+    display:flex;
+    align-content: center;
+    font-size: small;
+    font-family: 'Helvetica';
+    color:#ecd4b5; 
+    padding: 0.8rem;
+    border-radius: 1rem;
+}
+
+.elemlistaprogrmas:hover{
+    font-size: small;
+    font-family: 'Helvetica';
+    font-weight: bold;
+    color:#271702;
+    background-color: #cdbdaa; 
+    padding: 0.8rem;
+    border-radius: 1rem;
+}
+
+.playbutton{
+    width: 2rem;
+    height: auto;
+    margin-right: 0.8rem;
+}
 
 /* Colaborar */
 

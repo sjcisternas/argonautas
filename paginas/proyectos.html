@@ -13,6 +13,8 @@
     
     <link rel="shortcut icon" href="../multimedia/logo.png" type="image/x-icon"> 
 
+    <link rel="stylesheet" href="../css/bootstrap.min.css"> 
+
     <link rel="stylesheet" href="../css/estilos.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -29,14 +31,18 @@
         </div>       
         
         <!-- MENÚ DE NAVEGACIÓN -->
-        <nav>
-            <ul class="mainul">
-                <li class="mainli"><a href="../index.html">Inicio</a></li>
-                <li class="mainli"><a href="proyectos.html" class="selected">Proyectos</a></li>
-                <li class="mainli"><a href="nosotros.html">Nosotros</a></li>
-                <li class="mainli"><a href="archivo.html">Archivo</a></li>
-                <li class="mainli"><a href="sumate.html">Sumate</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-sm navbar-dark">
+            <button class="navbar-toggler" type="button"    data-bs-toggle="collapse" data-bs-target="#opciones">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="opciones">
+                <ul class="mainul">
+                    <li class="mainli"><a href="../index.html">Inicio</li><li class="mainli"><a href="proyectos.html" class="selected">Proyectos</a></li>
+                    <li class="mainli"><a href="nosotros.html">Nosotros</a></li>
+                    <li class="mainli" ><a href="archivo.html">Archivo</a></li>
+                    <li class="mainli"><a href="sumate.html">Sumate</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
     
@@ -77,5 +83,6 @@
             <a href=""><img src="../multimedia/youtube.svg" alt="Youtube" class="imgf2"></a>
         </div>
     </footer>
+    <script src="../js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
