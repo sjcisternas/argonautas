@@ -73,6 +73,15 @@ nav{
     margin-top: 1.7em;
 }
 
+main{
+    display: grid;
+    grid-template-columns: 83% 17%;
+    grid-template-rows: 60% 40%;
+    grid-template-areas: 
+    "noticias miniaturas"
+    "colaborar colaborar";
+}
+
 .mainul{
     list-style-type: none;
 }
@@ -132,20 +141,13 @@ footer{
 
 /* INDEX */
 
-.arriba{
-    display:flex;
-    height:54rem;
-    margin-bottom: 6rem;
-
-}
-
 /* Box izq con notas*/
 
 
 .notasPrincipales{
+    grid-area: noticias;
     display: flex;
     flex-direction: column;
-    width: 83%;
     height: auto;
     padding-right: 1.8rem;
 }
@@ -183,8 +185,8 @@ footer{
 /* Box der con imagenes */
 
 .boxDerecha{
+    grid-area: miniaturas;
     display: flex;
-    width: 17%;
     flex-direction: column;
     justify-content: space-between;
     
@@ -208,6 +210,7 @@ footer{
 /* Colaborar */
 
 .colaborar{
+    grid-area: colaborar;
     height: 31rem;
     background-color:  #c0b19d;
     border-radius: 1rem;
