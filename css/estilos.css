@@ -150,11 +150,12 @@ footer{
     flex-direction: column;
     height: auto;
     padding-right: 1.8rem;
+    justify-content: space-between;
 }
+
 
 .nota{
     display: flex;
-    margin-bottom: 5.7rem;
 }
 
 .imgboxder{
@@ -201,8 +202,7 @@ footer{
     background-position: center;    
     border-radius: 1rem;
     font-size: large;
-    padding: 3rem;
-    
+    padding: 3rem;    
 }
 
 
@@ -215,6 +215,7 @@ footer{
     background-color:  #c0b19d;
     border-radius: 1rem;
     padding: 4rem 7rem;
+    margin-top: 7rem;
 }
 
 .tituloColab{
