@@ -23,33 +23,33 @@
 
 </head>
 
-<body>
-    <header>
-        <div class="argonautas1">
+<body class="container-fluid">
+    <header class="row">
+        <div class="argonautas1 col-xl-9">
             <img src="../multimedia/logo_sombra.png" alt="Logo" class="logo">
-            <h1>Argonautas del Atlántico Sur</h1> 
-        </div>       
-        
+            <h1>Argonautas del Atlántico Sur</h1>
+        </div>
+
         <!-- MENÚ DE NAVEGACIÓN -->
-        <nav class="navbar navbar-expand-sm navbar-dark">
+        <nav class="navbar navbar-expand-sm navbar-dark col-xl-3">
             <button class="navbar-toggler" type="button"    data-bs-toggle="collapse" data-bs-target="#opciones">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="opciones">
                 <ul class="mainul">
-                    <li class="mainli"><a href="../index.html">Inicio</li><li class="mainli"><a href="proyectos.html" class="selected">Proyectos</a></li>
+                    <li class="mainli"><a href="../index.html">Inicio</li><li class="mainli"><a href="paginas/proyectos.html" class="selected">Proyectos</a></li>
                     <li class="mainli"><a href="nosotros.html">Nosotros</a></li>
-                    <li class="mainli" ><a href="archivo.html">Archivo</a></li>
+                    <li class="mainli"><a href="archivo.html">Archivo</a></li>
                     <li class="mainli"><a href="sumate.html">Sumate</a></li>
                 </ul>
             </div>
         </nav>
     </header>
     
-    <main>
+    <main class="row">
 
         <!-- SECCIÓN PODCAST -->
-        <section class="podcast">
+        <section class="podcast col-xl-12">
             <h2 class="Tpodcast">Podcast</h2>
             <p class="Ppodcast">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur fugiat, debitis rem autem labore perferendis delectus et expedita quaerat eos, molestias praesentium aut. Labore aliquid expedita quis libero corporis repellendus atque itaque delectus excepturi? Soluta quasi nihil quo esse repellat voluptatem. Asperiores inventore pariatur natus eveniet sequi quis, enim laborum perspiciatis quaerat minus illo, modi dignissimos cupiditate sit cum dolorum voluptatum officiis mollitia quia harum nobis. Similique, dolor assumenda. Nostrum consectetur sunt excepturi atque cumque molestiae delectus veniam id accusamus. Eos voluptatibus cupiditate laboriosam quibusdam quaerat suscipit eum quisquam quia impedit, illum esse sunt ratione non eius officia, vel natus?</p>
             <div class="boton">
@@ -59,16 +59,14 @@
     
 
         <!-- SECCIÓN MyT -->
-    
+        <div class="col-xl-12">
         <h2 class="proyectospreviostitulo">Proyectos previos</h2>
         <section class="MyT">
             <div class="MyTt">
                 <img src="../multimedia/nombre.png" alt="mapayterritorio" class="titulo">
             </div>
             <div>    
-                <div class="MyTp">
-                    <p>Mapa y Territorio (2020-2021) fue una revista de divulgación científica que tiene como objetivo las ciencias socioculturales y biosociales. El proyecto surgió como espacio en el que los lectores podían construir sus propios escenarios para comunicar. La revista recibió artículos de todas partes de Latinoamérica. Si te interesa leernos, podés descargar todos los números acá.</p>
-                </div>
+                <p class="MyTp">Mapa y Territorio (2020-2021) fue una revista de divulgación científica que tiene como objetivo las ciencias socioculturales y biosociales. El proyecto surgió como espacio en el que los lectores podían construir sus propios escenarios para comunicar. La revista recibió artículos de todas partes de Latinoamérica. Si te interesa leernos, podés descargar todos los números acá.</p>
                 <div class="botonleer">
                     <button class="leer"><a href="">Leer revista</a></button> 
                 </div>
@@ -77,13 +75,13 @@
         </div>
     </main>
     
-    <footer>
-        <p class="pfooter">All rights reserved©</p>
-        <div class="imgfooter">
-            <a href=""><img src="../multimedia/facebook.svg" alt="Facebook" class="imgf"></a>
-            <a href=""><img src="../multimedia/instagram.svg" alt="Instagram" class="imgf"></a>
-            <a href=""><img src="../multimedia/twitter.svg" alt="Twitter" class="imgf2"></a>
-            <a href=""><img src="../multimedia/youtube.svg" alt="Youtube" class="imgf2"></a>
+    <footer class="row">
+        <p class="pfooter col-xl-6">All rights reserved©</p>
+        <div class="imgfooter col-xl-6">
+        <a href=""><img src="../multimedia/facebook.svg" alt="Facebook" class="imgf"></a>
+        <a href=""><img src="../multimedia/instagram.svg" alt="Instagram" class="imgf"></a>
+        <a href=""><img src="../multimedia/twitter.svg" alt="Twitter" class="imgf2"></a>
+        <a href=""><img src="../multimedia/youtube.svg" alt="Youtube" class="imgf2"></a>
         </div>
     </footer>
     <script src="../js/bootstrap.bundle.min.js"></script>
