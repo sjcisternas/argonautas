@@ -45,6 +45,7 @@ h1{
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: bold;
     font-size: large;
+    margin-top: 0.5rem
 }
 
 h2{
@@ -81,13 +82,15 @@ nav{
 
 .mainul{
     list-style-type: none;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
 }
 
 .mainli{
-    display: inline-block;
+    display: block;
     font-size: small;
     font-family: 'Helvetica';
-    margin: 0px 0px 10px 0px;
     padding: 0rem 0.8rem;
 }
 
@@ -115,19 +118,20 @@ footer{
 
 .pfooter{
     display:inline-block;
-    padding-top: 1rem;
+    margin-top: 1rem;
     color: #c0b19d;
     font-size: small;   
 }
 
 .imgfooter{
-    display: inline-block;
+    display: flex;
+    justify-content: end;
 }
 
 .imgf{
     display:inline-block;
-    height: 2.4rem;
-    padding-left: 0.8rem;
+    height: 2rem;
+    padding-left: 1rem;
 }
 
 .imgf2{
@@ -168,6 +172,13 @@ footer{
     display: flex;
     background-color: #beaf9c;
     border-radius: 1rem;
+    .imgboxder{
+        display: inline-block;
+        height: 23.7rem;
+        width: 32.3rem;
+        border-radius: 1rem 0rem 0rem 1rem;
+        
+    }
 }
 
 .Tnota{
@@ -211,8 +222,10 @@ footer{
 .boxDerecha{
     grid-area: miniaturas;
     background-color:#7b6b57;
-    border-radius: 1rem;    
+    border-radius: 1rem;
+    padding: 0rem;    
 }
+
 
 .tituloimgpodcast{
     display:flex;
@@ -362,6 +375,7 @@ footer{
 
 .MyT{
     display: flex;
+    margin-bottom: 7rem;
 }
 
 .MyTt{
