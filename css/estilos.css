@@ -60,6 +60,7 @@ h3{
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-style: italic;
     color: #271702;
+    font-weight: bold;
 }
 
 h4{
@@ -424,48 +425,89 @@ footer{
 .mainnosotros{
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 25% 25% 25% 25%;
+    grid-template-rows: repeat(4, 25%);
     grid-template-areas: 
-    "fila1 fila1"
-    "fila2 fila2"
-    "fila3 fila3"
-    "fila4 fila4";
-    padding:16rem;
-}
-
-.miembro11{
-    display: flex;
-    justify-content: space-between;
-    padding: 3.2rem 5rem;
-    grid-area: fila1;
-}
-
-.miembro12{
-    display: flex;
-    justify-content: space-between;
-    padding: 3.2rem 5rem;
-    grid-area: fila2;
-}
-
-.miembro13{
-    display: flex;
-    justify-content: space-between;
-    padding: 3.2rem 5rem;
-    grid-area: fila3;
-}
-
-.miembro1{
-    display: flex;
-    padding: 3.2rem 5rem;
-    grid-area: fila4;
+    "miembro1 miembro2"
+    "miembro3 miembro4"
+    "miembro5 miembro6"
+    "miembro7 miembro7";
 }
 
 .miembro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4rem;
+}
+
+.miembro71{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4rem;
+}
+
+.miembro1{
     display: block;
     flex-direction: column;
     background-color: #c0b19d;
     width: 50rem;
     border-radius: 10px;
+    grid-area: miembro1;
+}
+
+.miembro2{
+    display: block;
+    flex-direction: column;
+    background-color: #c0b19d;
+    width: 50rem;
+    border-radius: 10px;
+    grid-area: miembro2;
+}
+
+.miembro3{
+    display: block;
+    flex-direction: column;
+    background-color: #c0b19d;
+    width: 50rem;
+    border-radius: 10px;
+    grid-area: miembro3;
+}
+
+.miembro4{
+    display: block;
+    flex-direction: column;
+    background-color: #c0b19d;
+    width: 50rem;
+    border-radius: 10px;
+    grid-area: miembro4;
+}
+
+.miembro5{
+    display: block;
+    flex-direction: column;
+    background-color: #c0b19d;
+    width: 50rem;
+    border-radius: 10px;
+    grid-area: miembro5;
+}
+
+.miembro6{
+    display: block;
+    flex-direction: column;
+    background-color: #c0b19d;
+    width: 50rem;
+    border-radius: 10px;
+    grid-area: miembro6;
+}
+
+.miembro7{
+    display: block;
+    flex-direction: column;
+    background-color: #c0b19d;
+    width: 50rem;
+    border-radius: 10px;
+    grid-area: miembro7;
 }
 
 .nombreCargo{
