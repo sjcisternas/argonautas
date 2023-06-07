@@ -422,29 +422,37 @@ footer{
 
 /* NOSOTROS */
 
+
+
 .mainnosotros{
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: repeat(4, 25%);
-    grid-template-areas: 
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas:
+    "quienes quienes" 
     "miembro1 miembro2"
     "miembro3 miembro4"
     "miembro5 miembro6"
     "miembro7 miembro7";
 }
 
+.quienes{
+    grid-area:quienes;
+    height: 0rem;
+    padding-top: 3rem;
+}
+
 .miembro{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 4rem;
+    margin-bottom: 5rem;
+    
 }
 
 .miembro71{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 4rem;
+    justify-content: center;    
 }
 
 .miembro1{
