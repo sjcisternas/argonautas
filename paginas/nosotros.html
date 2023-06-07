@@ -13,6 +13,8 @@
     
     <link rel="shortcut icon" href="../multimedia/logo.png" type="image/x-icon"> 
 
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    
     <link rel="stylesheet" href="../css/estilos.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,26 +23,30 @@
 
 </head>
 
-<body>
-    <header>
-        <div class="argonautas1">
+<body class="container-fluid">
+    <header class="row">
+        <div class="argonautas1 col-xl-9">
             <img src="../multimedia/logo_sombra.png" alt="Logo" class="logo">
-            <h1>Argonautas del Atlántico Sur</h1> 
-        </div>       
-        
+            <h1>Argonautas del Atlántico Sur</h1>
+        </div>
+
         <!-- MENÚ DE NAVEGACIÓN -->
-        <nav>
-            <ul class="mainul">
-                <li class="mainli"><a href="../index.html">Inicio</a></li>
-                <li class="mainli"><a href="proyectos.html">Proyectos</a></li>
-                <li class="mainli"><a href="nosotros.html" class="selected">Nosotros</a></li>
-                <li class="mainli"><a href="archivo.html">Archivo</a></li>
-                <li class="mainli"><a href="sumate.html">Sumate</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-sm navbar-dark col-xl-3">
+            <button class="navbar-toggler" type="button"    data-bs-toggle="collapse" data-bs-target="#opciones">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="opciones">
+                <ul class="mainul">
+                    <li class="mainli"><a href="../index.html">Inicio</li><li class="mainli"><a href="proyectos.html">Proyectos</a></li>
+                    <li class="mainli"><a href="nosotros.html" class="selected">Nosotros</a></li>
+                    <li class="mainli"><a href="archivo.html">Archivo</a></li>
+                    <li class="mainli"><a href="sumate.html">Sumate</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
     
-    <main>
+    <main class="row mainnosotros">
         <div class ="miembro12">
             
             <!-- MIEMBRO 1 -->
@@ -138,14 +144,15 @@
         </div>
     </main>
     
-    <footer>
-        <p class="pfooter">All rights reserved©</p>
-        <div class="imgfooter">
-            <a href=""><img src="../multimedia/facebook.svg" alt="Facebook" class="imgf"></a>
-            <a href=""><img src="../multimedia/instagram.svg" alt="Instagram" class="imgf"></a>
-            <a href=""><img src="../multimedia/twitter.svg" alt="Twitter" class="imgf2"></a>
-            <a href=""><img src="../multimedia/youtube.svg" alt="Youtube" class="imgf2"></a>
+    <footer class="row">
+        <p class="pfooter col-xl-6">All rights reserved©</p>
+        <div class="imgfooter col-xl-6">
+        <a href=""><img src="../multimedia/facebook.svg" alt="Facebook" class="imgf"></a>
+        <a href=""><img src="../multimedia/instagram.svg" alt="Instagram" class="imgf"></a>
+        <a href=""><img src="../multimedia/twitter.svg" alt="Twitter" class="imgf2"></a>
+        <a href=""><img src="../multimedia/youtube.svg" alt="Youtube" class="imgf2"></a>
         </div>
     </footer>
+    <script src="../js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
