@@ -345,7 +345,7 @@ footer{
 }
 
 .Ppodcast{
-    padding-bottom: 8rem;
+    margin-bottom: 5rem;
 }
 
 .boton{display:flex;
@@ -438,8 +438,8 @@ footer{
 
 .quienes{
     grid-area:quienes;
-    height: 0rem;
-    padding-top: 3rem;
+    height: fit-content;
+    padding: 3rem 10rem 0rem 7rem;
 }
 
 .miembro{
