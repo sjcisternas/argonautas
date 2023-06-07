@@ -294,7 +294,7 @@ footer{
     background-color:  #c0b19d;
     border-radius: 1rem;
     padding: 4rem 7rem;
-    margin-top: 7rem;
+    margin: 7rem 0rem 12rem 0rem;
 }
 
 .tituloColab{
@@ -554,10 +554,15 @@ footer{
     display: flex;
     flex-direction: column;
     margin: 2.4rem;
-    overflow: hidden;
-    height: 19rem;
+    justify-content:space-between;
 }
 
+.linkultimanota{
+    display: flex;
+    justify-content: end;
+    color: #55694a;
+    margin-bottom: 3rem;
+}
 
 .imgnota1{
     height: 25.4rem;
@@ -575,22 +580,105 @@ footer{
 
 .miniaturas{
     display: flex;
-    padding-bottom: 8rem;
-    justify-content: space-between; /* Este espaciado, cuando veo la pagina en otra pantalla con otro tamaño, queda mal (Se juntan las cards), no sé como arreglarlo */
+    margin-bottom: 8rem;
+    justify-content: space-between;
 }
 
 .miniaturabox{
     width: 33.5rem;
-    height: 40.4rem;
-    
+    height: 43rem;
 }
 
-.imgminiaturas{   /* Hay algunas imágenes que se deforman y no sé cómo acomodarlo */
+.miniaturabox:hover{
+    width: 33.5rem;
+    height: 43rem;
+    background-color: #beaf9c;
+    border-radius: 1rem;
+    .imgminiaturas2{
+        border-radius: 0.8rem 0.8rem 0rem 0rem;
+        
+    }
+    .imgminiaturas3{
+        border-radius: 0.8rem 0.8rem 0rem 0rem;
+        
+    }
+    .imgminiaturas4{
+        border-radius: 0.8rem 0.8rem 0rem 0rem;
+        
+    }
+    .imgminiaturas5{
+        border-radius: 0.8rem 0.8rem 0rem 0rem;
+        
+    }
+    .imgminiaturas6{
+        border-radius: 0.8rem 0.8rem 0rem 0rem;
+        
+    }
+    .imgminiaturas7{
+        border-radius: 0.8rem 0.8rem 0rem 0rem;
+        
+    }
+}
+
+.imgminiaturas2{   
     width:33.5rem;
     height: 20.4rem;
-    background-color: #c0b19d;
-    border-radius: 8px;
-} 
+    background-image: url(../multimedia/arqueo1.jpg);
+    background-position: center;
+    background-repeat:no-repeat;
+    background-size: cover;
+    border-radius: 0.8rem;
+}
+
+.imgminiaturas3{   
+    width:33.5rem;
+    height: 20.4rem;
+    background-image: url(../multimedia/mtdibujo.jpeg);
+    background-position: center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    border-radius: 0.8rem;
+}
+
+.imgminiaturas4{   
+    width:33.5rem;
+    height: 20.4rem;
+    background-image: url(../multimedia/mtdibujo.jpeg);
+    background-position: center;
+    background-repeat:no-repeat;
+    background-size: cover;
+    border-radius: 0.8rem;
+}
+
+.imgminiaturas5{   
+    width:33.5rem;
+    height: 20.4rem;
+    background-image: url(../multimedia/mtdibujo.jpeg);
+    background-position: center;
+    background-repeat:no-repeat;
+    background-size: cover;
+    border-radius: 0.8rem;
+}
+
+.imgminiaturas6{   
+    width:33.5rem;
+    height: 20.4rem;
+    background-image: url(../multimedia/mtdibujo.jpeg);
+    background-position: center;
+    background-repeat:no-repeat;
+    background-size: cover;
+    border-radius: 0.8rem;
+}
+
+.imgminiaturas7{   
+    width:33.5rem;
+    height: 20.4rem;
+    background-image: url(../multimedia/mtdibujo.jpeg);
+    background-position: center;
+    background-repeat:no-repeat;
+    background-size: cover;
+    border-radius: 0.8rem;
+}
 
 .titulomini{
     font-size: medium;
@@ -600,8 +688,9 @@ footer{
     display:flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 18rem;
-    margin: 1rem;
+    height: 20rem;
+    margin: 1rem 1rem 0rem 1rem;
+    padding: 1rem 0.5rem 0rem 0.5rem;
 }
 
 .miniaturadesc{
@@ -610,7 +699,9 @@ footer{
 }
 
 .autormini{
-    padding: 0.4rem 0rem;
+    padding: 0.2rem 0rem;
+    font-weight: 100;
+    font-size: small;
 }
 
 .linkminiatura{
@@ -636,6 +727,20 @@ footer{
     border-radius: 1rem;
 }
 
+.numpagina{
+    width: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.numpagina:hover{
+    width: 2rem;
+    display: flex;
+    justify-content: center;
+    background-color:#738467;
+    border-radius: 1rem;
+}
+
 #puntitos{
     color: #cdbdaa;
 }
@@ -657,9 +762,9 @@ footer{
 }
 
 .mision{
-    height: 28rem;
-    background-color:#c0b19d;
-    background-image: url(../multimedia/logo.png); /* probablemente vaya otra imagen */
+    height: fit-content;
+    background-color:#62625f;
+    background-image: url(../multimedia/mtdibujo.jpeg); /* probablemente vaya otra imagen */
     background-blend-mode:soft-light; /* ver de poner la imagen mas suave aun */
     background-position: center;
     background-repeat:no-repeat;
@@ -676,10 +781,10 @@ footer{
 .misionP{
     background-color:#55694a;
     width: 70rem;
-    height: 20rem;
+    height: fit-content;
     padding: 3rem 5rem;
     position: relative;
-    top:7rem;
+    top:11rem;
     border-radius: 1rem;
 }
 
@@ -711,15 +816,14 @@ footer{
 .botonMP{
     display: flex;
     justify-content: end;
-    padding: 0rem 28rem 6rem 0rem;
+    padding: 0rem 16rem 6rem 0rem;
 }
 
-.MP{
-    height: 3rem;
+.MercP{
+    height: 7rem;
     width: auto;
     background-color: #55694a;
     border: none;
-    cursor: pointer;
     border-radius: 4px;
     font-size: 16px;
     padding: 2rem;
