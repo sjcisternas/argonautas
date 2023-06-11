@@ -22,6 +22,8 @@ main{
     padding: 6rem 12rem;
 }
 
+
+
 /* HEADER */
 
 header{
@@ -230,9 +232,10 @@ footer{
     }
 }
 
-/* Mobile */
+/* Mobile S-M-L */
 
 @media screen and (min-width: 320px) and (max-width:767px){
+
     /* Header */
     header{
         padding: 0rem;
@@ -243,10 +246,6 @@ footer{
     .argonautas1 {
         width: fit-content;
         grid-area: logo;
-    }
-
-    .argonautas1 h1{
-        font-size: 14px;
     }
 
     .logo{
@@ -281,10 +280,27 @@ footer{
     /* Main */
 
     main{
-        padding: 2.4rem 1.6rem;
+        padding: 2.4rem;
     }
 
+    /* Footer */
+    
+    footer{
+        padding: 0rem 3rem
+    }
+
+    .pfooter{
+        width: fit-content;
+    }
+    .imgfooter{
+        width: fit-content;
+    }
+
+    .pfooter{
+        font-size: 10px; 
+    }
 }
+
 
 /* INDEX */
 
@@ -337,8 +353,7 @@ footer{
     display: inline-block;
     height: 23.7rem;
     width: 32.3rem;
-    border-radius: 10px;
-    
+    border-radius: 10px;    
 }
 
 .boxPizq{
@@ -368,7 +383,7 @@ footer{
     overflow: hidden;
     display: -webkit-box;
     -webkit-box-orient: vertical;
-    -webkit-line-clamp: 5;  
+    -webkit-line-clamp: 4;  
 }
 
 
@@ -605,6 +620,10 @@ footer{
         justify-content: space-around;
     }
 
+    .nota{
+        margin: 1.5rem 0rem;
+    }
+
     .nota:hover{
         display: flex;
         background-color: #beaf9c;
@@ -634,7 +653,7 @@ footer{
     }
 
     .linkboxderPadre1{
-        margin: 0rem;
+        margin: 0rem 2rem 0rem 0rem;
     } 
     
     .linkboxderPadre2{
@@ -667,7 +686,7 @@ footer{
 
 }
 
-/* Mobile */
+/* Mobile S-M-L */
 
 @media screen and (min-width: 320px) and (max-width: 767px){
     
@@ -686,6 +705,7 @@ footer{
     .nota{
         display: flex;
         flex-direction: column;
+        margin-bottom: 3.2rem;
     }
 
     .nota:hover{
@@ -698,18 +718,18 @@ footer{
     .nota:hover .imgboxizq{
         display: inline-block;
         border-radius: 1rem 1rem 0rem 0rem;
-        height: 16.7rem;
-        width: 25.3rem;
+        height: 25rem;
+        width: 100%;
         
     }
 
     .imgboxizq{
-        height: 16.7rem;
-        width: 25.3rem;
+        height: 25rem;
+        width: 100%;
     }
 
     .boxPizq{
-        padding-right: 0.5rem;
+        padding: 2rem 1.5rem;
     }
 
     .Pnota{
@@ -729,6 +749,7 @@ footer{
         height: fit-content;
         padding-bottom: 2.4rem;
         margin-top: 0rem;
+        margin-bottom: 2rem;
     }
 
     .colaborar{
@@ -738,16 +759,39 @@ footer{
     }
 
     .botoncolab{
-        margin: 4rem 2rem 0rem 0rem;
+        margin: 0rem 2rem 0rem 0rem;
     }
 
     .pColab{
-        font-size: 1.3rem;
+        font-size: 1.4rem;
     }
 
     .aColab{
         font-size: 1.6rem;
     }
+
+    .colaborar{
+        height: auto;
+    }
+
+}
+
+/* Mobile M */
+
+@media screen and (min-width: 375px) and (max-width: 424px){
+    .nota{
+        margin-bottom: 2rem;
+    }
+
+}
+
+/* Mobile S */
+
+@media screen and (min-width: 320px) and (max-width: 374px){
+    .nota{
+        margin-bottom: 1.5rem;
+    }
+
 
 }
 
