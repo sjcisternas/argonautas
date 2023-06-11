@@ -40,6 +40,7 @@ header{
     align-items:center;
 }
 
+
 h1{
     color:#edc99c;
     display: inline-block;
@@ -325,6 +326,11 @@ footer{
     justify-content: space-between;
 }
 
+.notasPrincipales h1{
+    color: #0e0801;
+    font-size: xx-large;
+    font-style: italic;
+}
 
 .nota{
     display: flex;
@@ -514,11 +520,20 @@ footer{
     .mainindex{
         display: grid;
         grid-template-columns: 83% 17%;
-        grid-template-rows: 60% 35%;
+        grid-template-rows: 60% 40%;
         grid-template-areas: 
         "noticias miniaturas"
         "colaborar colaborar";
-        row-gap: 5%;
+    }
+
+    .notasPrincipales{
+        grid-area: noticias;
+        height: auto;
+        width: auto;
+    }
+
+    .notasPrincipales h1{
+        margin-bottom: 2rem;
     }
 
     .imgboxizq{
@@ -530,6 +545,7 @@ footer{
     .nota{
         display: flex;
         margin-bottom: 3rem;
+        height: auto;
     }
     
     .nota:hover{
@@ -546,7 +562,7 @@ footer{
     
     .Pnota{
         font-size: 14px;
-        -webkit-line-clamp: 5;  
+        -webkit-line-clamp: 4;  
       }
 
     .linkboxderPadre1{
@@ -555,6 +571,10 @@ footer{
 
     .linkboxderPadre2{
         margin:0rem
+    }
+
+    .boxDerecha{
+        grid-area: miniaturas;
     }
 
     .boxDerecha .tituloimgpodcast{
@@ -598,7 +618,9 @@ footer{
     }
 
     .colaborar{
-        margin: 0rem 0rem 0rem 0rem;
+        margin: 5rem 0rem 0rem 0rem;
+        height: auto;
+        grid-area: colaborar;
     }
 }
 
@@ -618,6 +640,12 @@ footer{
     .notasPrincipales{
         padding-right: 0rem;
         justify-content: space-around;
+        margin-bottom: 3rem;
+        margin-top: 3rem;
+    }
+
+    .notasPrincipales h1{
+        margin-top: 5rem;
     }
 
     .nota{
@@ -663,13 +691,14 @@ footer{
     .boxDerecha{
         height: fit-content;
         padding-bottom: 2.4rem;
-        margin-top: 1.2rem;
+        margin-top: 4rem;
     }
 
     .colaborar{
-        margin: 3rem 0rem 0rem 0rem;
+        margin: 0rem;
         background-color:#cdbdaa;
         padding: 0rem 1rem;
+        height: auto;
     }
 
     .botoncolab{
@@ -683,6 +712,7 @@ footer{
     .aColab{
         font-size: 1.6rem;
     }
+
 
 }
 
@@ -702,6 +732,10 @@ footer{
         flex-direction: column;
     }
 
+    .notasPrincipales h1{
+        margin-bottom: 2rem;
+    }
+
     .nota{
         display: flex;
         flex-direction: column;
@@ -719,8 +753,7 @@ footer{
         display: inline-block;
         border-radius: 1rem 1rem 0rem 0rem;
         height: 25rem;
-        width: 100%;
-        
+        width: 100%; 
     }
 
     .imgboxizq{
@@ -774,6 +807,21 @@ footer{
         height: auto;
     }
 
+}
+
+/* Mobile L */
+
+@media screen and (min-width: 550px) and (max-width: 767px){
+
+    .imgboxizq{
+        height: 40rem;
+        width: 100%;
+    }
+
+    .nota:hover .imgboxizq{
+        height: 40rem;
+        width: 100%; 
+    }
 }
 
 /* Mobile M */
@@ -866,6 +914,7 @@ footer{
     height: 9rem;
 }
 
+
 .MyTp{
     display: flex;
     justify-content: center;
@@ -888,6 +937,54 @@ footer{
     cursor: pointer;
     border-radius: 4px;
     font-size: 16px;
+}
+
+/* 1024-1280px */
+
+@media screen and (min-width: 1024px) and (max-width: 1280px){
+    .podcast{
+        margin-top: 3rem;
+    }
+    
+    .MyTt{
+        height: auto;        
+    }
+}
+
+/* Mobile L y Tablet */
+
+@media screen and (min-width: 320px) and (max-width: 1023px){
+    .podcast{
+        margin-top: 3rem;
+    }
+    
+    .MyT{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 3rem;        
+    }
+
+    .MyTp{
+        padding: 4rem 1rem;
+    }
+}
+
+/* Mobile L */
+
+@media screen and (min-width: 320px) and (max-width: 767px){
+    .titulo{
+        width: 100%;
+    }
+}
+
+/* Mobile S */
+
+@media screen and (min-width: 320px) and (max-width: 375px){
+    .proyectospreviostitulo{
+        padding: 0rem;
+        margin: 4rem 0rem 3rem 0rem;
+        text-align: center;
+    }
 }
 
 /* NOSOTROS */
