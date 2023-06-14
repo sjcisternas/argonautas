@@ -423,31 +423,31 @@ footer .imgfooter .imgf2 {
   .mainindex .notasPrincipales h1 {
     margin-bottom: 2rem;
   }
-  .mainindex .notasPrincipales h1 .nota {
+  .mainindex .notasPrincipales .nota {
     display: flex;
-    margin-bottom: 8rem;
+    margin-bottom: 3rem;
     height: auto;
   }
-  .mainindex .notasPrincipales h1 .nota .imgboxizq {
+  .mainindex .notasPrincipales .nota .imgboxizq {
     display: inline-block;
     border-radius: 10px;
   }
-  .mainindex .notasPrincipales h1 .nota .Pnota {
+  .mainindex .notasPrincipales .nota .Pnota {
     font-size: 14px;
     -webkit-line-clamp: 4;
   }
-  .mainindex .notasPrincipales h1 .nota .linkboxderPadre1 {
+  .mainindex .notasPrincipales .nota .linkboxderPadre1 {
     margin: 0rem;
   }
-  .mainindex .notasPrincipales h1 .nota .linkboxderPadre2 {
+  .mainindex .notasPrincipales .nota .linkboxderPadre2 {
     margin: 0rem;
   }
-  .mainindex .notasPrincipales h1 .nota:hover {
+  .mainindex .notasPrincipales .nota:hover {
     display: flex;
     background-color: #beaf9c;
     border-radius: 1rem;
   }
-  .mainindex .notasPrincipales h1 .nota:hover .imgboxizq {
+  .mainindex .notasPrincipales .nota:hover .imgboxizq {
     display: inline-block;
     border-radius: 1rem 0rem 0rem 1rem;
   }
@@ -499,64 +499,64 @@ footer .imgfooter .imgf2 {
     grid-template-rows: 35% 35% 30%;
     grid-template-areas: "noticias" "miniaturas" "colaborar";
   }
-  .notasPrincipales {
+  .mainindex .notasPrincipales {
     padding-right: 0rem;
     justify-content: space-around;
     margin-bottom: 3rem;
     margin-top: 3rem;
   }
-  .notasPrincipales h1 {
+  .mainindex .notasPrincipales h1 {
     margin-top: 5rem;
   }
-  .nota {
+  .mainindex .notasPrincipales .nota {
     margin: 1.5rem 0rem;
   }
-  .nota:hover {
+  .mainindex .notasPrincipales .nota .imgboxizq {
+    height: 16.7rem;
+    width: 25.3rem;
+  }
+  .mainindex .notasPrincipales .nota .boxPizq {
+    padding-right: 0.5rem;
+  }
+  .mainindex .notasPrincipales .nota .boxPizq .Pnota {
+    font-size: 1.3rem;
+    -webkit-line-clamp: 3;
+  }
+  .mainindex .notasPrincipales .nota .boxPizq .linkboxderPadre1 {
+    margin: 0rem 2rem 0rem 0rem;
+  }
+  .mainindex .notasPrincipales .nota .boxPizq .linkboxderPadre2 {
+    margin: 0rem;
+  }
+  .mainindex .notasPrincipales .nota:hover {
     display: flex;
     background-color: #beaf9c;
     border-radius: 1rem;
   }
-  .nota:hover .imgboxizq {
+  .mainindex .notasPrincipales .nota:hover .imgboxizq {
     display: inline-block;
     border-radius: 1rem 0rem 0rem 1rem;
     height: 16.7rem;
     width: 25.3rem;
   }
-  .imgboxizq {
-    height: 16.7rem;
-    width: 25.3rem;
-  }
-  .boxPizq {
-    padding-right: 0.5rem;
-  }
-  .Pnota {
-    font-size: 1.3rem;
-    -webkit-line-clamp: 3;
-  }
-  .linkboxderPadre1 {
-    margin: 0rem 2rem 0rem 0rem;
-  }
-  .linkboxderPadre2 {
-    margin: 0rem;
-  }
-  .boxDerecha {
+  .mainindex .boxDerecha {
     height: fit-content;
     padding-bottom: 2.4rem;
-    margin-top: 4rem;
+    margin-top: 6rem;
   }
-  .colaborar {
-    margin: 0rem;
+  .mainindex .colaborar {
+    margin: 3rem 0rem 0rem 0rem;
     background-color: #cdbdaa;
     padding: 0rem 1rem;
     height: auto;
   }
-  .botoncolab {
-    margin: 4rem 2rem 0rem 0rem;
-  }
-  .pColab {
+  .mainindex .colaborar .pColab {
     font-size: 1.3rem;
   }
-  .aColab {
+  .mainindex .colaborar .botoncolab {
+    margin: 4rem 2rem 0rem 0rem;
+  }
+  .mainindex .colaborar .botoncolab .aColab {
     font-size: 1.6rem;
   }
 }
@@ -566,71 +566,63 @@ footer .imgfooter .imgf2 {
     display: flex;
     flex-direction: column;
   }
-  .notasPrincipales {
+  .mainindex .notasPrincipales {
     padding: 0rem;
     margin: 0rem;
     display: flex;
     flex-direction: column;
   }
-  .notasPrincipales h1 {
+  .mainindex .notasPrincipales h1 {
     margin-bottom: 2rem;
   }
-  .nota {
+  .mainindex .notasPrincipales .nota {
     display: flex;
     flex-direction: column;
     margin-bottom: 3.2rem;
   }
-  .nota:hover {
-    display: flex;
-    flex-direction: column;
-    background-color: #beaf9c;
-    border-radius: 1rem;
+  .mainindex .notasPrincipales .nota .imgboxizq {
+    height: 25rem;
+    width: 100%;
   }
-  .nota:hover .imgboxizq {
+  .mainindex .notasPrincipales .nota .boxPizq {
+    padding: 2rem 1.5rem;
+  }
+  .mainindex .notasPrincipales .nota .boxPizq .Pnota {
+    font-size: 1.3rem;
+    -webkit-line-clamp: 3;
+  }
+  .mainindex .notasPrincipales .nota .boxPizq .linkboxderPadre1 {
+    margin: 0rem;
+  }
+  .mainindex .notasPrincipales .nota .boxPizq .linkboxderPadre2 {
+    margin: 0rem;
+  }
+  .mainindex .notasPrincipales .nota:hover .imgboxizq {
     display: inline-block;
     border-radius: 1rem 1rem 0rem 0rem;
     height: 25rem;
     width: 100%;
   }
-  .imgboxizq {
-    height: 25rem;
-    width: 100%;
-  }
-  .boxPizq {
-    padding: 2rem 1.5rem;
-  }
-  .Pnota {
-    font-size: 1.3rem;
-    -webkit-line-clamp: 3;
-  }
-  .linkboxderPadre1 {
-    margin: 0rem;
-  }
-  .linkboxderPadre2 {
-    margin: 0rem;
-  }
-  .boxDerecha {
+  .mainindex .boxDerecha {
     height: fit-content;
     padding-bottom: 2.4rem;
     margin-top: 0rem;
     margin-bottom: 2rem;
   }
-  .colaborar {
-    margin: 0rem 0rem 0rem 0rem;
+  .mainindex .colaborar {
+    margin: 2rem 0rem 0rem 0rem;
     background-color: #cdbdaa;
     padding: 0rem 1rem;
+    height: auto;
   }
-  .botoncolab {
-    margin: 0rem 2rem 0rem 0rem;
-  }
-  .pColab {
+  .mainindex .colaborar .pColab {
     font-size: 1.4rem;
   }
-  .aColab {
-    font-size: 1.6rem;
+  .mainindex .colaborar .botoncolab {
+    margin: 0rem 2rem 0rem 0rem;
   }
-  .colaborar {
-    height: auto;
+  .mainindex .colaborar .botoncolab .aColab {
+    font-size: 1.6rem;
   }
 }
 /* Mobile L */
@@ -663,22 +655,18 @@ footer .imgfooter .imgf2 {
   background-color: #c0b19d;
   border-radius: 1rem;
 }
-
-.Tpodcast {
+.podcast .Tpodcast {
   display: inline-block;
   padding-bottom: 1.8rem;
 }
-
-.Ppodcast {
+.podcast .Ppodcast {
   margin-bottom: 5rem;
 }
-
-.boton {
+.podcast .boton {
   display: flex;
   justify-content: end;
 }
-
-.escuchar {
+.podcast .boton .escuchar {
   padding: 10px 20px;
   background-color: #55694a;
   color: #fff;
@@ -702,8 +690,7 @@ footer .imgfooter .imgf2 {
   display: flex;
   margin-bottom: 7rem;
 }
-
-.MyTt {
+.MyT .MyTt {
   display: flex;
   justify-content: center;
   padding-top: 8rem;
@@ -714,26 +701,22 @@ footer .imgfooter .imgf2 {
   background-repeat: none;
   background-position: center;
 }
-
-.titulo {
+.MyT .MyTt .titulo {
   width: 45rem;
   height: 9rem;
 }
-
-.MyTp {
+.MyT .MyTp {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 5rem;
 }
-
-.botonleer {
+.MyT .botonleer {
   display: flex;
   justify-content: end;
   padding-right: 5rem;
 }
-
-.leer {
+.MyT .botonleer .leer {
   padding: 10px 20px;
   background-color: #55694a;
   color: #fff;
@@ -764,7 +747,7 @@ footer .imgfooter .imgf2 {
     flex-direction: column;
     margin-bottom: 3rem;
   }
-  .MyTp {
+  .MyT .MyTp {
     padding: 4rem 1rem;
   }
 }
@@ -788,25 +771,17 @@ footer .imgfooter .imgf2 {
   grid-template-rows: repeat(5, 1fr);
   grid-template-areas: "quienes quienes" "miembro1 miembro2" "miembro3 miembro4" "miembro5 miembro6" "miembro7 miembro7";
 }
-
-.quienes {
+.mainnosotros .quienes {
   grid-area: quienes;
   padding: 3rem 7rem 0rem 7rem;
 }
-
-.miembro {
+.mainnosotros .miembro {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 5rem;
 }
-
-.miembro71 {
-  display: flex;
-  justify-content: center;
-}
-
-.miembro1 {
+.mainnosotros .miembro .miembro1 {
   display: block;
   flex-direction: column;
   background-color: #c0b19d;
@@ -814,8 +789,29 @@ footer .imgfooter .imgf2 {
   border-radius: 10px;
   grid-area: miembro1;
 }
-
-.miembro2 {
+.mainnosotros .miembro .miembro1 .nombreCargo {
+  display: block;
+  padding: 1.6rem;
+}
+.mainnosotros .miembro .miembro1 .nombreCargo .cargo {
+  display: block;
+  padding-top: 0.3rem;
+}
+.mainnosotros .miembro .miembro1 .imgparrafo {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 1.6rem;
+}
+.mainnosotros .miembro .miembro1 .imgparrafo .nosotrosimg {
+  margin-left: 1.6rem;
+  height: 15rem;
+  width: 15rem;
+  border-radius: 10px;
+}
+.mainnosotros .miembro .miembro1 .imgparrafo .nosotrosp {
+  padding: 0rem 1.6rem;
+}
+.mainnosotros .miembro .miembro2 {
   display: block;
   flex-direction: column;
   background-color: #c0b19d;
@@ -823,8 +819,29 @@ footer .imgfooter .imgf2 {
   border-radius: 10px;
   grid-area: miembro2;
 }
-
-.miembro3 {
+.mainnosotros .miembro .miembro2 .nombreCargo {
+  display: block;
+  padding: 1.6rem;
+}
+.mainnosotros .miembro .miembro2 .nombreCargo .cargo {
+  display: block;
+  padding-top: 0.3rem;
+}
+.mainnosotros .miembro .miembro2 .imgparrafo {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 1.6rem;
+}
+.mainnosotros .miembro .miembro2 .imgparrafo .nosotrosimg {
+  margin-left: 1.6rem;
+  height: 15rem;
+  width: 15rem;
+  border-radius: 10px;
+}
+.mainnosotros .miembro .miembro2 .imgparrafo .nosotrosp {
+  padding: 0rem 1.6rem;
+}
+.mainnosotros .miembro .miembro3 {
   display: block;
   flex-direction: column;
   background-color: #c0b19d;
@@ -832,8 +849,29 @@ footer .imgfooter .imgf2 {
   border-radius: 10px;
   grid-area: miembro3;
 }
-
-.miembro4 {
+.mainnosotros .miembro .miembro3 .nombreCargo {
+  display: block;
+  padding: 1.6rem;
+}
+.mainnosotros .miembro .miembro3 .nombreCargo .cargo {
+  display: block;
+  padding-top: 0.3rem;
+}
+.mainnosotros .miembro .miembro3 .imgparrafo {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 1.6rem;
+}
+.mainnosotros .miembro .miembro3 .imgparrafo .nosotrosimg {
+  margin-left: 1.6rem;
+  height: 15rem;
+  width: 15rem;
+  border-radius: 10px;
+}
+.mainnosotros .miembro .miembro3 .imgparrafo .nosotrosp {
+  padding: 0rem 1.6rem;
+}
+.mainnosotros .miembro .miembro4 {
   display: block;
   flex-direction: column;
   background-color: #c0b19d;
@@ -841,8 +879,29 @@ footer .imgfooter .imgf2 {
   border-radius: 10px;
   grid-area: miembro4;
 }
-
-.miembro5 {
+.mainnosotros .miembro .miembro4 .nombreCargo {
+  display: block;
+  padding: 1.6rem;
+}
+.mainnosotros .miembro .miembro4 .nombreCargo .cargo {
+  display: block;
+  padding-top: 0.3rem;
+}
+.mainnosotros .miembro .miembro4 .imgparrafo {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 1.6rem;
+}
+.mainnosotros .miembro .miembro4 .imgparrafo .nosotrosimg {
+  margin-left: 1.6rem;
+  height: 15rem;
+  width: 15rem;
+  border-radius: 10px;
+}
+.mainnosotros .miembro .miembro4 .imgparrafo .nosotrosp {
+  padding: 0rem 1.6rem;
+}
+.mainnosotros .miembro .miembro5 {
   display: block;
   flex-direction: column;
   background-color: #c0b19d;
@@ -850,8 +909,29 @@ footer .imgfooter .imgf2 {
   border-radius: 10px;
   grid-area: miembro5;
 }
-
-.miembro6 {
+.mainnosotros .miembro .miembro5 .nombreCargo {
+  display: block;
+  padding: 1.6rem;
+}
+.mainnosotros .miembro .miembro5 .nombreCargo .cargo {
+  display: block;
+  padding-top: 0.3rem;
+}
+.mainnosotros .miembro .miembro5 .imgparrafo {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 1.6rem;
+}
+.mainnosotros .miembro .miembro5 .imgparrafo .nosotrosimg {
+  margin-left: 1.6rem;
+  height: 15rem;
+  width: 15rem;
+  border-radius: 10px;
+}
+.mainnosotros .miembro .miembro5 .imgparrafo .nosotrosp {
+  padding: 0rem 1.6rem;
+}
+.mainnosotros .miembro .miembro6 {
   display: block;
   flex-direction: column;
   background-color: #c0b19d;
@@ -859,8 +939,33 @@ footer .imgfooter .imgf2 {
   border-radius: 10px;
   grid-area: miembro6;
 }
-
-.miembro7 {
+.mainnosotros .miembro .miembro6 .nombreCargo {
+  display: block;
+  padding: 1.6rem;
+}
+.mainnosotros .miembro .miembro6 .nombreCargo .cargo {
+  display: block;
+  padding-top: 0.3rem;
+}
+.mainnosotros .miembro .miembro6 .imgparrafo {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 1.6rem;
+}
+.mainnosotros .miembro .miembro6 .imgparrafo .nosotrosimg {
+  margin-left: 1.6rem;
+  height: 15rem;
+  width: 15rem;
+  border-radius: 10px;
+}
+.mainnosotros .miembro .miembro6 .imgparrafo .nosotrosp {
+  padding: 0rem 1.6rem;
+}
+.mainnosotros .miembro71 {
+  display: flex;
+  justify-content: center;
+}
+.mainnosotros .miembro71 .miembro7 {
   display: block;
   flex-direction: column;
   background-color: #c0b19d;
@@ -868,31 +973,26 @@ footer .imgfooter .imgf2 {
   border-radius: 10px;
   grid-area: miembro7;
 }
-
-.nombreCargo {
+.mainnosotros .miembro71 .miembro7 .nombreCargo {
   display: block;
   padding: 1.6rem;
 }
-
-.cargo {
+.mainnosotros .miembro71 .miembro7 .nombreCargo .cargo {
   display: block;
   padding-top: 0.3rem;
 }
-
-.imgparrafo {
+.mainnosotros .miembro71 .miembro7 .imgparrafo {
   display: flex;
   flex-direction: row;
   margin-bottom: 1.6rem;
 }
-
-.nosotrosimg {
+.mainnosotros .miembro71 .miembro7 .imgparrafo .nosotrosimg {
   margin-left: 1.6rem;
   height: 15rem;
   width: 15rem;
   border-radius: 10px;
 }
-
-.nosotrosp {
+.mainnosotros .miembro71 .miembro7 .imgparrafo .nosotrosp {
   padding: 0rem 1.6rem;
 }
 

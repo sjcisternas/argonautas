@@ -9,112 +9,235 @@
     "miembro3 miembro4"
     "miembro5 miembro6"
     "miembro7 miembro7";
+    .quienes{
+        grid-area:quienes;
+        padding: 3rem 7rem 0rem 7rem;
+    }
+    .miembro{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 5rem;
+        .miembro1{
+            display: block;
+            flex-direction: column;
+            background-color: #c0b19d;
+            width: 50rem;
+            border-radius: 10px;
+            grid-area: miembro1;
+            .nombreCargo{
+                display: block;
+                padding: 1.6rem;
+                .cargo{
+                    display: block;
+                    padding-top: 0.3rem;
+                }
+            }
+            .imgparrafo{
+                display:flex;
+                flex-direction: row;
+                margin-bottom: 1.6rem;
+                .nosotrosimg{
+                    margin-left: 1.6rem;
+                    height: 15rem;
+                    width: 15rem;
+                    border-radius: 10px;
+                }
+                .nosotrosp{
+                    padding: 0rem 1.6rem;
+                }
+            }
+        }
+        .miembro2{
+            display: block;
+            flex-direction: column;
+            background-color: #c0b19d;
+            width: 50rem;
+            border-radius: 10px;
+            grid-area: miembro2;
+            .nombreCargo{
+                display: block;
+                padding: 1.6rem;
+                .cargo{
+                    display: block;
+                    padding-top: 0.3rem;
+                }
+            }
+            .imgparrafo{
+                display:flex;
+                flex-direction: row;
+                margin-bottom: 1.6rem;
+                .nosotrosimg{
+                    margin-left: 1.6rem;
+                    height: 15rem;
+                    width: 15rem;
+                    border-radius: 10px;
+                }
+                .nosotrosp{
+                    padding: 0rem 1.6rem;
+                }
+            }
+        }
+        .miembro3{
+            display: block;
+            flex-direction: column;
+            background-color: #c0b19d;
+            width: 50rem;
+            border-radius: 10px;
+            grid-area: miembro3;
+            .nombreCargo{
+                display: block;
+                padding: 1.6rem;
+                .cargo{
+                    display: block;
+                    padding-top: 0.3rem;
+                }
+            }
+            .imgparrafo{
+                display:flex;
+                flex-direction: row;
+                margin-bottom: 1.6rem;
+                .nosotrosimg{
+                    margin-left: 1.6rem;
+                    height: 15rem;
+                    width: 15rem;
+                    border-radius: 10px;
+                }
+                .nosotrosp{
+                    padding: 0rem 1.6rem;
+                }
+            }
+        }
+        .miembro4{
+            display: block;
+            flex-direction: column;
+            background-color: #c0b19d;
+            width: 50rem;
+            border-radius: 10px;
+            grid-area: miembro4;
+            .nombreCargo{
+                display: block;
+                padding: 1.6rem;
+                .cargo{
+                    display: block;
+                    padding-top: 0.3rem;
+                }
+            }
+            .imgparrafo{
+                display:flex;
+                flex-direction: row;
+                margin-bottom: 1.6rem;
+                .nosotrosimg{
+                    margin-left: 1.6rem;
+                    height: 15rem;
+                    width: 15rem;
+                    border-radius: 10px;
+                }
+                .nosotrosp{
+                    padding: 0rem 1.6rem;
+                }
+            }
+        }
+        .miembro5{
+            display: block;
+            flex-direction: column;
+            background-color: #c0b19d;
+            width: 50rem;
+            border-radius: 10px;
+            grid-area: miembro5;
+            .nombreCargo{
+                display: block;
+                padding: 1.6rem;
+                .cargo{
+                    display: block;
+                    padding-top: 0.3rem;
+                }
+            }
+            .imgparrafo{
+                display:flex;
+                flex-direction: row;
+                margin-bottom: 1.6rem;
+                .nosotrosimg{
+                    margin-left: 1.6rem;
+                    height: 15rem;
+                    width: 15rem;
+                    border-radius: 10px;
+                }
+                .nosotrosp{
+                    padding: 0rem 1.6rem;
+                }
+            }
+        }
+        .miembro6{
+            display: block;
+            flex-direction: column;
+            background-color: #c0b19d;
+            width: 50rem;
+            border-radius: 10px;
+            grid-area: miembro6;
+            .nombreCargo{
+                display: block;
+                padding: 1.6rem;
+                .cargo{
+                    display: block;
+                    padding-top: 0.3rem;
+                }
+            }
+            .imgparrafo{
+                display:flex;
+                flex-direction: row;
+                margin-bottom: 1.6rem;
+                .nosotrosimg{
+                    margin-left: 1.6rem;
+                    height: 15rem;
+                    width: 15rem;
+                    border-radius: 10px;
+                }
+                .nosotrosp{
+                    padding: 0rem 1.6rem;
+                }
+            }
+        }
+    }
+    .miembro71{
+        display: flex;
+        justify-content: center;
+        .miembro7{
+            display: block;
+            flex-direction: column;
+            background-color: #c0b19d;
+            width: 50rem;
+            border-radius: 10px;
+            grid-area: miembro7;
+            .nombreCargo{
+                display: block;
+                padding: 1.6rem;
+                .cargo{
+                    display: block;
+                    padding-top: 0.3rem;
+                }
+            }
+            .imgparrafo{
+                display:flex;
+                flex-direction: row;
+                margin-bottom: 1.6rem;
+                .nosotrosimg{
+                    margin-left: 1.6rem;
+                    height: 15rem;
+                    width: 15rem;
+                    border-radius: 10px;
+                }
+                .nosotrosp{
+                    padding: 0rem 1.6rem;
+                }
+            }
+        }    
+    }
 }
 
-.quienes{
-    grid-area:quienes;
-    padding: 3rem 7rem 0rem 7rem;
-}
 
-.miembro{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 5rem;
-    
-}
 
-.miembro71{
-    display: flex;
-    justify-content: center;    
-}
 
-.miembro1{
-    display: block;
-    flex-direction: column;
-    background-color: #c0b19d;
-    width: 50rem;
-    border-radius: 10px;
-    grid-area: miembro1;
-}
 
-.miembro2{
-    display: block;
-    flex-direction: column;
-    background-color: #c0b19d;
-    width: 50rem;
-    border-radius: 10px;
-    grid-area: miembro2;
-}
 
-.miembro3{
-    display: block;
-    flex-direction: column;
-    background-color: #c0b19d;
-    width: 50rem;
-    border-radius: 10px;
-    grid-area: miembro3;
-}
 
-.miembro4{
-    display: block;
-    flex-direction: column;
-    background-color: #c0b19d;
-    width: 50rem;
-    border-radius: 10px;
-    grid-area: miembro4;
-}
-
-.miembro5{
-    display: block;
-    flex-direction: column;
-    background-color: #c0b19d;
-    width: 50rem;
-    border-radius: 10px;
-    grid-area: miembro5;
-}
-
-.miembro6{
-    display: block;
-    flex-direction: column;
-    background-color: #c0b19d;
-    width: 50rem;
-    border-radius: 10px;
-    grid-area: miembro6;
-}
-
-.miembro7{
-    display: block;
-    flex-direction: column;
-    background-color: #c0b19d;
-    width: 50rem;
-    border-radius: 10px;
-    grid-area: miembro7;
-}
-
-.nombreCargo{
-    display: block;
-    padding: 1.6rem;
-}
-
-.cargo{
-    display: block;
-    padding-top: 0.3rem;
-}
-
-.imgparrafo{
-    display:flex;
-    flex-direction: row;
-    margin-bottom: 1.6rem;
-}
-
-.nosotrosimg{
-    margin-left: 1.6rem;
-    height: 15rem;
-    width: 15rem;
-    border-radius: 10px;
-}
-
-.nosotrosp{
-    padding: 0rem 1.6rem;
-}

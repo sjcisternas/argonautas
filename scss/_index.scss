@@ -201,7 +201,7 @@
             }
             .nota{
                 display: flex;
-                margin-bottom: 8rem;
+                margin-bottom: 3rem;
                 height: auto;
                 .imgboxizq{
                     display: inline-block;
@@ -286,85 +286,69 @@
         "noticias"
         "miniaturas"
         "colaborar";
+        .notasPrincipales{
+            padding-right: 0rem;
+            justify-content: space-around;
+            margin-bottom: 3rem;
+            margin-top: 3rem;
+            h1{
+                margin-top: 5rem;
+            }
+            .nota{
+                margin: 1.5rem 0rem;
+                .imgboxizq{
+                    height: 16.7rem;
+                    width: 25.3rem;
+                }
+                .boxPizq{
+                    padding-right: 0.5rem;
+                    .Pnota{
+                        font-size: 1.3rem;
+                        -webkit-line-clamp: 3;
+                    }
+                    .linkboxderPadre1{
+                        margin: 0rem 2rem 0rem 0rem;
+                    } 
+                    
+                    .linkboxderPadre2{
+                        margin: 0rem;
+                    }
+                }
+                &:hover{
+                    display: flex;
+                    background-color: #beaf9c;
+                    border-radius: 1rem;
+                    .imgboxizq{
+                        display: inline-block;
+                        border-radius: 1rem 0rem 0rem 1rem;
+                        height: 16.7rem;
+                        width: 25.3rem;
+                        
+                    }
+                }
+            }
+        }
+        .boxDerecha{
+            height: fit-content;
+            padding-bottom: 2.4rem;
+            margin-top: 6rem;
+        }
+        .colaborar{
+            margin: 3rem 0rem 0rem 0rem;
+            background-color:#cdbdaa;
+            padding: 0rem 1rem;
+            height: auto;
+            .pColab{
+                font-size: 1.3rem;
+            }
+            .botoncolab{
+                margin: 4rem 2rem 0rem 0rem;
+                .aColab{
+                    font-size: 1.6rem;
+                }
+            }
+        }
     }
-
-    .notasPrincipales{
-        padding-right: 0rem;
-        justify-content: space-around;
-        margin-bottom: 3rem;
-        margin-top: 3rem;
-    }
-
-    .notasPrincipales h1{
-        margin-top: 5rem;
-    }
-
-    .nota{
-        margin: 1.5rem 0rem;
-    }
-
-    .nota:hover{
-        display: flex;
-        background-color: #beaf9c;
-        border-radius: 1rem;
-    }
-    
-    .nota:hover .imgboxizq{
-        display: inline-block;
-        border-radius: 1rem 0rem 0rem 1rem;
-        height: 16.7rem;
-        width: 25.3rem;
-        
-    }
-
-    .imgboxizq{
-        height: 16.7rem;
-        width: 25.3rem;
-    }
-
-    .boxPizq{
-        padding-right: 0.5rem;
-    }
-
-    .Pnota{
-        font-size: 1.3rem;
-        -webkit-line-clamp: 3;
-    }
-
-    .linkboxderPadre1{
-        margin: 0rem 2rem 0rem 0rem;
-    } 
-    
-    .linkboxderPadre2{
-        margin: 0rem;
-    }
-
-    .boxDerecha{
-        height: fit-content;
-        padding-bottom: 2.4rem;
-        margin-top: 4rem;
-    }
-
-    .colaborar{
-        margin: 0rem;
-        background-color:#cdbdaa;
-        padding: 0rem 1rem;
-        height: auto;
-    }
-
-    .botoncolab{
-        margin: 4rem 2rem 0rem 0rem;
-    }
-
-    .pColab{
-        font-size: 1.3rem;
-    }
-
-    .aColab{
-        font-size: 1.6rem;
-    }
-
-
 }
 
 /* Mobile S-M-L */
@@ -374,90 +358,69 @@
     .mainindex{
         display: flex;
         flex-direction: column;
-    }
+        .notasPrincipales{
+            padding: 0rem;
+            margin:0rem;
+            display: flex;
+            flex-direction: column;
+            h1{
+                margin-bottom: 2rem;
+            }
+            .nota{
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 3.2rem;
+                .imgboxizq{
+                    height: 25rem;
+                    width: 100%;
+                }
+                .boxPizq{
+                    padding: 2rem 1.5rem;
+                    .Pnota{
+                        font-size: 1.3rem;
+                        -webkit-line-clamp: 3;
+                    }
+                    .linkboxderPadre1{
+                        margin: 0rem;
+                    } 
+                    
+                    .linkboxderPadre2{
+                        margin: 0rem;
+                    }
+                }
+                &:hover{
+                    .imgboxizq{
+                        display: inline-block;
+                        border-radius: 1rem 1rem 0rem 0rem;
+                        height: 25rem;
+                        width: 100%; 
+                    }
+                }
+            }
+        }
+        .boxDerecha{
+            height: fit-content;
+            padding-bottom: 2.4rem;
+            margin-top: 0rem;
+            margin-bottom: 2rem;
+        }
+        .colaborar{
+            margin: 2rem 0rem 0rem 0rem;
+            background-color:#cdbdaa;
+            padding: 0rem 1rem;
+            height: auto;
+            .pColab{
+                font-size: 1.4rem;
+            }
+            .botoncolab{
+                margin: 0rem 2rem 0rem 0rem;
+                .aColab{
+                    font-size: 1.6rem;
+                }
+            }
+        }
 
-    .notasPrincipales{
-        padding: 0rem;
-        margin:0rem;
-        display: flex;
-        flex-direction: column;
     }
-
-    .notasPrincipales h1{
-        margin-bottom: 2rem;
-    }
-
-    .nota{
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 3.2rem;
-    }
-
-    .nota:hover{
-        display: flex;
-        flex-direction: column;
-        background-color: #beaf9c;
-        border-radius: 1rem;
-    }
-    
-    .nota:hover .imgboxizq{
-        display: inline-block;
-        border-radius: 1rem 1rem 0rem 0rem;
-        height: 25rem;
-        width: 100%; 
-    }
-
-    .imgboxizq{
-        height: 25rem;
-        width: 100%;
-    }
-
-    .boxPizq{
-        padding: 2rem 1.5rem;
-    }
-
-    .Pnota{
-        font-size: 1.3rem;
-        -webkit-line-clamp: 3;
-    }
-
-    .linkboxderPadre1{
-        margin: 0rem;
-    } 
-    
-    .linkboxderPadre2{
-        margin: 0rem;
-    }
-
-    .boxDerecha{
-        height: fit-content;
-        padding-bottom: 2.4rem;
-        margin-top: 0rem;
-        margin-bottom: 2rem;
-    }
-
-    .colaborar{
-        margin: 0rem 0rem 0rem 0rem;
-        background-color:#cdbdaa;
-        padding: 0rem 1rem;
-    }
-
-    .botoncolab{
-        margin: 0rem 2rem 0rem 0rem;
-    }
-
-    .pColab{
-        font-size: 1.4rem;
-    }
-
-    .aColab{
-        font-size: 1.6rem;
-    }
-
-    .colaborar{
-        height: auto;
-    }
-
 }
 
 /* Mobile L */
@@ -468,7 +431,6 @@
         height: 40rem;
         width: 100%;
     }
-
     .nota:hover .imgboxizq{
         height: 40rem;
         width: 100%; 
@@ -481,7 +443,6 @@
     .nota{
         margin-bottom: 2rem;
     }
-
 }
 
 /* Mobile S */
@@ -490,6 +451,4 @@
     .nota{
         margin-bottom: 1.5rem;
     }
-
-
 }
