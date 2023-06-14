@@ -88,6 +88,7 @@
     .podcast{
         margin-top: 3rem;
     }
+    
     .MyTt{
         height: auto;        
     }
@@ -99,6 +100,7 @@
     .podcast{
         margin-top: 3rem;
     }
+    
     .MyT{
         display: flex;
         flex-direction: column;
@@ -106,14 +108,22 @@
         .MyTp{
             padding: 4rem 1rem;
         }        
-    }    
+    }
+    
 }
 
 /* Mobile L */
 
 @media screen and (min-width: 320px) and (max-width: 767px){
-    .titulo{
-        width: 100%;
+    .MyT{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 3rem;
+        .MyTt{
+            .titulo{
+                width: 100%;
+            }
+        }
     }
 }
 
