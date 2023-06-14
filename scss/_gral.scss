@@ -1,0 +1,274 @@
+/* CONFIG PARA TODAS LAS PAGINAS */
+
+
+*{    
+    margin: 0;   
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+h1{
+    color:#edc99c;
+    display: inline-block;
+    margin-left: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: large;
+    margin-top: 0.5rem
+}
+
+h2{
+    font-size: xx-large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #0e0801;
+    font-weight: bold;
+    
+}
+
+h3{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    color: #271702;
+    font-weight: bold;
+}
+
+h4{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #0e0801;
+    font-weight: bold;
+}
+
+p{
+    font-size: medium;
+    font-family: 'Helvetica';
+    color:#271702;   
+}
+
+a{
+    font-family: 'Helvetica';
+    text-decoration:none;
+    color:#edc99c;
+}
+
+/* Header */
+
+header{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0rem 8rem;
+    background-color: #271702;
+    .argonautas1{
+        display:flex;
+        align-items:center;
+        .logo{
+            width: 5rem;
+            height: 5rem;
+            display: inline-block;
+            margin: 10px 0px 10px 10px;
+        }
+    }
+   /* Nav */
+   nav{
+    display:inline-block;
+    margin-top: 1.7em;
+    .mainul{
+        list-style-type: none;
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: row;
+        .mainli{
+            display: block;
+            font-size: small;
+            font-family: 'Helvetica';
+            padding: 0rem 0.8rem;
+            .selected{
+                text-decoration: underline; /* Es la única modificación que pude hacerle. quise ponerle algun sombreado o algo más sutil, pero no pude */
+            }
+        }
+    }
+}
+}
+
+/* Main */
+
+main{
+    background-color: #cdbdaa;
+    padding: 6rem 12rem;
+}
+
+/* Footer */
+
+footer{
+    background-color: #271702;
+    height: 4rem;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0rem 8rem;
+    .pfooter{
+        display:inline-block;
+        margin-top: 1rem;
+        color: #c0b19d;
+        font-size: small;   
+    }
+    .imgfooter{
+        display: flex;
+        justify-content: end;
+        .imgf{
+            display:inline-block;
+            height: 2rem;
+            padding-left: 1rem;
+        }
+        .imgf2{
+            display:inline-block;
+            height: 1.9rem;
+            padding-left: 0.8rem;
+        }
+    }
+}
+
+
+/* MEDIA QUERYS */
+
+
+/* 1024px-1339px */
+
+@media screen and (min-width: 1024px) and (max-width:1439px){
+    
+    h4{
+        font-size: 14px; 
+    }
+    
+    /* Header */
+    
+    .argonautas1 {
+        flex: 1;
+    }
+    
+    .navbar {
+        flex: 1;
+        .collapse{
+            display: flex;
+            justify-content: end;
+        }
+    }
+
+    /* Main */
+
+    main{
+        background-color: #cdbdaa;
+        padding: 3rem 6rem;
+    }
+
+    /* Footer */
+
+    .pfooter{
+        width: fit-content;
+    }
+    .imgfooter{
+        width: fit-content;
+    }
+}
+
+/* Tablet */
+
+@media screen and (min-width: 768px) and (max-width:1023px){
+    
+    h4{
+        font-size: 14px; 
+    }
+    
+    /* Header */
+    
+    header{
+        padding: 0rem 3rem;
+        .argonautas1 {
+            flex: 1;
+        }
+        .navbar {
+            flex: 1;
+            .collapse{
+                display: flex;
+                justify-content: end;
+                .mainli{
+                    font-size: 12px;
+                }
+            }
+        }
+    }    
+
+    /* Main */
+
+    main{
+        background-color: #cdbdaa;
+        padding: 3rem 6rem;
+    }
+
+    /* Footer */
+
+    .pfooter{
+        width: fit-content;
+    }
+    .imgfooter{
+        width: fit-content;
+    }
+}
+
+/* Mobile S-M-L */
+
+@media screen and (min-width: 320px) and (max-width:767px){
+
+    /* Header */
+    header{
+        padding: 0rem;
+        display: flex;
+        flex-direction: column;
+        .argonautas1 {
+            width: fit-content;
+            grid-area: logo;
+            .logo{
+                margin-bottom: 0rem;
+            }
+        }
+        .navbar {
+            width: fit-content;
+            display: flex;
+            flex-direction: column;
+            .navbar-toggler{
+                border-style:none;
+            }
+            
+            .mainul{
+                margin-bottom:1rem;
+                padding:0rem;
+                .mainli{
+                    font-size: 12px;
+                }
+            }
+            
+        }
+    }
+
+    /* Main */
+
+    main{
+        padding: 2.4rem;
+    }
+
+    /* Footer */
+    
+    footer{
+        padding: 0rem 3rem;
+        .pfooter{
+            width: fit-content;
+            font-size: 10px;
+        }
+        .imgfooter{
+            width: fit-content;
+        }
+    }
+}

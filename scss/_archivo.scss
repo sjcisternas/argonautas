@@ -1,0 +1,191 @@
+
+/* Última nota */
+
+.notaprincipal{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 8rem;
+    background-color: #c0b19d;
+}
+
+.ultimanota{
+    display: flex;
+    flex-direction: column;
+    margin: 2.4rem;
+    justify-content:space-between;
+}
+
+.linkultimanota{
+    display: flex;
+    justify-content: end;
+    color: #55694a;
+    margin-bottom: 3rem;
+}
+
+.imgnota1{
+    height: 25.4rem;
+    width: 55rem;
+    border-radius: 10px;
+    margin: 2.4rem;
+}
+
+.autor1{
+    display: inline-block;
+    padding-bottom: 1.2rem;
+}
+
+/* Miniaturas otras notas */
+
+.miniaturas{
+    display: flex;
+    margin-bottom: 8rem;
+    justify-content: space-between;
+}
+
+.miniaturabox{
+    width: 33.5rem;
+    height: 43rem;
+}
+
+.miniaturabox:hover {
+    width: 33.5rem;
+    height: 43rem;
+    background-color: #beaf9c;
+    border-radius: 1rem;
+  }
+  
+  .miniaturabox:hover .imgminiaturas2,
+  .miniaturabox:hover .imgminiaturas3,
+  .miniaturabox:hover .imgminiaturas4,
+  .miniaturabox:hover .imgminiaturas5,
+  .miniaturabox:hover .imgminiaturas6,
+  .miniaturabox:hover .imgminiaturas7 {
+    border-radius: 0.8rem 0.8rem 0rem 0rem;
+  }
+
+.imgminiaturas2{   
+    width:33.5rem;
+    height: 20.4rem;
+    background-image: url(../multimedia/arqueo1.jpg);
+    background-position: center;
+    background-repeat:no-repeat;
+    background-size: cover;
+    border-radius: 0.8rem;
+}
+
+.imgminiaturas3{   
+    width:33.5rem;
+    height: 20.4rem;
+    background-image: url(../multimedia/mtdibujo.jpeg);
+    background-position: center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    border-radius: 0.8rem;
+}
+
+.imgminiaturas4{   
+    width:33.5rem;
+    height: 20.4rem;
+    background-image: url(../multimedia/mtdibujo.jpeg);
+    background-position: center;
+    background-repeat:no-repeat;
+    background-size: cover;
+    border-radius: 0.8rem;
+}
+
+.imgminiaturas5{   
+    width:33.5rem;
+    height: 20.4rem;
+    background-image: url(../multimedia/mtdibujo.jpeg);
+    background-position: center;
+    background-repeat:no-repeat;
+    background-size: cover;
+    border-radius: 0.8rem;
+}
+
+.imgminiaturas6{   
+    width:33.5rem;
+    height: 20.4rem;
+    background-image: url(../multimedia/mtdibujo.jpeg);
+    background-position: center;
+    background-repeat:no-repeat;
+    background-size: cover;
+    border-radius: 0.8rem;
+}
+
+.imgminiaturas7{   
+    width:33.5rem;
+    height: 20.4rem;
+    background-image: url(../multimedia/mtdibujo.jpeg);
+    background-position: center;
+    background-repeat:no-repeat;
+    background-size: cover;
+    border-radius: 0.8rem;
+}
+
+.titulomini{
+    font-size: medium;
+}
+
+.miniaturatext{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 20rem;
+    margin: 1rem 1rem 0rem 1rem;
+    padding: 1rem 0.5rem 0rem 0.5rem;
+}
+
+.miniaturadesc{
+    height: 14.5rem;
+    overflow: hidden;
+}
+
+.autormini{
+    padding: 0.2rem 0rem;
+    font-weight: 100;
+    font-size: small;
+}
+
+.linkminiatura{
+    display: flex;
+    justify-content: end;
+    color: #55694a;
+}
+
+.paginas{
+    display: flex;
+    justify-content: center;
+    font-size: medium;
+}
+
+.paginasinf{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    background-color: #55694a;
+    width: 20rem;
+    height: 3rem;
+    border-radius: 1rem;
+}
+
+.numpagina{
+    width: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.numpagina:hover{
+    width: 2rem;
+    display: flex;
+    justify-content: center;
+    background-color:#738467;
+    border-radius: 1rem;
+}
+
+#puntitos{
+    color: #cdbdaa;
+}

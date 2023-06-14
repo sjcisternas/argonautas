@@ -22,6 +22,8 @@ main{
     padding: 6rem 12rem;
 }
 
+
+
 /* HEADER */
 
 header{
@@ -37,6 +39,7 @@ header{
     display:flex;
     align-items:center;
 }
+
 
 h1{
     color:#edc99c;
@@ -73,6 +76,7 @@ p{
     font-size: medium;
     font-family: 'Helvetica';
     color:#271702;
+    
 }
 
 nav{
@@ -141,6 +145,164 @@ footer{
     padding-left: 0.8rem;
 }
 
+/* 1024px-1339px */
+
+@media screen and (min-width: 1024px) and (max-width:1439px){
+    
+    /* Header */
+    
+    .argonautas1 {
+        flex: 1;
+      }
+    
+    .navbar {
+        flex: 1;
+      }
+
+    .collapse{
+        display: flex;
+        justify-content: end;
+    }
+
+    /* Main */
+
+    main{
+        background-color: #cdbdaa;
+        padding: 3rem 6rem;
+    }
+
+    /* Footer */
+
+    .pfooter{
+        width: fit-content;
+    }
+    .imgfooter{
+        width: fit-content;
+    }
+
+    h4{
+        font-size: 14px; 
+    }
+}
+
+/* Tablet */
+
+@media screen and (min-width: 768px) and (max-width:1023px){
+    /* Header */
+    
+
+    header{
+        padding: 0rem 3rem;
+    }
+
+    .argonautas1 {
+        flex: 1;
+      }
+    
+    .navbar {
+        flex: 1;
+      }
+
+    .collapse{
+        display: flex;
+        justify-content: end;
+    }
+
+    .mainli{
+        font-size: 12px;
+    }
+
+    /* Main */
+
+    main{
+        background-color: #cdbdaa;
+        padding: 3rem 6rem;
+    }
+
+    /* Footer */
+
+    .pfooter{
+        width: fit-content;
+    }
+    .imgfooter{
+        width: fit-content;
+    }
+
+    h4{
+        font-size: 14px; 
+    }
+}
+
+/* Mobile S-M-L */
+
+@media screen and (min-width: 320px) and (max-width:767px){
+
+    /* Header */
+    header{
+        padding: 0rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .argonautas1 {
+        width: fit-content;
+        grid-area: logo;
+    }
+
+    .logo{
+        margin-bottom: 0rem;
+    }
+    
+    .navbar {
+        width: fit-content;
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .collapse{
+        display: flex;
+        justify-content: end;
+    }
+
+    .navbar-toggler{
+        border-style:none;
+    }
+
+    .mainul{
+        margin-bottom:1rem;
+        padding:0rem;
+    }
+
+    .mainli{
+        font-size: 12px;
+    }
+
+    /* Main */
+
+    main{
+        padding: 2.4rem;
+    }
+
+    /* Footer */
+    
+    footer{
+        padding: 0rem 3rem
+    }
+
+    .pfooter{
+        width: fit-content;
+    }
+    .imgfooter{
+        width: fit-content;
+    }
+
+    .pfooter{
+        font-size: 10px; 
+    }
+}
+
+
 /* INDEX */
 
 .mainindex{
@@ -164,6 +326,11 @@ footer{
     justify-content: space-between;
 }
 
+.notasPrincipales h1{
+    color: #0e0801;
+    font-size: xx-large;
+    font-style: italic;
+}
 
 .nota{
     display: flex;
@@ -173,13 +340,14 @@ footer{
     display: flex;
     background-color: #beaf9c;
     border-radius: 1rem;
-    .imgboxder{
-        display: inline-block;
-        height: 23.7rem;
-        width: 32.3rem;
-        border-radius: 1rem 0rem 0rem 1rem;
-        
-    }
+}
+
+.nota:hover .imgboxizq{
+    display: inline-block;
+    height: 23.7rem;
+    width: 32.3rem;
+    border-radius: 1rem 0rem 0rem 1rem;
+    
 }
 
 .Tnota{
@@ -187,15 +355,14 @@ footer{
     margin-bottom: 2rem;
 }
 
-.imgboxder{
+.imgboxizq{
     display: inline-block;
     height: 23.7rem;
     width: 32.3rem;
-    border-radius: 10px;
-    
+    border-radius: 10px;    
 }
 
-.boxPder{
+.boxPizq{
     display: flex; 
     flex-direction: column;
     padding: 2rem;
@@ -217,6 +384,14 @@ footer{
 .linkboxder{
     color:#55694a;
 }
+  
+.Pnota {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;  
+}
+
 
 /* Box der del PODCAST */
 
@@ -224,7 +399,7 @@ footer{
     grid-area: miniaturas;
     background-color:#7b6b57;
     border-radius: 1rem;
-    padding: 0rem;    
+    padding: 0rem;   
 }
 
 
@@ -261,12 +436,19 @@ footer{
 .elemlistaprogrmas{
     display:flex;
     align-content: center;
-    font-size: small;
     font-family: 'Helvetica';
-    color:#ecd4b5; 
     padding: 0.8rem;
-    border-radius: 1rem;
-    text-overflow: clip;
+    border-radius: 1rem; 
+}
+
+.elemlistaprogrmas p{
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    font-size: small;
+    color:#ecd4b5;
+    margin-bottom: 0rem;
 }
 
 .elemlistaprogrmas:hover{
@@ -277,6 +459,10 @@ footer{
     background-color: #cdbdaa; 
     padding: 0.8rem;
     border-radius: 1rem;
+}
+
+.elemlistaprogrmas:hover p{
+    color:#271702;   
 }
 
 .playbutton{
@@ -323,6 +509,338 @@ footer{
     cursor: pointer;
     border-radius: 4px;
     font-size: 16px;
+}
+
+/* Min width 1024px */
+
+@media screen and (min-width: 1024px) and (max-width:1439px){
+    
+    /* Main */
+
+    .mainindex{
+        display: grid;
+        grid-template-columns: 83% 17%;
+        grid-template-rows: 60% 40%;
+        grid-template-areas: 
+        "noticias miniaturas"
+        "colaborar colaborar";
+    }
+
+    .notasPrincipales{
+        grid-area: noticias;
+        height: auto;
+        width: auto;
+    }
+
+    .notasPrincipales h1{
+        margin-bottom: 2rem;
+    }
+
+    .imgboxizq{
+        display: inline-block;
+        border-radius: 10px;
+    }
+
+
+    .nota{
+        display: flex;
+        margin-bottom: 3rem;
+        height: auto;
+    }
+    
+    .nota:hover{
+        display: flex;
+        background-color: #beaf9c;
+        border-radius: 1rem;
+    }
+    
+    .nota:hover .imgboxizq{
+        display: inline-block;
+        border-radius: 1rem 0rem 0rem 1rem;
+        
+    }
+    
+    .Pnota{
+        font-size: 14px;
+        -webkit-line-clamp: 4;  
+      }
+
+    .linkboxderPadre1{
+        margin:0rem
+    }
+
+    .linkboxderPadre2{
+        margin:0rem
+    }
+
+    .boxDerecha{
+        grid-area: miniaturas;
+    }
+
+    .boxDerecha .tituloimgpodcast{
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .boxDerecha .tituloimgpodcast a{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 1rem;
+    }
+
+    .titulopodcast{
+        margin: 0rem;
+        font-size: 1.3rem;
+    }
+
+    .elemDer{
+        margin: 0;
+        width: 10rem;
+    }
+
+    .elemlistaprogrmas p{
+        font-size: 1.1rem;
+    }
+
+    .elemlistaprogrmas:hover{
+        font-size: 10px;
+        font-family: 'Helvetica';
+        font-weight: bold;
+        background-color: #cdbdaa; 
+        padding: 0.8rem;
+        border-radius: 1rem;
+    }
+
+    .listaprogramas{
+        margin-top: 0.8rem;
+    }
+
+    .colaborar{
+        margin: 5rem 0rem 0rem 0rem;
+        height: auto;
+        grid-area: colaborar;
+    }
+}
+
+/* Tablet */
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    .mainindex{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 35% 35% 30%;
+        grid-template-areas: 
+        "noticias"
+        "miniaturas"
+        "colaborar";
+    }
+
+    .notasPrincipales{
+        padding-right: 0rem;
+        justify-content: space-around;
+        margin-bottom: 3rem;
+        margin-top: 3rem;
+    }
+
+    .notasPrincipales h1{
+        margin-top: 5rem;
+    }
+
+    .nota{
+        margin: 1.5rem 0rem;
+    }
+
+    .nota:hover{
+        display: flex;
+        background-color: #beaf9c;
+        border-radius: 1rem;
+    }
+    
+    .nota:hover .imgboxizq{
+        display: inline-block;
+        border-radius: 1rem 0rem 0rem 1rem;
+        height: 16.7rem;
+        width: 25.3rem;
+        
+    }
+
+    .imgboxizq{
+        height: 16.7rem;
+        width: 25.3rem;
+    }
+
+    .boxPizq{
+        padding-right: 0.5rem;
+    }
+
+    .Pnota{
+        font-size: 1.3rem;
+        -webkit-line-clamp: 3;
+    }
+
+    .linkboxderPadre1{
+        margin: 0rem 2rem 0rem 0rem;
+    } 
+    
+    .linkboxderPadre2{
+        margin: 0rem;
+    }
+
+    .boxDerecha{
+        height: fit-content;
+        padding-bottom: 2.4rem;
+        margin-top: 4rem;
+    }
+
+    .colaborar{
+        margin: 0rem;
+        background-color:#cdbdaa;
+        padding: 0rem 1rem;
+        height: auto;
+    }
+
+    .botoncolab{
+        margin: 4rem 2rem 0rem 0rem;
+    }
+
+    .pColab{
+        font-size: 1.3rem;
+    }
+
+    .aColab{
+        font-size: 1.6rem;
+    }
+
+
+}
+
+/* Mobile S-M-L */
+
+@media screen and (min-width: 320px) and (max-width: 767px){
+    
+    .mainindex{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .notasPrincipales{
+        padding: 0rem;
+        margin:0rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .notasPrincipales h1{
+        margin-bottom: 2rem;
+    }
+
+    .nota{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 3.2rem;
+    }
+
+    .nota:hover{
+        display: flex;
+        flex-direction: column;
+        background-color: #beaf9c;
+        border-radius: 1rem;
+    }
+    
+    .nota:hover .imgboxizq{
+        display: inline-block;
+        border-radius: 1rem 1rem 0rem 0rem;
+        height: 25rem;
+        width: 100%; 
+    }
+
+    .imgboxizq{
+        height: 25rem;
+        width: 100%;
+    }
+
+    .boxPizq{
+        padding: 2rem 1.5rem;
+    }
+
+    .Pnota{
+        font-size: 1.3rem;
+        -webkit-line-clamp: 3;
+    }
+
+    .linkboxderPadre1{
+        margin: 0rem;
+    } 
+    
+    .linkboxderPadre2{
+        margin: 0rem;
+    }
+
+    .boxDerecha{
+        height: fit-content;
+        padding-bottom: 2.4rem;
+        margin-top: 0rem;
+        margin-bottom: 2rem;
+    }
+
+    .colaborar{
+        margin: 0rem 0rem 0rem 0rem;
+        background-color:#cdbdaa;
+        padding: 0rem 1rem;
+    }
+
+    .botoncolab{
+        margin: 0rem 2rem 0rem 0rem;
+    }
+
+    .pColab{
+        font-size: 1.4rem;
+    }
+
+    .aColab{
+        font-size: 1.6rem;
+    }
+
+    .colaborar{
+        height: auto;
+    }
+
+}
+
+/* Mobile L */
+
+@media screen and (min-width: 550px) and (max-width: 767px){
+
+    .imgboxizq{
+        height: 40rem;
+        width: 100%;
+    }
+
+    .nota:hover .imgboxizq{
+        height: 40rem;
+        width: 100%; 
+    }
+}
+
+/* Mobile M */
+
+@media screen and (min-width: 375px) and (max-width: 424px){
+    .nota{
+        margin-bottom: 2rem;
+    }
+
+}
+
+/* Mobile S */
+
+@media screen and (min-width: 320px) and (max-width: 374px){
+    .nota{
+        margin-bottom: 1.5rem;
+    }
+
+
 }
 
 /* PROYECTOS */
@@ -396,6 +914,7 @@ footer{
     height: 9rem;
 }
 
+
 .MyTp{
     display: flex;
     justify-content: center;
@@ -418,6 +937,54 @@ footer{
     cursor: pointer;
     border-radius: 4px;
     font-size: 16px;
+}
+
+/* 1024-1280px */
+
+@media screen and (min-width: 1024px) and (max-width: 1280px){
+    .podcast{
+        margin-top: 3rem;
+    }
+    
+    .MyTt{
+        height: auto;        
+    }
+}
+
+/* Mobile L y Tablet */
+
+@media screen and (min-width: 320px) and (max-width: 1023px){
+    .podcast{
+        margin-top: 3rem;
+    }
+    
+    .MyT{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 3rem;        
+    }
+
+    .MyTp{
+        padding: 4rem 1rem;
+    }
+}
+
+/* Mobile L */
+
+@media screen and (min-width: 320px) and (max-width: 767px){
+    .titulo{
+        width: 100%;
+    }
+}
+
+/* Mobile S */
+
+@media screen and (min-width: 320px) and (max-width: 375px){
+    .proyectospreviostitulo{
+        padding: 0rem;
+        margin: 4rem 0rem 3rem 0rem;
+        text-align: center;
+    }
 }
 
 /* NOSOTROS */
@@ -596,36 +1163,21 @@ footer{
     height: 43rem;
 }
 
-.miniaturabox:hover{
+.miniaturabox:hover {
     width: 33.5rem;
     height: 43rem;
     background-color: #beaf9c;
     border-radius: 1rem;
-    .imgminiaturas2{
-        border-radius: 0.8rem 0.8rem 0rem 0rem;
-        
-    }
-    .imgminiaturas3{
-        border-radius: 0.8rem 0.8rem 0rem 0rem;
-        
-    }
-    .imgminiaturas4{
-        border-radius: 0.8rem 0.8rem 0rem 0rem;
-        
-    }
-    .imgminiaturas5{
-        border-radius: 0.8rem 0.8rem 0rem 0rem;
-        
-    }
-    .imgminiaturas6{
-        border-radius: 0.8rem 0.8rem 0rem 0rem;
-        
-    }
-    .imgminiaturas7{
-        border-radius: 0.8rem 0.8rem 0rem 0rem;
-        
-    }
-}
+  }
+  
+  .miniaturabox:hover .imgminiaturas2,
+  .miniaturabox:hover .imgminiaturas3,
+  .miniaturabox:hover .imgminiaturas4,
+  .miniaturabox:hover .imgminiaturas5,
+  .miniaturabox:hover .imgminiaturas6,
+  .miniaturabox:hover .imgminiaturas7 {
+    border-radius: 0.8rem 0.8rem 0rem 0rem;
+  }
 
 .imgminiaturas2{   
     width:33.5rem;
