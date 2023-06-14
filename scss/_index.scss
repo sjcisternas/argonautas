@@ -195,8 +195,10 @@
         grid-template-areas: 
         "noticias miniaturas"
         "colaborar colaborar";
-        .notasPrincipales h1{
-            margin-bottom: 2rem;
+        .notasPrincipales{ 
+            h1{
+                margin-bottom: 2rem;
+            }
             .nota{
                 display: flex;
                 margin-bottom: 8rem;
