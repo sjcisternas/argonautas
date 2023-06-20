@@ -1,8 +1,9 @@
 
 .mainnosotros{
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 48% 48%;
     grid-template-rows: repeat(5, 1fr);
+    column-gap: 2%;
     grid-template-areas:
     "quienes quienes" 
     "miembro1 miembro2"
@@ -22,7 +23,7 @@
             display: block;
             flex-direction: column;
             background-color: #c0b19d;
-            width: 50rem;
+            width: auto;
             border-radius: 10px;
             grid-area: miembro1;
             .nombreCargo{
@@ -52,7 +53,7 @@
             display: block;
             flex-direction: column;
             background-color: #c0b19d;
-            width: 50rem;
+            width: auto;
             border-radius: 10px;
             grid-area: miembro2;
             .nombreCargo{
@@ -82,7 +83,7 @@
             display: block;
             flex-direction: column;
             background-color: #c0b19d;
-            width: 50rem;
+            width: auto;
             border-radius: 10px;
             grid-area: miembro3;
             .nombreCargo{
@@ -112,7 +113,7 @@
             display: block;
             flex-direction: column;
             background-color: #c0b19d;
-            width: 50rem;
+            width: auto;
             border-radius: 10px;
             grid-area: miembro4;
             .nombreCargo{
@@ -142,7 +143,7 @@
             display: block;
             flex-direction: column;
             background-color: #c0b19d;
-            width: 50rem;
+            width: auto;
             border-radius: 10px;
             grid-area: miembro5;
             .nombreCargo{
@@ -172,7 +173,7 @@
             display: block;
             flex-direction: column;
             background-color: #c0b19d;
-            width: 50rem;
+            width: auto;
             border-radius: 10px;
             grid-area: miembro6;
             .nombreCargo{
@@ -202,11 +203,12 @@
     .miembro71{
         display: flex;
         justify-content: center;
+        margin-bottom: 5rem;
         .miembro7{
             display: block;
             flex-direction: column;
             background-color: #c0b19d;
-            width: 50rem;
+            width: auto;
             border-radius: 10px;
             grid-area: miembro7;
             .nombreCargo{
@@ -233,6 +235,35 @@
             }
         }    
     }
+}
+
+/* MEDIA QUERYS */
+
+/* Tablet */
+
+@media screen and (min-width: 768px) and (max-width:1023px){
+    .mainnosotros{
+        display: flex;
+        flex-direction: column;
+        .quienes{
+            margin-bottom: 7rem;
+        }
+    }
+
+}
+
+/* Mobile L */
+
+@media screen and (min-width: 320px) and (max-width:767px){
+    .mainnosotros{
+        display: flex;
+        flex-direction: column;
+        .quienes{
+            margin-bottom: 6rem;
+            padding: 3rem 2rem 0rem 2rem;
+        }
+    }
+
 }
 
 

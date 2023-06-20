@@ -411,7 +411,7 @@ footer .imgfooter .imgf2 {
 }
 
 /* MEDIA QUERYS */
-/* Min width 1024px */
+/* 1024px - 1439px */
 @media screen and (min-width: 1024px) and (max-width: 1439px) {
   /* Main */
   .mainindex {
@@ -772,8 +772,9 @@ footer .imgfooter .imgf2 {
 }
 .mainnosotros {
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 48% 48%;
   grid-template-rows: repeat(5, 1fr);
+  column-gap: 2%;
   grid-template-areas: "quienes quienes" "miembro1 miembro2" "miembro3 miembro4" "miembro5 miembro6" "miembro7 miembro7";
 }
 .mainnosotros .quienes {
@@ -790,7 +791,7 @@ footer .imgfooter .imgf2 {
   display: block;
   flex-direction: column;
   background-color: #c0b19d;
-  width: 50rem;
+  width: auto;
   border-radius: 10px;
   grid-area: miembro1;
 }
@@ -820,7 +821,7 @@ footer .imgfooter .imgf2 {
   display: block;
   flex-direction: column;
   background-color: #c0b19d;
-  width: 50rem;
+  width: auto;
   border-radius: 10px;
   grid-area: miembro2;
 }
@@ -850,7 +851,7 @@ footer .imgfooter .imgf2 {
   display: block;
   flex-direction: column;
   background-color: #c0b19d;
-  width: 50rem;
+  width: auto;
   border-radius: 10px;
   grid-area: miembro3;
 }
@@ -880,7 +881,7 @@ footer .imgfooter .imgf2 {
   display: block;
   flex-direction: column;
   background-color: #c0b19d;
-  width: 50rem;
+  width: auto;
   border-radius: 10px;
   grid-area: miembro4;
 }
@@ -910,7 +911,7 @@ footer .imgfooter .imgf2 {
   display: block;
   flex-direction: column;
   background-color: #c0b19d;
-  width: 50rem;
+  width: auto;
   border-radius: 10px;
   grid-area: miembro5;
 }
@@ -940,7 +941,7 @@ footer .imgfooter .imgf2 {
   display: block;
   flex-direction: column;
   background-color: #c0b19d;
-  width: 50rem;
+  width: auto;
   border-radius: 10px;
   grid-area: miembro6;
 }
@@ -969,12 +970,13 @@ footer .imgfooter .imgf2 {
 .mainnosotros .miembro71 {
   display: flex;
   justify-content: center;
+  margin-bottom: 5rem;
 }
 .mainnosotros .miembro71 .miembro7 {
   display: block;
   flex-direction: column;
   background-color: #c0b19d;
-  width: 50rem;
+  width: auto;
   border-radius: 10px;
   grid-area: miembro7;
 }
@@ -1001,6 +1003,28 @@ footer .imgfooter .imgf2 {
   padding: 0rem 1.6rem;
 }
 
+/* MEDIA QUERYS */
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .mainnosotros {
+    display: flex;
+    flex-direction: column;
+  }
+  .mainnosotros .quienes {
+    margin-bottom: 7rem;
+  }
+}
+/* Mobile L */
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .mainnosotros {
+    display: flex;
+    flex-direction: column;
+  }
+  .mainnosotros .quienes {
+    margin-bottom: 6rem;
+    padding: 3rem 2rem 0rem 2rem;
+  }
+}
 /* Última nota */
 .notaprincipal {
   display: flex;
