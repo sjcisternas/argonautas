@@ -87,7 +87,14 @@ header nav .mainul .mainli {
   padding: 0rem 0.8rem;
 }
 header nav .mainul .mainli .selected {
-  text-decoration: underline; /* Es la única modificación que pude hacerle. quise ponerle algun sombreado o algo más sutil, pero no pude */
+  display: inline-block;
+}
+header nav .mainul .mainli .selected::after {
+  content: "";
+  height: 3px;
+  background: #6e6457;
+  border-radius: 10px;
+  display: block;
 }
 
 /* Main */
@@ -1014,8 +1021,8 @@ footer .imgfooter .imgf2 {
     margin-bottom: 7rem;
   }
 }
-/* Mobile L */
-@media screen and (min-width: 320px) and (max-width: 767px) {
+/* 740px - 767px */
+@media screen and (min-width: 740px) and (max-width: 767px) {
   .mainnosotros {
     display: flex;
     flex-direction: column;
@@ -1023,6 +1030,727 @@ footer .imgfooter .imgf2 {
   .mainnosotros .quienes {
     margin-bottom: 6rem;
     padding: 3rem 2rem 0rem 2rem;
+  }
+  .mainnosotros .miembro .miembro1 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .mainnosotros .miembro .miembro1 .imgparrafo {
+    display: flex;
+    flex-direction: column;
+  }
+  .mainnosotros .miembro .miembro1 .imgparrafo .nosotrosimg {
+    height: 60rem;
+    width: auto;
+    margin: 0rem 1.6rem 1.6rem 1.6rem;
+  }
+  .mainnosotros .miembro .miembro2 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .mainnosotros .miembro .miembro2 .imgparrafo {
+    display: flex;
+    flex-direction: column;
+  }
+  .mainnosotros .miembro .miembro2 .imgparrafo .nosotrosimg {
+    height: 60rem;
+    width: auto;
+    margin: 0rem 1.6rem 1.6rem 1.6rem;
+  }
+  .mainnosotros .miembro .miembro3 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .mainnosotros .miembro .miembro3 .imgparrafo {
+    display: flex;
+    flex-direction: column;
+  }
+  .mainnosotros .miembro .miembro3 .imgparrafo .nosotrosimg {
+    height: 60rem;
+    width: auto;
+    margin: 0rem 1.6rem 1.6rem 1.6rem;
+  }
+  .mainnosotros .miembro .miembro4 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .mainnosotros .miembro .miembro4 .imgparrafo {
+    display: flex;
+    flex-direction: column;
+  }
+  .mainnosotros .miembro .miembro4 .imgparrafo .nosotrosimg {
+    height: 60rem;
+    width: auto;
+    margin: 0rem 1.6rem 1.6rem 1.6rem;
+  }
+  .mainnosotros .miembro .miembro5 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .mainnosotros .miembro .miembro5 .imgparrafo {
+    display: flex;
+    flex-direction: column;
+  }
+  .mainnosotros .miembro .miembro5 .imgparrafo .nosotrosimg {
+    height: 60rem;
+    width: auto;
+    margin: 0rem 1.6rem 1.6rem 1.6rem;
+  }
+  .mainnosotros .miembro .miembro6 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .mainnosotros .miembro .miembro6 .imgparrafo {
+    display: flex;
+    flex-direction: column;
+  }
+  .mainnosotros .miembro .miembro6 .imgparrafo .nosotrosimg {
+    height: 60rem;
+    width: auto;
+    margin: 0rem 1.6rem 1.6rem 1.6rem;
+  }
+  .mainnosotros .miembro71 .miembro7 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .mainnosotros .miembro71 .miembro7 .imgparrafo {
+    display: flex;
+    flex-direction: column;
+  }
+  .mainnosotros .miembro71 .miembro7 .imgparrafo .nosotrosimg {
+    height: 60rem;
+    width: auto;
+    margin: 0rem 1.6rem 1.6rem 1.6rem;
+  }
+}
+/* 680px - 739px */
+@media screen and (min-width: 680px) and (max-width: 739px) {
+  .mainnosotros {
+    display: flex;
+    flex-direction: column;
+  }
+  .mainnosotros .quienes {
+    margin-bottom: 6rem;
+    padding: 3rem 2rem 0rem 2rem;
+  }
+  .mainnosotros .miembro .miembro1 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .mainnosotros .miembro .miembro1 .imgparrafo {
+    display: flex;
+    flex-direction: column;
+  }
+  .mainnosotros .miembro .miembro1 .imgparrafo .nosotrosimg {
+    height: 55rem;
+    width: auto;
+    margin: 0rem 1.6rem 1.6rem 1.6rem;
+  }
+  .mainnosotros .miembro .miembro2 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .mainnosotros .miembro .miembro2 .imgparrafo {
+    display: flex;
+    flex-direction: column;
+  }
+  .mainnosotros .miembro .miembro2 .imgparrafo .nosotrosimg {
+    height: 55rem;
+    width: auto;
+    margin: 0rem 1.6rem 1.6rem 1.6rem;
+  }
+  .mainnosotros .miembro .miembro3 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .mainnosotros .miembro .miembro3 .imgparrafo {
+    display: flex;
+    flex-direction: column;
+  }
+  .mainnosotros .miembro .miembro3 .imgparrafo .nosotrosimg {
+    height: 55rem;
+    width: auto;
+    margin: 0rem 1.6rem 1.6rem 1.6rem;
+  }
+  .mainnosotros .miembro .miembro4 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .mainnosotros .miembro .miembro4 .imgparrafo {
+    display: flex;
+    flex-direction: column;
+  }
+  .mainnosotros .miembro .miembro4 .imgparrafo .nosotrosimg {
+    height: 55rem;
+    width: auto;
+    margin: 0rem 1.6rem 1.6rem 1.6rem;
+  }
+  .mainnosotros .miembro .miembro5 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .mainnosotros .miembro .miembro5 .imgparrafo {
+    display: flex;
+    flex-direction: column;
+  }
+  .mainnosotros .miembro .miembro5 .imgparrafo .nosotrosimg {
+    height: 55rem;
+    width: auto;
+    margin: 0rem 1.6rem 1.6rem 1.6rem;
+  }
+  .mainnosotros .miembro .miembro6 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .mainnosotros .miembro .miembro6 .imgparrafo {
+    display: flex;
+    flex-direction: column;
+  }
+  .mainnosotros .miembro .miembro6 .imgparrafo .nosotrosimg {
+    height: 55rem;
+    width: auto;
+    margin: 0rem 1.6rem 1.6rem 1.6rem;
+  }
+  .mainnosotros .miembro71 .miembro7 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .mainnosotros .miembro71 .miembro7 .imgparrafo {
+    display: flex;
+    flex-direction: column;
+  }
+  .mainnosotros .miembro71 .miembro7 .imgparrafo .nosotrosimg {
+    height: 55rem;
+    width: auto;
+    margin: 0rem 1.6rem 1.6rem 1.6rem;
+  }
+}
+/* 615px - 679px */
+@media screen and (min-width: 615px) and (max-width: 679px) {
+  .mainnosotros {
+    display: flex;
+    flex-direction: column;
+  }
+  .mainnosotros .quienes {
+    margin-bottom: 6rem;
+    padding: 3rem 2rem 0rem 2rem;
+  }
+  .mainnosotros .miembro .miembro1 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .mainnosotros .miembro .miembro1 .imgparrafo {
+    display: flex;
+    flex-direction: column;
+  }
+  .mainnosotros .miembro .miembro1 .imgparrafo .nosotrosimg {
+    height: 50rem;
+    width: auto;
+    margin: 0rem 1.6rem 1.6rem 1.6rem;
+  }
+  .mainnosotros .miembro .miembro2 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .mainnosotros .miembro .miembro2 .imgparrafo {
+    display: flex;
+    flex-direction: column;
+  }
+  .mainnosotros .miembro .miembro2 .imgparrafo .nosotrosimg {
+    height: 50rem;
+    width: auto;
+    margin: 0rem 1.6rem 1.6rem 1.6rem;
+  }
+  .mainnosotros .miembro .miembro3 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .mainnosotros .miembro .miembro3 .imgparrafo {
+    display: flex;
+    flex-direction: column;
+  }
+  .mainnosotros .miembro .miembro3 .imgparrafo .nosotrosimg {
+    height: 50rem;
+    width: auto;
+    margin: 0rem 1.6rem 1.6rem 1.6rem;
+  }
+  .mainnosotros .miembro .miembro4 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .mainnosotros .miembro .miembro4 .imgparrafo {
+    display: flex;
+    flex-direction: column;
+  }
+  .mainnosotros .miembro .miembro4 .imgparrafo .nosotrosimg {
+    height: 50rem;
+    width: auto;
+    margin: 0rem 1.6rem 1.6rem 1.6rem;
+  }
+  .mainnosotros .miembro .miembro5 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .mainnosotros .miembro .miembro5 .imgparrafo {
+    display: flex;
+    flex-direction: column;
+  }
+  .mainnosotros .miembro .miembro5 .imgparrafo .nosotrosimg {
+    height: 50rem;
+    width: auto;
+    margin: 0rem 1.6rem 1.6rem 1.6rem;
+  }
+  .mainnosotros .miembro .miembro6 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .mainnosotros .miembro .miembro6 .imgparrafo {
+    display: flex;
+    flex-direction: column;
+  }
+  .mainnosotros .miembro .miembro6 .imgparrafo .nosotrosimg {
+    height: 50rem;
+    width: auto;
+    margin: 0rem 1.6rem 1.6rem 1.6rem;
+  }
+  .mainnosotros .miembro71 .miembro7 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .mainnosotros .miembro71 .miembro7 .imgparrafo {
+    display: flex;
+    flex-direction: column;
+  }
+  .mainnosotros .miembro71 .miembro7 .imgparrafo .nosotrosimg {
+    height: 50rem;
+    width: auto;
+    margin: 0rem 1.6rem 1.6rem 1.6rem;
+  }
+}
+/* 510px - 614px */
+@media screen and (min-width: 550px) and (max-width: 614px) {
+  .mainnosotros {
+    display: flex;
+    flex-direction: column;
+  }
+  .mainnosotros .quienes {
+    margin-bottom: 6rem;
+    padding: 3rem 2rem 0rem 2rem;
+  }
+  .mainnosotros .miembro .miembro1 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .mainnosotros .miembro .miembro1 .imgparrafo {
+    display: flex;
+    flex-direction: column;
+  }
+  .mainnosotros .miembro .miembro1 .imgparrafo .nosotrosimg {
+    height: 45rem;
+    width: auto;
+    margin: 0rem 1.6rem 1.6rem 1.6rem;
+  }
+  .mainnosotros .miembro .miembro2 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .mainnosotros .miembro .miembro2 .imgparrafo {
+    display: flex;
+    flex-direction: column;
+  }
+  .mainnosotros .miembro .miembro2 .imgparrafo .nosotrosimg {
+    height: 45rem;
+    width: auto;
+    margin: 0rem 1.6rem 1.6rem 1.6rem;
+  }
+  .mainnosotros .miembro .miembro3 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .mainnosotros .miembro .miembro3 .imgparrafo {
+    display: flex;
+    flex-direction: column;
+  }
+  .mainnosotros .miembro .miembro3 .imgparrafo .nosotrosimg {
+    height: 45rem;
+    width: auto;
+    margin: 0rem 1.6rem 1.6rem 1.6rem;
+  }
+  .mainnosotros .miembro .miembro4 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .mainnosotros .miembro .miembro4 .imgparrafo {
+    display: flex;
+    flex-direction: column;
+  }
+  .mainnosotros .miembro .miembro4 .imgparrafo .nosotrosimg {
+    height: 45rem;
+    width: auto;
+    margin: 0rem 1.6rem 1.6rem 1.6rem;
+  }
+  .mainnosotros .miembro .miembro5 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .mainnosotros .miembro .miembro5 .imgparrafo {
+    display: flex;
+    flex-direction: column;
+  }
+  .mainnosotros .miembro .miembro5 .imgparrafo .nosotrosimg {
+    height: 45rem;
+    width: auto;
+    margin: 0rem 1.6rem 1.6rem 1.6rem;
+  }
+  .mainnosotros .miembro .miembro6 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .mainnosotros .miembro .miembro6 .imgparrafo {
+    display: flex;
+    flex-direction: column;
+  }
+  .mainnosotros .miembro .miembro6 .imgparrafo .nosotrosimg {
+    height: 45rem;
+    width: auto;
+    margin: 0rem 1.6rem 1.6rem 1.6rem;
+  }
+  .mainnosotros .miembro71 .miembro7 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .mainnosotros .miembro71 .miembro7 .imgparrafo {
+    display: flex;
+    flex-direction: column;
+  }
+  .mainnosotros .miembro71 .miembro7 .imgparrafo .nosotrosimg {
+    height: 45rem;
+    width: auto;
+    margin: 0rem 1.6rem 1.6rem 1.6rem;
+  }
+}
+/* 490px - 549px  */
+@media screen and (min-width: 490px) and (max-width: 549px) {
+  .mainnosotros {
+    display: flex;
+    flex-direction: column;
+  }
+  .mainnosotros .quienes {
+    margin-bottom: 6rem;
+    padding: 3rem 2rem 0rem 2rem;
+  }
+  .mainnosotros .miembro .miembro1 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .mainnosotros .miembro .miembro1 .imgparrafo {
+    display: flex;
+    flex-direction: column;
+  }
+  .mainnosotros .miembro .miembro1 .imgparrafo .nosotrosimg {
+    height: 34rem;
+    width: auto;
+    margin: 0rem 1.6rem 1.6rem 1.6rem;
+  }
+  .mainnosotros .miembro .miembro2 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .mainnosotros .miembro .miembro2 .imgparrafo {
+    display: flex;
+    flex-direction: column;
+  }
+  .mainnosotros .miembro .miembro2 .imgparrafo .nosotrosimg {
+    height: 34rem;
+    width: auto;
+    margin: 0rem 1.6rem 1.6rem 1.6rem;
+  }
+  .mainnosotros .miembro .miembro3 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .mainnosotros .miembro .miembro3 .imgparrafo {
+    display: flex;
+    flex-direction: column;
+  }
+  .mainnosotros .miembro .miembro3 .imgparrafo .nosotrosimg {
+    height: 34rem;
+    width: auto;
+    margin: 0rem 1.6rem 1.6rem 1.6rem;
+  }
+  .mainnosotros .miembro .miembro4 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .mainnosotros .miembro .miembro4 .imgparrafo {
+    display: flex;
+    flex-direction: column;
+  }
+  .mainnosotros .miembro .miembro4 .imgparrafo .nosotrosimg {
+    height: 34rem;
+    width: auto;
+    margin: 0rem 1.6rem 1.6rem 1.6rem;
+  }
+  .mainnosotros .miembro .miembro5 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .mainnosotros .miembro .miembro5 .imgparrafo {
+    display: flex;
+    flex-direction: column;
+  }
+  .mainnosotros .miembro .miembro5 .imgparrafo .nosotrosimg {
+    height: 34rem;
+    width: auto;
+    margin: 0rem 1.6rem 1.6rem 1.6rem;
+  }
+  .mainnosotros .miembro .miembro6 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .mainnosotros .miembro .miembro6 .imgparrafo {
+    display: flex;
+    flex-direction: column;
+  }
+  .mainnosotros .miembro .miembro6 .imgparrafo .nosotrosimg {
+    height: 34rem;
+    width: auto;
+    margin: 0rem 1.6rem 1.6rem 1.6rem;
+  }
+  .mainnosotros .miembro71 .miembro7 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .mainnosotros .miembro71 .miembro7 .imgparrafo {
+    display: flex;
+    flex-direction: column;
+  }
+  .mainnosotros .miembro71 .miembro7 .imgparrafo .nosotrosimg {
+    height: 34rem;
+    width: auto;
+    margin: 0rem 1.6rem 1.6rem 1.6rem;
+  }
+}
+/* 459px - 489px */
+@media screen and (min-width: 459px) and (max-width: 489px) {
+  .mainnosotros {
+    display: flex;
+    flex-direction: column;
+  }
+  .mainnosotros .quienes {
+    margin-bottom: 6rem;
+    padding: 3rem 2rem 0rem 2rem;
+  }
+  .mainnosotros .miembro .miembro1 .imgparrafo {
+    display: flex;
+    flex-direction: column;
+  }
+  .mainnosotros .miembro .miembro1 .imgparrafo .nosotrosimg {
+    height: 30rem;
+    width: auto;
+    margin: 0rem 2rem 1.6rem 2rem;
+  }
+  .mainnosotros .miembro .miembro2 .imgparrafo {
+    display: flex;
+    flex-direction: column;
+  }
+  .mainnosotros .miembro .miembro2 .imgparrafo .nosotrosimg {
+    height: 30rem;
+    width: auto;
+    margin: 0rem 2rem 1.6rem 2rem;
+  }
+  .mainnosotros .miembro .miembro3 .imgparrafo {
+    display: flex;
+    flex-direction: column;
+  }
+  .mainnosotros .miembro .miembro3 .imgparrafo .nosotrosimg {
+    height: 30rem;
+    width: auto;
+    margin: 0rem 2rem 1.6rem 2rem;
+  }
+  .mainnosotros .miembro .miembro4 .imgparrafo {
+    display: flex;
+    flex-direction: column;
+  }
+  .mainnosotros .miembro .miembro4 .imgparrafo .nosotrosimg {
+    height: 30rem;
+    width: auto;
+    margin: 0rem 2rem 1.6rem 2rem;
+  }
+  .mainnosotros .miembro .miembro5 .imgparrafo {
+    display: flex;
+    flex-direction: column;
+  }
+  .mainnosotros .miembro .miembro5 .imgparrafo .nosotrosimg {
+    height: 30rem;
+    width: auto;
+    margin: 0rem 2rem 1.6rem 2rem;
+  }
+  .mainnosotros .miembro .miembro6 .imgparrafo {
+    display: flex;
+    flex-direction: column;
+  }
+  .mainnosotros .miembro .miembro6 .imgparrafo .nosotrosimg {
+    height: 30rem;
+    width: auto;
+    margin: 0rem 2rem 1.6rem 2rem;
+  }
+  .mainnosotros .miembro71 .miembro7 .imgparrafo {
+    display: flex;
+    flex-direction: column;
+  }
+  .mainnosotros .miembro71 .miembro7 .imgparrafo .nosotrosimg {
+    height: 30rem;
+    width: auto;
+    margin: 0rem 2rem 1.6rem 2rem;
+  }
+}
+/* 375px - 459px */
+@media screen and (min-width: 375px) and (max-width: 459px) {
+  .mainnosotros {
+    display: flex;
+    flex-direction: column;
+  }
+  .mainnosotros .quienes {
+    margin-bottom: 6rem;
+    padding: 3rem 2rem 0rem 2rem;
+  }
+  .mainnosotros .miembro .miembro1 .imgparrafo {
+    display: flex;
+    flex-direction: column;
+  }
+  .mainnosotros .miembro .miembro1 .imgparrafo .nosotrosimg {
+    height: 25rem;
+    width: auto;
+    margin: 0rem 2rem 1.6rem 2rem;
+  }
+  .mainnosotros .miembro .miembro2 .imgparrafo {
+    display: flex;
+    flex-direction: column;
+  }
+  .mainnosotros .miembro .miembro2 .imgparrafo .nosotrosimg {
+    height: 25rem;
+    width: auto;
+    margin: 0rem 2rem 1.6rem 2rem;
+  }
+  .mainnosotros .miembro .miembro3 .imgparrafo {
+    display: flex;
+    flex-direction: column;
+  }
+  .mainnosotros .miembro .miembro3 .imgparrafo .nosotrosimg {
+    height: 25rem;
+    width: auto;
+    margin: 0rem 2rem 1.6rem 2rem;
+  }
+  .mainnosotros .miembro .miembro4 .imgparrafo {
+    display: flex;
+    flex-direction: column;
+  }
+  .mainnosotros .miembro .miembro4 .imgparrafo .nosotrosimg {
+    height: 25rem;
+    width: auto;
+    margin: 0rem 2rem 1.6rem 2rem;
+  }
+  .mainnosotros .miembro .miembro5 .imgparrafo {
+    display: flex;
+    flex-direction: column;
+  }
+  .mainnosotros .miembro .miembro5 .imgparrafo .nosotrosimg {
+    height: 25rem;
+    width: auto;
+    margin: 0rem 2rem 1.6rem 2rem;
+  }
+  .mainnosotros .miembro .miembro6 .imgparrafo {
+    display: flex;
+    flex-direction: column;
+  }
+  .mainnosotros .miembro .miembro6 .imgparrafo .nosotrosimg {
+    height: 25rem;
+    width: auto;
+    margin: 0rem 2rem 1.6rem 2rem;
+  }
+  .mainnosotros .miembro71 .miembro7 .imgparrafo {
+    display: flex;
+    flex-direction: column;
+  }
+  .mainnosotros .miembro71 .miembro7 .imgparrafo .nosotrosimg {
+    height: 25rem;
+    width: auto;
+    margin: 0rem 2rem 1.6rem 2rem;
+  }
+}
+/* 320px - 374px */
+@media screen and (min-width: 320px) and (max-width: 374px) {
+  .mainnosotros {
+    display: flex;
+    flex-direction: column;
+  }
+  .mainnosotros .quienes {
+    margin-bottom: 6rem;
+    padding: 3rem 2rem 0rem 2rem;
+  }
+  .mainnosotros .miembro .miembro1 .imgparrafo {
+    display: flex;
+    flex-direction: column;
+  }
+  .mainnosotros .miembro .miembro1 .imgparrafo .nosotrosimg {
+    height: 20rem;
+    width: auto;
+    margin: 0rem 2rem 1.6rem 2rem;
+  }
+  .mainnosotros .miembro .miembro2 .imgparrafo {
+    display: flex;
+    flex-direction: column;
+  }
+  .mainnosotros .miembro .miembro2 .imgparrafo .nosotrosimg {
+    height: 20rem;
+    width: auto;
+    margin: 0rem 2rem 1.6rem 2rem;
+  }
+  .mainnosotros .miembro .miembro3 .imgparrafo {
+    display: flex;
+    flex-direction: column;
+  }
+  .mainnosotros .miembro .miembro3 .imgparrafo .nosotrosimg {
+    height: 20rem;
+    width: auto;
+    margin: 0rem 2rem 1.6rem 2rem;
+  }
+  .mainnosotros .miembro .miembro4 .imgparrafo {
+    display: flex;
+    flex-direction: column;
+  }
+  .mainnosotros .miembro .miembro4 .imgparrafo .nosotrosimg {
+    height: 20rem;
+    width: auto;
+    margin: 0rem 2rem 1.6rem 2rem;
+  }
+  .mainnosotros .miembro .miembro5 .imgparrafo {
+    display: flex;
+    flex-direction: column;
+  }
+  .mainnosotros .miembro .miembro5 .imgparrafo .nosotrosimg {
+    height: 20rem;
+    width: auto;
+    margin: 0rem 2rem 1.6rem 2rem;
+  }
+  .mainnosotros .miembro .miembro6 .imgparrafo {
+    display: flex;
+    flex-direction: column;
+  }
+  .mainnosotros .miembro .miembro6 .imgparrafo .nosotrosimg {
+    height: 20rem;
+    width: auto;
+    margin: 0rem 2rem 1.6rem 2rem;
+  }
+  .mainnosotros .miembro71 .miembro7 .imgparrafo {
+    display: flex;
+    flex-direction: column;
+  }
+  .mainnosotros .miembro71 .miembro7 .imgparrafo .nosotrosimg {
+    height: 20rem;
+    width: auto;
+    margin: 0rem 2rem 1.6rem 2rem;
   }
 }
 /* Última nota */
@@ -1034,31 +1762,27 @@ footer .imgfooter .imgf2 {
   margin-bottom: 8rem;
   background-color: #c0b19d;
 }
-
-.ultimanota {
+.notaprincipal .ultimanota {
   display: flex;
   flex-direction: column;
   margin: 2.4rem;
   justify-content: space-between;
 }
-
-.linkultimanota {
+.notaprincipal .ultimanota .autor1 {
+  display: inline-block;
+  padding-bottom: 1.2rem;
+}
+.notaprincipal .ultimanota .linkultimanota {
   display: flex;
   justify-content: end;
   color: #55694a;
   margin-bottom: 3rem;
 }
-
-.imgnota1 {
+.notaprincipal .imgnota1 {
   height: 25.4rem;
   width: 55rem;
   border-radius: 10px;
   margin: 2.4rem;
-}
-
-.autor1 {
-  display: inline-block;
-  padding-bottom: 1.2rem;
 }
 
 /* Miniaturas otras notas */
@@ -1067,29 +1791,11 @@ footer .imgfooter .imgf2 {
   margin-bottom: 8rem;
   justify-content: space-between;
 }
-
-.miniaturabox {
+.miniaturas .miniaturabox {
   width: 33.5rem;
   height: 43rem;
 }
-
-.miniaturabox:hover {
-  width: 33.5rem;
-  height: 43rem;
-  background-color: #beaf9c;
-  border-radius: 1rem;
-}
-
-.miniaturabox:hover .imgminiaturas2,
-.miniaturabox:hover .imgminiaturas3,
-.miniaturabox:hover .imgminiaturas4,
-.miniaturabox:hover .imgminiaturas5,
-.miniaturabox:hover .imgminiaturas6,
-.miniaturabox:hover .imgminiaturas7 {
-  border-radius: 0.8rem 0.8rem 0rem 0rem;
-}
-
-.imgminiaturas2 {
+.miniaturas .miniaturabox .imgminiaturas2 {
   width: 33.5rem;
   height: 20.4rem;
   background-image: url(../multimedia/arqueo1.jpg);
@@ -1098,8 +1804,7 @@ footer .imgfooter .imgf2 {
   background-size: cover;
   border-radius: 0.8rem;
 }
-
-.imgminiaturas3 {
+.miniaturas .miniaturabox .imgminiaturas3 {
   width: 33.5rem;
   height: 20.4rem;
   background-image: url(../multimedia/mtdibujo.jpeg);
@@ -1108,8 +1813,7 @@ footer .imgfooter .imgf2 {
   background-size: cover;
   border-radius: 0.8rem;
 }
-
-.imgminiaturas4 {
+.miniaturas .miniaturabox .imgminiaturas4 {
   width: 33.5rem;
   height: 20.4rem;
   background-image: url(../multimedia/mtdibujo.jpeg);
@@ -1118,8 +1822,7 @@ footer .imgfooter .imgf2 {
   background-size: cover;
   border-radius: 0.8rem;
 }
-
-.imgminiaturas5 {
+.miniaturas .miniaturabox .imgminiaturas5 {
   width: 33.5rem;
   height: 20.4rem;
   background-image: url(../multimedia/mtdibujo.jpeg);
@@ -1128,8 +1831,7 @@ footer .imgfooter .imgf2 {
   background-size: cover;
   border-radius: 0.8rem;
 }
-
-.imgminiaturas6 {
+.miniaturas .miniaturabox .imgminiaturas6 {
   width: 33.5rem;
   height: 20.4rem;
   background-image: url(../multimedia/mtdibujo.jpeg);
@@ -1138,8 +1840,7 @@ footer .imgfooter .imgf2 {
   background-size: cover;
   border-radius: 0.8rem;
 }
-
-.imgminiaturas7 {
+.miniaturas .miniaturabox .imgminiaturas7 {
   width: 33.5rem;
   height: 20.4rem;
   background-image: url(../multimedia/mtdibujo.jpeg);
@@ -1148,12 +1849,7 @@ footer .imgfooter .imgf2 {
   background-size: cover;
   border-radius: 0.8rem;
 }
-
-.titulomini {
-  font-size: medium;
-}
-
-.miniaturatext {
+.miniaturas .miniaturabox .miniaturatext {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -1161,22 +1857,46 @@ footer .imgfooter .imgf2 {
   margin: 1rem 1rem 0rem 1rem;
   padding: 1rem 0.5rem 0rem 0.5rem;
 }
-
-.miniaturadesc {
+.miniaturas .miniaturabox .miniaturatext .miniaturadesc {
   height: 14.5rem;
   overflow: hidden;
 }
-
-.autormini {
+.miniaturas .miniaturabox .miniaturatext .miniaturadesc .titulomini {
+  font-size: medium;
+}
+.miniaturas .miniaturabox .miniaturatext .miniaturadesc .titulomini .autormini {
   padding: 0.2rem 0rem;
   font-weight: 100;
   font-size: small;
 }
-
-.linkminiatura {
+.miniaturas .miniaturabox .miniaturatext .linkminiatura {
   display: flex;
   justify-content: end;
   color: #55694a;
+}
+.miniaturas .miniaturabox:hover {
+  width: 33.5rem;
+  height: 43rem;
+  background-color: #beaf9c;
+  border-radius: 1rem;
+}
+.miniaturas .miniaturabox:hover .imgminiaturas2 {
+  border-radius: 0.8rem 0.8rem 0rem 0rem;
+}
+.miniaturas .miniaturabox:hover .imgminiaturas3 {
+  border-radius: 0.8rem 0.8rem 0rem 0rem;
+}
+.miniaturas .miniaturabox:hover .imgminiaturas4 {
+  border-radius: 0.8rem 0.8rem 0rem 0rem;
+}
+.miniaturas .miniaturabox:hover .imgminiaturas5 {
+  border-radius: 0.8rem 0.8rem 0rem 0rem;
+}
+.miniaturas .miniaturabox:hover .imgminiaturas6 {
+  border-radius: 0.8rem 0.8rem 0rem 0rem;
+}
+.miniaturas .miniaturabox:hover .imgminiaturas7 {
+  border-radius: 0.8rem 0.8rem 0rem 0rem;
 }
 
 .paginas {
@@ -1184,8 +1904,7 @@ footer .imgfooter .imgf2 {
   justify-content: center;
   font-size: medium;
 }
-
-.paginasinf {
+.paginas .paginasinf {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -1195,40 +1914,50 @@ footer .imgfooter .imgf2 {
   height: 3rem;
   border-radius: 1rem;
 }
-
-.numpagina {
+.paginas .paginasinf .numpagina {
   width: 2rem;
   display: flex;
   justify-content: center;
 }
-
-.numpagina:hover {
+.paginas .paginasinf .numpagina:hover {
   width: 2rem;
   display: flex;
   justify-content: center;
   background-color: #738467;
   border-radius: 1rem;
 }
-
-#puntitos {
+.paginas .paginasinf #puntitos {
   color: #cdbdaa;
 }
 
 .mainsumate {
   padding: 0rem;
 }
-
-.acciontitulo {
-  display: block;
-  margin-bottom: 3rem;
-}
-
-.accion1 {
+.mainsumate .accion1 {
   margin-bottom: 6rem;
   padding: 6rem 16rem;
 }
-
-.mision {
+.mainsumate .accion1 .acciontitulo {
+  display: block;
+  margin-bottom: 3rem;
+}
+.mainsumate .accion1 .botoncolab {
+  display: flex;
+  justify-content: flex-end;
+}
+.mainsumate .accion1 .botoncolab .aColab {
+  margin-top: 5rem;
+  padding: 1rem 2rem;
+  background-color: #55694a;
+  color: #fff;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 16px;
+}
+.mainsumate .mision {
   height: fit-content;
   background-color: #62625f;
   background-image: url(../multimedia/mtdibujo.jpeg); /* probablemente vaya otra imagen */
@@ -1239,13 +1968,11 @@ footer .imgfooter .imgf2 {
   padding: 5rem 16rem;
   margin-bottom: 6rem;
 }
-
-.misiontitulo {
+.mainsumate .mision .misiontitulo {
   display: flex;
   justify-content: end;
 }
-
-.misionP {
+.mainsumate .mision .misionP {
   background-color: #55694a;
   width: 70rem;
   height: fit-content;
@@ -1254,39 +1981,32 @@ footer .imgfooter .imgf2 {
   top: 11rem;
   border-radius: 1rem;
 }
-
-.misioncolor {
+.mainsumate .mision .misionP .misioncolor {
   color: #cdbdaa;
 }
-
-.beneficios {
+.mainsumate .beneficios {
   padding: 6rem 16rem;
 }
-
-.beneficiostitulo {
+.mainsumate .beneficios .beneficiostitulo {
   display: block;
   margin-bottom: 3rem;
 }
-
-.ulaportantes {
+.mainsumate .beneficios .ulaportantes {
   list-style-type: decimal;
   font-size: large;
   color: #271702;
   font-family: "Helvetica";
   padding-left: 2rem;
 }
-
-.liaportantes {
+.mainsumate .beneficios .ulaportantes .liaportantes {
   margin-bottom: 1rem;
 }
-
-.botonMP {
+.mainsumate .botonMP {
   display: flex;
   justify-content: end;
   padding: 0rem 16rem 6rem 0rem;
 }
-
-.MercP {
+.mainsumate .botonMP .MercP {
   height: 7rem;
   width: auto;
   background-color: #55694a;

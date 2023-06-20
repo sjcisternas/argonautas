@@ -1,81 +1,85 @@
 .mainsumate{
     padding:0rem;
-}
-
-.acciontitulo{
-    display: block;
-    margin-bottom:3rem;
-}
-
-.accion1{
-    margin-bottom: 6rem;
-    padding: 6rem 16rem;
-}
-
-.mision{
-    height: fit-content;
-    background-color:#62625f;
-    background-image: url(../multimedia/mtdibujo.jpeg); /* probablemente vaya otra imagen */
-    background-blend-mode:soft-light; /* ver de poner la imagen mas suave aun */
-    background-position: center;
-    background-repeat:no-repeat;
-    background-size: cover;
-    padding: 5rem 16rem;
-    margin-bottom: 6rem;
-}
-
-.misiontitulo{
-    display: flex;
-    justify-content: end;
-}
-
-.misionP{
-    background-color:#55694a;
-    width: 70rem;
-    height: fit-content;
-    padding: 3rem 5rem;
-    position: relative;
-    top:11rem;
-    border-radius: 1rem;
-}
-
-.misioncolor{
-    color:#cdbdaa;
-}
-
-.beneficios{
-    padding: 6rem 16rem;
-}
-
-.beneficiostitulo{
-    display: block;
-    margin-bottom:3rem;   
-}
-
-.ulaportantes{
-    list-style-type:decimal;
-    font-size: large;
-    color:#271702;
-    font-family: 'Helvetica';
-    padding-left:2rem;
-}
-
-.liaportantes{
-    margin-bottom: 1rem;
-}
-
-.botonMP{
-    display: flex;
-    justify-content: end;
-    padding: 0rem 16rem 6rem 0rem;
-}
-
-.MercP{
-    height: 7rem;
-    width: auto;
-    background-color: #55694a;
-    border: none;
-    border-radius: 4px;
-    font-size: 16px;
-    padding: 2rem;
+    .accion1{
+        margin-bottom: 6rem;
+        padding: 6rem 16rem;
+        .acciontitulo{
+            display: block;
+            margin-bottom:3rem;
+        }
+        .botoncolab{
+            display: flex;
+            justify-content: flex-end;
+            .aColab{
+                margin-top: 5rem;
+                padding: 1rem 2rem;
+                background-color: #55694a;
+                color: #fff;
+                border: none;
+                text-align: center;
+                text-decoration: none;
+                cursor: pointer;
+                border-radius: 4px;
+                font-size: 16px;
+            }
+        }
+    }
+    .mision{
+        height: fit-content;
+        background-color:#62625f;
+        background-image: url(../multimedia/mtdibujo.jpeg); /* probablemente vaya otra imagen */
+        background-blend-mode:soft-light; /* ver de poner la imagen mas suave aun */
+        background-position: center;
+        background-repeat:no-repeat;
+        background-size: cover;
+        padding: 5rem 16rem;
+        margin-bottom: 6rem;
+        .misiontitulo{
+            display: flex;
+            justify-content: end;
+        }
+        .misionP{
+            background-color:#55694a;
+            width: 70rem;
+            height: fit-content;
+            padding: 3rem 5rem;
+            position: relative;
+            top:11rem;
+            border-radius: 1rem;
+            .misioncolor{
+                color:#cdbdaa;
+            }
+        }
+    }
+    .beneficios{
+        padding: 6rem 16rem;
+        .beneficiostitulo{
+            display: block;
+            margin-bottom:3rem;   
+        }
+        .ulaportantes{
+            list-style-type:decimal;
+            font-size: large;
+            color:#271702;
+            font-family: 'Helvetica';
+            padding-left:2rem;
+            .liaportantes{
+                margin-bottom: 1rem;
+            }
+        }
+    }
+    .botonMP{
+        display: flex;
+        justify-content: end;
+        padding: 0rem 16rem 6rem 0rem;
+        .MercP{
+            height: 7rem;
+            width: auto;
+            background-color: #55694a;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            padding: 2rem;
+        }
+    }
 }

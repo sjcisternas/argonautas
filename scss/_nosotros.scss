@@ -252,9 +252,9 @@
 
 }
 
-/* Mobile L */
+/* 740px - 767px */
 
-@media screen and (min-width: 320px) and (max-width:767px){
+@media screen and (min-width: 740px) and (max-width: 767px){
     .mainnosotros{
         display: flex;
         flex-direction: column;
@@ -262,11 +262,823 @@
             margin-bottom: 6rem;
             padding: 3rem 2rem 0rem 2rem;
         }
+        .miembro{
+            .miembro1{
+                 padding-left: 2rem;
+                padding-right: 2rem;
+                .imgparrafo{
+                    display: flex;
+                    flex-direction: column;
+                    .nosotrosimg{
+                        height: 60rem;
+                        width: auto;
+                        margin: 0rem 1.6rem 1.6rem 1.6rem;
+                    }
+                }
+            }
+            .miembro2{
+                padding-left: 2rem;
+                padding-right: 2rem;
+                .imgparrafo{
+                    display: flex;
+                    flex-direction: column;
+                    .nosotrosimg{
+                        height: 60rem;
+                        width: auto;
+                        margin: 0rem 1.6rem 1.6rem 1.6rem;
+                    }
+                }
+            }
+            .miembro3{
+                padding-left: 2rem;
+                padding-right: 2rem;
+                .imgparrafo{
+                    display: flex;
+                    flex-direction: column;
+                    .nosotrosimg{
+                        height: 60rem;
+                        width: auto;
+                        margin: 0rem 1.6rem 1.6rem 1.6rem;
+                    }
+                }
+            }
+            .miembro4{
+                padding-left: 2rem;
+                padding-right: 2rem;
+                .imgparrafo{
+                    display: flex;
+                    flex-direction: column;
+                    .nosotrosimg{
+                        height: 60rem;
+                        width: auto;
+                        margin: 0rem 1.6rem 1.6rem 1.6rem;
+                    }
+                }
+            }
+            .miembro5{
+                padding-left: 2rem;
+                padding-right: 2rem;
+                .imgparrafo{
+                    display: flex;
+                    flex-direction: column;
+                    .nosotrosimg{
+                        height: 60rem;
+                        width: auto;
+                        margin: 0rem 1.6rem 1.6rem 1.6rem;
+                    }
+                }
+            }
+            .miembro6{
+                padding-left: 2rem;
+                padding-right: 2rem;
+                .imgparrafo{
+                    display: flex;
+                    flex-direction: column;
+                    .nosotrosimg{
+                        height: 60rem;
+                        width: auto;
+                        margin: 0rem 1.6rem 1.6rem 1.6rem;
+                    }
+                }
+            }
+        }
+        .miembro71{
+            .miembro7{
+                padding-left: 2rem;
+                padding-right: 2rem;
+                .imgparrafo{
+                    display: flex;
+                    flex-direction: column;
+                    .nosotrosimg{
+                        height: 60rem;
+                        width: auto;
+                        margin: 0rem 1.6rem 1.6rem 1.6rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* 680px - 739px */
+
+@media screen and (min-width: 680px) and (max-width: 739px){
+    .mainnosotros{
+        display: flex;
+        flex-direction: column;
+        .quienes{
+            margin-bottom: 6rem;
+            padding: 3rem 2rem 0rem 2rem;
+        }
+        .miembro{
+            .miembro1{
+                 padding-left: 2rem;
+                padding-right: 2rem;
+                .imgparrafo{
+                    display: flex;
+                    flex-direction: column;
+                    .nosotrosimg{
+                        height: 55rem;
+                        width: auto;
+                        margin: 0rem 1.6rem 1.6rem 1.6rem;
+                    }
+                }
+            }
+            .miembro2{
+                padding-left: 2rem;
+                padding-right: 2rem;
+                .imgparrafo{
+                    display: flex;
+                    flex-direction: column;
+                    .nosotrosimg{
+                        height: 55rem;
+                        width: auto;
+                        margin: 0rem 1.6rem 1.6rem 1.6rem;
+                    }
+                }
+            }
+            .miembro3{
+                padding-left: 2rem;
+                padding-right: 2rem;
+                .imgparrafo{
+                    display: flex;
+                    flex-direction: column;
+                    .nosotrosimg{
+                        height: 55rem;
+                        width: auto;
+                        margin: 0rem 1.6rem 1.6rem 1.6rem;
+                    }
+                }
+            }
+            .miembro4{
+                padding-left: 2rem;
+                padding-right: 2rem;
+                .imgparrafo{
+                    display: flex;
+                    flex-direction: column;
+                    .nosotrosimg{
+                        height: 55rem;
+                        width: auto;
+                        margin: 0rem 1.6rem 1.6rem 1.6rem;
+                    }
+                }
+            }
+            .miembro5{
+                padding-left: 2rem;
+                padding-right: 2rem;
+                .imgparrafo{
+                    display: flex;
+                    flex-direction: column;
+                    .nosotrosimg{
+                        height: 55rem;
+                        width: auto;
+                        margin: 0rem 1.6rem 1.6rem 1.6rem;
+                    }
+                }
+            }
+            .miembro6{
+                padding-left: 2rem;
+                padding-right: 2rem;
+                .imgparrafo{
+                    display: flex;
+                    flex-direction: column;
+                    .nosotrosimg{
+                        height: 55rem;
+                        width: auto;
+                        margin: 0rem 1.6rem 1.6rem 1.6rem;
+                    }
+                }
+            }
+        }
+        .miembro71{
+            .miembro7{
+                padding-left: 2rem;
+                padding-right: 2rem;
+                .imgparrafo{
+                    display: flex;
+                    flex-direction: column;
+                    .nosotrosimg{
+                        height: 55rem;
+                        width: auto;
+                        margin: 0rem 1.6rem 1.6rem 1.6rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* 615px - 679px */
+
+@media screen and (min-width: 615px) and (max-width: 679px){
+    .mainnosotros{
+        display: flex;
+        flex-direction: column;
+        .quienes{
+            margin-bottom: 6rem;
+            padding: 3rem 2rem 0rem 2rem;
+        }
+        .miembro{
+            .miembro1{
+                 padding-left: 2rem;
+                padding-right: 2rem;
+                .imgparrafo{
+                    display: flex;
+                    flex-direction: column;
+                    .nosotrosimg{
+                        height: 50rem;
+                        width: auto;
+                        margin: 0rem 1.6rem 1.6rem 1.6rem;
+                    }
+                }
+            }
+            .miembro2{
+                padding-left: 2rem;
+                padding-right: 2rem;
+                .imgparrafo{
+                    display: flex;
+                    flex-direction: column;
+                    .nosotrosimg{
+                        height: 50rem;
+                        width: auto;
+                        margin: 0rem 1.6rem 1.6rem 1.6rem;
+                    }
+                }
+            }
+            .miembro3{
+                padding-left: 2rem;
+                padding-right: 2rem;
+                .imgparrafo{
+                    display: flex;
+                    flex-direction: column;
+                    .nosotrosimg{
+                        height: 50rem;
+                        width: auto;
+                        margin: 0rem 1.6rem 1.6rem 1.6rem;
+                    }
+                }
+            }
+            .miembro4{
+                padding-left: 2rem;
+                padding-right: 2rem;
+                .imgparrafo{
+                    display: flex;
+                    flex-direction: column;
+                    .nosotrosimg{
+                        height: 50rem;
+                        width: auto;
+                        margin: 0rem 1.6rem 1.6rem 1.6rem;
+                    }
+                }
+            }
+            .miembro5{
+                padding-left: 2rem;
+                padding-right: 2rem;
+                .imgparrafo{
+                    display: flex;
+                    flex-direction: column;
+                    .nosotrosimg{
+                        height: 50rem;
+                        width: auto;
+                        margin: 0rem 1.6rem 1.6rem 1.6rem;
+                    }
+                }
+            }
+            .miembro6{
+                padding-left: 2rem;
+                padding-right: 2rem;
+                .imgparrafo{
+                    display: flex;
+                    flex-direction: column;
+                    .nosotrosimg{
+                        height: 50rem;
+                        width: auto;
+                        margin: 0rem 1.6rem 1.6rem 1.6rem;
+                    }
+                }
+            }
+        }
+        .miembro71{
+            .miembro7{
+                padding-left: 2rem;
+                padding-right: 2rem;
+                .imgparrafo{
+                    display: flex;
+                    flex-direction: column;
+                    .nosotrosimg{
+                        height: 50rem;
+                        width: auto;
+                        margin: 0rem 1.6rem 1.6rem 1.6rem;
+                    }
+                }
+            }
+        }
     }
 
 }
 
+/* 510px - 614px */
 
+@media screen and (min-width: 550px) and (max-width:614px){
+    .mainnosotros{
+        display: flex;
+        flex-direction: column;
+        .quienes{
+            margin-bottom: 6rem;
+            padding: 3rem 2rem 0rem 2rem;
+        }
+        .miembro{
+            .miembro1{
+                padding-left: 2rem;
+                padding-right: 2rem;
+                .imgparrafo{
+                    display: flex;
+                    flex-direction: column;
+                    .nosotrosimg{
+                        height: 45rem;
+                        width: auto;
+                        margin: 0rem 1.6rem 1.6rem 1.6rem;
+                    }
+                }
+            }
+            .miembro2{
+                padding-left: 2rem;
+                padding-right: 2rem;
+                .imgparrafo{
+                    display: flex;
+                    flex-direction: column;
+                    .nosotrosimg{
+                        height: 45rem;
+                        width: auto;
+                        margin: 0rem 1.6rem 1.6rem 1.6rem;
+                    }
+                }
+            }
+            .miembro3{
+                padding-left: 2rem;
+                padding-right: 2rem;
+                .imgparrafo{
+                    display: flex;
+                    flex-direction: column;
+                    .nosotrosimg{
+                        height: 45rem;
+                        width: auto;
+                        margin: 0rem 1.6rem 1.6rem 1.6rem;
+                    }
+                }
+            }
+            .miembro4{
+                padding-left: 2rem;
+                padding-right: 2rem;
+                .imgparrafo{
+                    display: flex;
+                    flex-direction: column;
+                    .nosotrosimg{
+                        height: 45rem;
+                        width: auto;
+                        margin: 0rem 1.6rem 1.6rem 1.6rem;
+                    }
+                }
+            }
+            .miembro5{
+                padding-left: 2rem;
+                padding-right: 2rem;
+                .imgparrafo{
+                    display: flex;
+                    flex-direction: column;
+                    .nosotrosimg{
+                        height: 45rem;
+                        width: auto;
+                        margin: 0rem 1.6rem 1.6rem 1.6rem;
+                    }
+                }
+            }
+            .miembro6{
+                padding-left: 2rem;
+                padding-right: 2rem;
+                .imgparrafo{
+                    display: flex;
+                    flex-direction: column;
+                    .nosotrosimg{
+                        height: 45rem;
+                        width: auto;
+                        margin: 0rem 1.6rem 1.6rem 1.6rem;
+                    }
+                }
+            }
+        }
+        .miembro71{
+            .miembro7{
+                padding-left: 2rem;
+                padding-right: 2rem;
+                .imgparrafo{
+                    display: flex;
+                    flex-direction: column;
+                    .nosotrosimg{
+                        height: 45rem;
+                        width: auto;
+                        margin: 0rem 1.6rem 1.6rem 1.6rem;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+/* 490px - 549px  */
+
+@media screen and (min-width: 490px) and (max-width:549px){
+    .mainnosotros{
+        display: flex;
+        flex-direction: column;
+        .quienes{
+            margin-bottom: 6rem;
+            padding: 3rem 2rem 0rem 2rem;
+        }
+        .miembro{
+            .miembro1{
+                padding-left: 2rem;
+                padding-right: 2rem;
+                .imgparrafo{
+                    display: flex;
+                    flex-direction: column;
+                    .nosotrosimg{
+                        height: 34rem;
+                        width: auto;
+                        margin: 0rem 1.6rem 1.6rem 1.6rem;
+                    }
+                }
+            }
+            .miembro2{
+                padding-left: 2rem;
+                padding-right: 2rem;
+                .imgparrafo{
+                    display: flex;
+                    flex-direction: column;
+                    .nosotrosimg{
+                        height: 34rem;
+                        width: auto;
+                        margin: 0rem 1.6rem 1.6rem 1.6rem;
+                    }
+                }
+            }
+            .miembro3{
+                padding-left: 2rem;
+                padding-right: 2rem;
+                .imgparrafo{
+                    display: flex;
+                    flex-direction: column;
+                    .nosotrosimg{
+                        height: 34rem;
+                        width: auto;
+                        margin: 0rem 1.6rem 1.6rem 1.6rem;
+                    }
+                }
+            }
+            .miembro4{
+                padding-left: 2rem;
+                padding-right: 2rem;
+                .imgparrafo{
+                    display: flex;
+                    flex-direction: column;
+                    .nosotrosimg{
+                        height: 34rem;
+                        width: auto;
+                        margin: 0rem 1.6rem 1.6rem 1.6rem;
+                    }
+                }
+            }
+            .miembro5{
+                padding-left: 2rem;
+                padding-right: 2rem;
+                .imgparrafo{
+                    display: flex;
+                    flex-direction: column;
+                    .nosotrosimg{
+                        height: 34rem;
+                        width: auto;
+                        margin: 0rem 1.6rem 1.6rem 1.6rem;
+                    }
+                }
+            }
+            .miembro6{
+                padding-left: 2rem;
+                padding-right: 2rem;
+                .imgparrafo{
+                    display: flex;
+                    flex-direction: column;
+                    .nosotrosimg{
+                        height: 34rem;
+                        width: auto;
+                        margin: 0rem 1.6rem 1.6rem 1.6rem;
+                    }
+                }
+            }
+        }
+        .miembro71{
+            .miembro7{
+                padding-left: 2rem;
+                padding-right: 2rem;
+                .imgparrafo{
+                    display: flex;
+                    flex-direction: column;
+                    .nosotrosimg{
+                        height: 34rem;
+                        width: auto;
+                        margin: 0rem 1.6rem 1.6rem 1.6rem;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+/* 459px - 489px */
+
+@media screen and (min-width: 459px) and (max-width:489px){
+    .mainnosotros{
+        display: flex;
+        flex-direction: column;
+        .quienes{
+            margin-bottom: 6rem;
+            padding: 3rem 2rem 0rem 2rem;
+        }
+        .miembro{
+            .miembro1{
+                .imgparrafo{
+                    display: flex;
+                    flex-direction: column;
+                    .nosotrosimg{
+                        height: 30rem;
+                        width: auto;
+                        margin: 0rem 2rem 1.6rem 2rem;
+                    }
+                }
+            }
+            .miembro2{
+                .imgparrafo{
+                    display: flex;
+                    flex-direction: column;
+                    .nosotrosimg{
+                        height: 30rem;
+                        width: auto;
+                        margin: 0rem 2rem 1.6rem 2rem;
+                    }
+                }
+            }
+            .miembro3{
+                .imgparrafo{
+                    display: flex;
+                    flex-direction: column;
+                    .nosotrosimg{
+                        height: 30rem;
+                        width: auto;
+                        margin: 0rem 2rem 1.6rem 2rem;
+                    }
+                }
+            }
+            .miembro4{
+                .imgparrafo{
+                    display: flex;
+                    flex-direction: column;
+                    .nosotrosimg{
+                        height: 30rem;
+                        width: auto;
+                        margin: 0rem 2rem 1.6rem 2rem;
+                    }
+                }
+            }
+            .miembro5{
+                .imgparrafo{
+                    display: flex;
+                    flex-direction: column;
+                    .nosotrosimg{
+                        height: 30rem;
+                        width: auto;
+                        margin: 0rem 2rem 1.6rem 2rem;
+                    }
+                }
+            }
+            .miembro6{
+                .imgparrafo{
+                    display: flex;
+                    flex-direction: column;
+                    .nosotrosimg{
+                        height: 30rem;
+                        width: auto;
+                        margin: 0rem 2rem 1.6rem 2rem;
+                    }
+                }
+            }
+        }
+        .miembro71{
+            .miembro7{
+                .imgparrafo{
+                    display: flex;
+                    flex-direction: column;
+                    .nosotrosimg{
+                        height: 30rem;
+                        width: auto;
+                        margin: 0rem 2rem 1.6rem 2rem;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+/* 375px - 459px */
+
+@media screen and (min-width: 375px) and (max-width:459px){
+    .mainnosotros{
+        display: flex;
+        flex-direction: column;
+        .quienes{
+            margin-bottom: 6rem;
+            padding: 3rem 2rem 0rem 2rem;
+        }
+        .miembro{
+            .miembro1{
+                .imgparrafo{
+                    display: flex;
+                    flex-direction: column;
+                    .nosotrosimg{
+                        height: 25rem;
+                        width: auto;
+                        margin: 0rem 2rem 1.6rem 2rem;
+                    }
+                }
+            }
+            .miembro2{
+                .imgparrafo{
+                    display: flex;
+                    flex-direction: column;
+                    .nosotrosimg{
+                        height: 25rem;
+                        width: auto;
+                        margin: 0rem 2rem 1.6rem 2rem;
+                    }
+                }
+            }
+            .miembro3{
+                .imgparrafo{
+                    display: flex;
+                    flex-direction: column;
+                    .nosotrosimg{
+                        height: 25rem;
+                        width: auto;
+                        margin: 0rem 2rem 1.6rem 2rem;
+                    }
+                }
+            }
+            .miembro4{
+                .imgparrafo{
+                    display: flex;
+                    flex-direction: column;
+                    .nosotrosimg{
+                        height: 25rem;
+                        width: auto;
+                        margin: 0rem 2rem 1.6rem 2rem;
+                    }
+                }
+            }
+            .miembro5{
+                .imgparrafo{
+                    display: flex;
+                    flex-direction: column;
+                    .nosotrosimg{
+                        height: 25rem;
+                        width: auto;
+                        margin: 0rem 2rem 1.6rem 2rem;
+                    }
+                }
+            }
+            .miembro6{
+                .imgparrafo{
+                    display: flex;
+                    flex-direction: column;
+                    .nosotrosimg{
+                        height: 25rem;
+                        width: auto;
+                        margin: 0rem 2rem 1.6rem 2rem;
+                    }
+                }
+            }
+        }
+        .miembro71{
+            .miembro7{
+                .imgparrafo{
+                    display: flex;
+                    flex-direction: column;
+                    .nosotrosimg{
+                        height: 25rem;
+                        width: auto;
+                        margin: 0rem 2rem 1.6rem 2rem;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+/* 320px - 374px */
+
+@media screen and (min-width: 320px) and (max-width:374px){
+    .mainnosotros{
+        display: flex;
+        flex-direction: column;
+        .quienes{
+            margin-bottom: 6rem;
+            padding: 3rem 2rem 0rem 2rem;
+        }
+        .miembro{
+            .miembro1{
+                .imgparrafo{
+                    display: flex;
+                    flex-direction: column;
+                    .nosotrosimg{
+                        height: 20rem;
+                        width: auto;
+                        margin: 0rem 2rem 1.6rem 2rem;
+                    }
+                }
+            }
+            .miembro2{
+                .imgparrafo{
+                    display: flex;
+                    flex-direction: column;
+                    .nosotrosimg{
+                        height: 20rem;
+                        width: auto;
+                        margin: 0rem 2rem 1.6rem 2rem;
+                    }
+                }
+            }
+            .miembro3{
+                .imgparrafo{
+                    display: flex;
+                    flex-direction: column;
+                    .nosotrosimg{
+                        height: 20rem;
+                        width: auto;
+                        margin: 0rem 2rem 1.6rem 2rem;
+                    }
+                }
+            }
+            .miembro4{
+                .imgparrafo{
+                    display: flex;
+                    flex-direction: column;
+                    .nosotrosimg{
+                        height: 20rem;
+                        width: auto;
+                        margin: 0rem 2rem 1.6rem 2rem;
+                    }
+                }
+            }
+            .miembro5{
+                .imgparrafo{
+                    display: flex;
+                    flex-direction: column;
+                    .nosotrosimg{
+                        height: 20rem;
+                        width: auto;
+                        margin: 0rem 2rem 1.6rem 2rem;
+                    }
+                }
+            }
+            .miembro6{
+                .imgparrafo{
+                    display: flex;
+                    flex-direction: column;
+                    .nosotrosimg{
+                        height: 20rem;
+                        width: auto;
+                        margin: 0rem 2rem 1.6rem 2rem;
+                    }
+                }
+            }
+        }
+        .miembro71{
+            .miembro7{
+                .imgparrafo{
+                    display: flex;
+                    flex-direction: column;
+                    .nosotrosimg{
+                        height: 20rem;
+                        width: auto;
+                        margin: 0rem 2rem 1.6rem 2rem;
+                    }
+                }
+            }
+        }
+    }
+
+}
 
 
 

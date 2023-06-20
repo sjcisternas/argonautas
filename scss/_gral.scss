@@ -86,7 +86,14 @@ header{
             font-family: 'Helvetica';
             padding: 0rem 0.8rem;
             .selected{
-                text-decoration: underline; /* Es la única modificación que pude hacerle. quise ponerle algun sombreado o algo más sutil, pero no pude */
+                display: inline-block;
+                &::after{
+                    content: '';
+                    height: 3px;
+                    background:#6e6457;
+                    border-radius: 10px;
+                    display: block;
+                }
             }
         }
     }
