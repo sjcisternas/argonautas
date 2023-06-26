@@ -1,6 +1,5 @@
 /* CONFIG PARA TODAS LAS PAGINAS */
 
-
 *{    
     margin: 0;   
     padding: 0;
@@ -11,7 +10,7 @@ html{
 }
 
 h1{
-    color:#edc99c;
+    color:$color-principal;
     display: inline-block;
     margin-left: 10px;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -23,7 +22,7 @@ h1{
 h2{
     font-size: xx-large;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    color: #0e0801;
+    color: $negro;
     font-weight: bold;
     
 }
@@ -31,95 +30,106 @@ h2{
 h3{
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-style: italic;
-    color: #271702;
+    color: $color-secundario1;
     font-weight: bold;
 }
 
 h4{
     font-family: Georgia, 'Times New Roman', Times, serif;
-    color: #0e0801;
+    color: $negro;
     font-weight: bold;
 }
 
 p{
     font-size: medium;
     font-family: 'Helvetica';
-    color:#271702;   
+    color:$color-secundario1;   
 }
 
 a{
     font-family: 'Helvetica';
     text-decoration:none;
-    color:#edc99c;
+    color:$color-principal;
 }
 
 /* Header */
 
 header{
-    display:flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0rem 8rem;
-    background-color: #271702;
-    .argonautas1{
+    position:fixed;
+    width: 100%;
+    z-index: 2;
+    
+    .headergral{
         display:flex;
-        align-items:center;
-        .logo{
-            width: 5rem;
-            height: 5rem;
-            display: inline-block;
-            margin: 10px 0px 10px 10px;
-        }
-    }
-   /* Nav */
-   nav{
-    display:inline-block;
-    margin-top: 1.7em;
-    .mainul{
-        list-style-type: none;
-        margin-top: 1rem;
-        display: flex;
-        flex-direction: row;
-        .mainli{
-            display: block;
-            font-size: small;
-            font-family: 'Helvetica';
-            padding: 0rem 0.8rem;
-            .selected{
+        align-items: center;
+        justify-content: space-between;
+        padding: 0rem 8rem;
+        background-color: $color-secundario1;
+        box-shadow: 0px 1px 20px rgb(62, 62, 62);
+        .argonautas1{
+            display:flex;
+            align-items:center;
+            
+            .logo{
+                width: 5rem;
+                height: 5rem;
                 display: inline-block;
-                &::after{
-                    content: '';
-                    height: 3px;
-                    background:#6e6457;
-                    border-radius: 10px;
+                margin: 10px 0px 10px 10px;
+            }
+            h1{
+                white-space: nowrap;
+            }
+        }
+    nav{
+            display:inline-block;
+            .mainul{
+                list-style-type: none;
+                margin-top: 1rem;
+                display: flex;
+                flex-direction: row;
+                .mainli{
                     display: block;
+                    font-size: small;
+                    font-family: 'Helvetica';
+                    padding: 0rem 0.8rem;
+                    .selected{
+                        display: inline-block;
+                        &::after{
+                            content: '';
+                            height: 3px;
+                            background:$color-principal;
+                            border-radius: 10px;
+                            display: block;
+                            
+                        }
+                    }
                 }
             }
         }
     }
 }
-}
 
 /* Main */
 
 main{
-    background-color: #cdbdaa;
-    padding: 6rem 12rem;
+    background-color: $color-secundario2;
+    padding: 12rem 6rem 6rem 12rem;
 }
 
 /* Footer */
 
 footer{
-    background-color: #271702;
+    background-color: $color-secundario1;
     height: 4rem;
     display:flex;
     align-items: center;
     justify-content: space-between;
     padding: 0rem 8rem;
+    box-shadow: 0px 1px 20px rgb(91, 91, 91);
     .pfooter{
         display:inline-block;
         margin-top: 1rem;
-        color: #c0b19d;
+        color: $color-secundario2;
         font-size: small;   
     }
     .imgfooter{
@@ -167,8 +177,8 @@ footer{
     /* Main */
 
     main{
-        background-color: #cdbdaa;
-        padding: 3rem 6rem;
+        background-color: $color-secundario2;
+        padding: 12rem 6rem 6rem 6rem;
     }
 
     /* Footer */
@@ -183,7 +193,7 @@ footer{
 
 /* Tablet */
 
-@media screen and (min-width: 768px) and (max-width:1023px){
+@media screen and (min-width: 880px) and (max-width:1023px){
     
     h4{
         font-size: 14px; 
@@ -191,8 +201,7 @@ footer{
     
     /* Header */
     
-    header{
-        padding: 0rem 3rem;
+    .headergral{
         .argonautas1 {
             flex: 1;
         }
@@ -201,9 +210,6 @@ footer{
             .collapse{
                 display: flex;
                 justify-content: end;
-                .mainli{
-                    font-size: 12px;
-                }
             }
         }
     }    
@@ -211,7 +217,7 @@ footer{
     /* Main */
 
     main{
-        background-color: #cdbdaa;
+        background-color: $color-secundario2;
         padding: 3rem 6rem;
     }
 
@@ -225,12 +231,25 @@ footer{
     }
 }
 
+@media screen and (min-width: 768px) and (max-width:879px){
+        .headergral{
+            flex-direction: column;
+            padding-top: 14rem;
+        }
+        .pfooter{
+            width: fit-content;
+        }
+        .imgfooter{
+            width: fit-content;
+        }
+}
+
 /* Mobile S-M-L */
 
 @media screen and (min-width: 320px) and (max-width:767px){
 
     /* Header */
-    header{
+    .headergral{
         padding: 0rem;
         display: flex;
         flex-direction: column;
@@ -248,15 +267,12 @@ footer{
             .navbar-toggler{
                 border-style:none;
             }
-            
-            .mainul{
-                margin-bottom:1rem;
-                padding:0rem;
-                .mainli{
-                    font-size: 12px;
+            .collapse{
+                .mainul{
+                    margin-bottom:1rem;
+                    padding:0rem;
                 }
             }
-            
         }
     }
 

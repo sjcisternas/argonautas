@@ -17,11 +17,22 @@
             display: inline-block;
             padding-bottom: 1.2rem;
         }
+        p{
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 4; 
+        }
         .linkultimanota{
             display: flex;
             justify-content: end;
             color: #55694a;
             margin-bottom: 3rem;
+            transition: font-size 0.3s;
+                &:hover{
+                    font-weight: bold;
+                    font-size: 10.5px;
+                }
         }
     }
     .imgnota1{
@@ -44,6 +55,7 @@
     .miniaturabox{
         width: 33.5rem;
         height: 43rem;
+        transition: box-shadow 0.2s, background-color 0.2s;
         .imgminiaturas2{   
             width:33.5rem;
             height: 20.4rem;
@@ -52,33 +64,37 @@
             background-repeat:no-repeat;
             background-size: cover;
             border-radius: 0.8rem;
+            transition: border-radius 0.2s;
         }
         .imgminiaturas3{   
             width:33.5rem;
             height: 20.4rem;
-            background-image: url(../multimedia/mtdibujo.jpeg);
+            background-image: url(../multimedia/espantapajaros.webp);
             background-position: center;
             background-repeat:no-repeat;
             background-size:cover;
             border-radius: 0.8rem;
+            transition: border-radius 0.2s;
         }
         .imgminiaturas4{   
             width:33.5rem;
             height: 20.4rem;
-            background-image: url(../multimedia/mtdibujo.jpeg);
+            background-image: url(../multimedia/inuit.jpg);
             background-position: center;
             background-repeat:no-repeat;
             background-size: cover;
             border-radius: 0.8rem;
+            transition: border-radius 0.2s;
         }
         .imgminiaturas5{   
             width:33.5rem;
             height: 20.4rem;
-            background-image: url(../multimedia/mtdibujo.jpeg);
+            background-image: url(../multimedia/jose.jpg);
             background-position: center;
             background-repeat:no-repeat;
             background-size: cover;
             border-radius: 0.8rem;
+            transition: border-radius 0.2s;
         }
         .imgminiaturas6{   
             width:33.5rem;
@@ -88,15 +104,17 @@
             background-repeat:no-repeat;
             background-size: cover;
             border-radius: 0.8rem;
+            transition: border-radius 0.2s;
         }
         .imgminiaturas7{   
             width:33.5rem;
             height: 20.4rem;
-            background-image: url(../multimedia/mtdibujo.jpeg);
+            background-image: url(../multimedia/ceramistas.jpg);
             background-position: center;
             background-repeat:no-repeat;
             background-size: cover;
             border-radius: 0.8rem;
+            transition: border-radius 0.2s;
         }
         .miniaturatext{
             display:flex;
@@ -110,11 +128,17 @@
                 overflow: hidden;
                 .titulomini{
                     font-size: medium;
-                    .autormini{
-                        padding: 0.2rem 0rem;
-                        font-weight: 100;
-                        font-size: small;
-                    }
+                }
+                .autormini{
+                    padding: 0.2rem 0rem;
+                    font-weight: 100;
+                    font-size: 1.4rem;
+                }
+                p{
+                    overflow: hidden;
+                    display: -webkit-box;
+                    -webkit-box-orient: vertical;
+                    -webkit-line-clamp: 3; 
                 }
             }
             .linkminiatura{
@@ -128,6 +152,7 @@
             height: 43rem;
             background-color: #beaf9c;
             border-radius: 1rem;
+            box-shadow: 0px 0px 15px rgb(135, 134, 134);
             .imgminiaturas2{
                 border-radius: 0.8rem 0.8rem 0rem 0rem;
             }

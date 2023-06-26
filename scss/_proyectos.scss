@@ -4,7 +4,7 @@
 .podcast{
     display: block;
     padding: 5rem;
-    background-color: #c0b19d;
+    background-color: $color-terciario1;
     border-radius: 1rem;
     .Tpodcast{
         display:inline-block;
@@ -18,14 +18,17 @@
         justify-content: end;
         .escuchar{
             padding: 10px 20px;
-            background-color: #55694a;
-            color: #fff;
+            background-color: $color-boton-principal;
             border: none;
             text-align: center;
             text-decoration: none;
             cursor: pointer;
             border-radius: 4px;
             font-size: 16px;
+            transition: background-color 0.3s;
+                &:hover{
+                    background-color: #2a481b;
+                }
         }
     }
 }
@@ -70,14 +73,17 @@
         padding-right: 5rem;
         .leer{
             padding: 10px 20px;
-            background-color: #55694a;
-            color: #fff;
+            background-color: $color-boton-principal;
             border: none;
             text-align: center;
             text-decoration: none;
             cursor: pointer;
             border-radius: 4px;
             font-size: 16px;
+            transition: background-color 0.3s;
+                &:hover{
+                    background-color: #2a481b;
+                }
         }
     }
 }
@@ -85,16 +91,30 @@
 /* 1024-1280px */
 
 @media screen and (min-width: 1024px) and (max-width: 1280px){
-    .podcast{
-        margin-top: 3rem;
-    }
-    
-    .MyTt{
-        height: auto;        
-    }
+    .mainproyectos{
+        padding: 10rem 6rem 6rem 6rem;
+        .podcast{
+            margin-top: 3rem;
+        }
+        .MyTt{
+            height: auto;        
+        }
+        }
 }
 
 /* Mobile L y Tablet */
+
+@media screen and (min-width: 880px) and (max-width: 1023px){
+    .mainproyectos{
+    padding: 10rem 6rem 6rem 6rem;
+    }
+}
+
+@media screen and (min-width: 764px) and (max-width: 879px){
+    .mainproyectos{
+        padding: 14rem 6rem 6rem 6rem;
+    }
+}
 
 @media screen and (min-width: 320px) and (max-width: 1023px){
     .podcast{
@@ -115,13 +135,16 @@
 /* Mobile L */
 
 @media screen and (min-width: 320px) and (max-width: 767px){
-    .MyT{
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 3rem;
-        .MyTt{
-            .titulo{
-                width: 100%;
+    .mainproyectos{
+        padding: 14rem 6rem 6rem 6rem;
+        .MyT{
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 3rem;
+            .MyTt{
+                .titulo{
+                    width: 100%;
+                }
             }
         }
     }
@@ -130,9 +153,12 @@
 /* Mobile S */
 
 @media screen and (min-width: 320px) and (max-width: 375px){
-    .proyectospreviostitulo{
-        padding: 0rem;
-        margin: 4rem 0rem 3rem 0rem;
-        text-align: center;
+    .mainproyectos{
+        padding: 12rem 4rem 6rem 4rem;
+        .proyectospreviostitulo{
+            padding: 0rem;
+            margin: 4rem 0rem 3rem 0rem;
+            text-align: center;
+        }
     }
 }

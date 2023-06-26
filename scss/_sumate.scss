@@ -1,8 +1,9 @@
 .mainsumate{
-    padding:0rem;
+    padding-left:0rem;
+    padding-right: 0rem;
     .accion1{
         margin-bottom: 6rem;
-        padding: 6rem 16rem;
+        padding: 0rem 16rem;
         .acciontitulo{
             display: block;
             margin-bottom:3rem;
@@ -13,46 +14,52 @@
             .aColab{
                 margin-top: 5rem;
                 padding: 1rem 2rem;
-                background-color: #55694a;
-                color: #fff;
+                background-color: $color-boton-principal;
                 border: none;
                 text-align: center;
                 text-decoration: none;
                 cursor: pointer;
                 border-radius: 4px;
                 font-size: 16px;
+                transition: background-color 0.3s;
+                &:hover{
+                    background-color: #2a481b;
+                }
             }
         }
     }
     .mision{
         height: fit-content;
         background-color:#62625f;
-        background-image: url(../multimedia/mtdibujo.jpeg); /* probablemente vaya otra imagen */
-        background-blend-mode:soft-light; /* ver de poner la imagen mas suave aun */
+        background-image: url(../multimedia/mtdibujo.jpeg); 
+        background-blend-mode:soft-light; 
         background-position: center;
         background-repeat:no-repeat;
         background-size: cover;
         padding: 5rem 16rem;
         margin-bottom: 6rem;
+        box-shadow: 0px 5px 20px rgb(62, 62, 62);
         .misiontitulo{
             display: flex;
             justify-content: end;
         }
         .misionP{
-            background-color:#55694a;
+            background-color:$color-terciario1;
             width: 70rem;
             height: fit-content;
             padding: 3rem 5rem;
             position: relative;
             top:11rem;
             border-radius: 1rem;
+            box-shadow: 0px 10px 100px rgb(85, 85, 85);
             .misioncolor{
-                color:#cdbdaa;
+                color:$color-secundario1;
             }
         }
     }
     .beneficios{
         padding: 6rem 16rem;
+        margin-top: 5rem;
         .beneficiostitulo{
             display: block;
             margin-bottom:3rem;   
@@ -60,7 +67,7 @@
         .ulaportantes{
             list-style-type:decimal;
             font-size: large;
-            color:#271702;
+            color:$color-secundario1;
             font-family: 'Helvetica';
             padding-left:2rem;
             .liaportantes{
@@ -75,11 +82,15 @@
         .MercP{
             height: 7rem;
             width: auto;
-            background-color: #55694a;
+            background-color: $color-boton-principal;
             border: none;
             border-radius: 4px;
             font-size: 16px;
             padding: 2rem;
+            transition: background-color 0.3s;
+                &:hover{
+                    background-color: #2a481b;
+                }
         }
     }
 }
