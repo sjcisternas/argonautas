@@ -1,0 +1,70 @@
+
+/* Cards del archivo */
+
+@mixin imgminiaturas{   
+    width:33.5rem;
+    height: 20rem;
+    background-position: center;
+    background-repeat:no-repeat;
+    background-size: cover;
+    border-radius: 0.8rem;
+    transition: border-radius 0.2s;
+}
+
+@mixin miniaturatext{
+    height: 20rem;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 1rem 1rem 0rem 1rem;
+    padding: 1rem 0.5rem 0rem 0.5rem;
+    .miniaturadesc{
+        height: 14.5rem;
+        overflow: hidden;
+        .titulomini{
+            font-size: medium;
+        }
+        .autormini{
+            padding: 0.2rem 0rem;
+            font-weight: 100;
+            font-size: 1.4rem;
+        }
+        p{
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 3; 
+        }
+    }
+    .linkminiatura{
+        display: flex;
+        justify-content: end;
+        color: #55694a;
+    }
+}
+
+@mixin hoverminiaturabox{
+    width: 33.5rem;
+    height: 42rem;
+    background-color: #beaf9c;
+    border-radius: 1rem;
+    box-shadow: 0px 0px 15px rgb(135, 134, 134);
+    .imgminiaturas2{
+        border-radius: 0.8rem 0.8rem 0rem 0rem;
+    }
+    .imgminiaturas3{
+        border-radius: 0.8rem 0.8rem 0rem 0rem;
+    }
+    .imgminiaturas4{
+        border-radius: 0.8rem 0.8rem 0rem 0rem;
+    }
+    .imgminiaturas5{
+        border-radius: 0.8rem 0.8rem 0rem 0rem;
+    }
+    .imgminiaturas6{
+        border-radius: 0.8rem 0.8rem 0rem 0rem;
+    }
+    .imgminiaturas7{
+        border-radius: 0.8rem 0.8rem 0rem 0rem;
+    }
+}

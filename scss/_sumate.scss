@@ -94,3 +94,65 @@
         }
     }
 }
+
+/* Tablet */
+
+@media screen and (min-width: 900px) and (max-width: 1024px){
+    .mainsumate{
+        padding-top: 12rem;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 899px){
+    .mainsumate{
+        padding-top: 18rem;
+        .mision{
+            padding: 5rem 8rem;
+            .misionP{
+                width: 50rem;
+            }
+        }
+        .botonMP{
+            justify-content: center;
+            margin-bottom: 6rem;
+            padding: 0rem;
+        }
+    }
+}
+
+/* Mobile */
+
+@media screen and (min-width: 320px) and (max-width: 767px){
+    .mainsumate{
+        padding-top: 18rem;
+        .accion1{
+            padding-left: 5rem;
+            padding-right: 5rem;
+        }
+        .mision{
+            padding: 5rem 3rem;
+            margin-bottom: 0rem;
+            .misiontitulo{
+                margin-bottom: 5rem;
+            }
+            .misionP{
+                background-color: $color-terciario1;
+                box-shadow: none;
+                width: auto;
+                position:initial;
+                padding-left: 3rem;
+                padding-right: 3rem;
+            }
+        }
+        .beneficios{
+            margin-top: 0rem;
+            padding-left: 5rem;
+            padding-right: 5rem;
+        }
+        .botonMP{
+            justify-content: center;
+            margin-bottom: 6rem;
+            padding: 0rem;
+        }
+    }
+}

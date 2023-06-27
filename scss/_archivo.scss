@@ -1,209 +1,1087 @@
 
-/* Última nota */
-
-.notaprincipal{
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    border-radius: 10px;
-    margin-bottom: 8rem;
-    background-color: #c0b19d;
-    .ultimanota{
+.mainarchivo{
+    .notaprincipal{
         display: flex;
-        flex-direction: column;
-        margin: 2.4rem;
-        justify-content:space-between;
-        .autor1{
-            display: inline-block;
-            padding-bottom: 1.2rem;
-        }
-        p{
-            overflow: hidden;
-            display: -webkit-box;
-            -webkit-box-orient: vertical;
-            -webkit-line-clamp: 4; 
-        }
-        .linkultimanota{
-            display: flex;
-            justify-content: end;
-            color: #55694a;
-            margin-bottom: 3rem;
-            transition: font-size 0.3s;
-                &:hover{
-                    font-weight: bold;
-                    font-size: 10.5px;
-                }
-        }
-    }
-    .imgnota1{
-        height: 25.4rem;
-        width: 55rem;
+        flex-direction: row;
+        width: 100%;
         border-radius: 10px;
-        margin: 2.4rem;
-    }
-}
-
-
-
-
-/* Miniaturas otras notas */
-
-.miniaturas{
-    display: flex;
-    margin-bottom: 8rem;
-    justify-content: space-between;
-    .miniaturabox{
-        width: 33.5rem;
-        height: 43rem;
-        transition: box-shadow 0.2s, background-color 0.2s;
-        .imgminiaturas2{   
-            width:33.5rem;
-            height: 20.4rem;
-            background-image: url(../multimedia/arqueo1.jpg);
-            background-position: center;
-            background-repeat:no-repeat;
-            background-size: cover;
-            border-radius: 0.8rem;
-            transition: border-radius 0.2s;
-        }
-        .imgminiaturas3{   
-            width:33.5rem;
-            height: 20.4rem;
-            background-image: url(../multimedia/espantapajaros.webp);
-            background-position: center;
-            background-repeat:no-repeat;
-            background-size:cover;
-            border-radius: 0.8rem;
-            transition: border-radius 0.2s;
-        }
-        .imgminiaturas4{   
-            width:33.5rem;
-            height: 20.4rem;
-            background-image: url(../multimedia/inuit.jpg);
-            background-position: center;
-            background-repeat:no-repeat;
-            background-size: cover;
-            border-radius: 0.8rem;
-            transition: border-radius 0.2s;
-        }
-        .imgminiaturas5{   
-            width:33.5rem;
-            height: 20.4rem;
-            background-image: url(../multimedia/jose.jpg);
-            background-position: center;
-            background-repeat:no-repeat;
-            background-size: cover;
-            border-radius: 0.8rem;
-            transition: border-radius 0.2s;
-        }
-        .imgminiaturas6{   
-            width:33.5rem;
-            height: 20.4rem;
-            background-image: url(../multimedia/mtdibujo.jpeg);
-            background-position: center;
-            background-repeat:no-repeat;
-            background-size: cover;
-            border-radius: 0.8rem;
-            transition: border-radius 0.2s;
-        }
-        .imgminiaturas7{   
-            width:33.5rem;
-            height: 20.4rem;
-            background-image: url(../multimedia/ceramistas.jpg);
-            background-position: center;
-            background-repeat:no-repeat;
-            background-size: cover;
-            border-radius: 0.8rem;
-            transition: border-radius 0.2s;
-        }
-        .miniaturatext{
-            display:flex;
+        margin-bottom: 8rem;
+        background-color: #c0b19d;
+        .ultimanota{
+            display: flex;
             flex-direction: column;
-            justify-content: space-between;
-            height: 20rem;
-            margin: 1rem 1rem 0rem 1rem;
-            padding: 1rem 0.5rem 0rem 0.5rem;
-            .miniaturadesc{
-                height: 14.5rem;
-                overflow: hidden;
-                .titulomini{
-                    font-size: medium;
-                }
-                .autormini{
-                    padding: 0.2rem 0rem;
-                    font-weight: 100;
-                    font-size: 1.4rem;
-                }
-                p{
-                    overflow: hidden;
-                    display: -webkit-box;
-                    -webkit-box-orient: vertical;
-                    -webkit-line-clamp: 3; 
-                }
+            margin: 2.4rem;
+            justify-content:space-between;
+            .autor1{
+                display: inline-block;
+                padding-bottom: 1.2rem;
             }
-            .linkminiatura{
+            p{
+                overflow: hidden;
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 4; 
+            }
+            .linkultimanota{
                 display: flex;
                 justify-content: end;
                 color: #55694a;
+                margin-bottom: 3rem;
+                transition: font-size 0.3s;
+                    &:hover{
+                        font-weight: bold;
+                        font-size: 10.5px;
+                    }
             }
         }
-        &:hover{
-            width: 33.5rem;
-            height: 43rem;
-            background-color: #beaf9c;
-            border-radius: 1rem;
-            box-shadow: 0px 0px 15px rgb(135, 134, 134);
-            .imgminiaturas2{
-                border-radius: 0.8rem 0.8rem 0rem 0rem;
-            }
-            .imgminiaturas3{
-                border-radius: 0.8rem 0.8rem 0rem 0rem;
-            }
-            .imgminiaturas4{
-                border-radius: 0.8rem 0.8rem 0rem 0rem;
-            }
-            .imgminiaturas5{
-                border-radius: 0.8rem 0.8rem 0rem 0rem;
-            }
-            .imgminiaturas6{
-                border-radius: 0.8rem 0.8rem 0rem 0rem;
-            }
-            .imgminiaturas7{
-                border-radius: 0.8rem 0.8rem 0rem 0rem;
-            }
-          }
+        .imgnota1{
+            height: 25.4rem;
+            width: 55rem;
+            border-radius: 10px;
+            margin: 2.4rem;
+        }
     }
-}
-  
-.paginas{
-    display: flex;
-    justify-content: center;
-    font-size: medium;
-    .paginasinf{
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        flex-direction: row;
-        background-color: #55694a;
-        width: 20rem;
-        height: 3rem;
-        border-radius: 1rem;
-        .numpagina{
-            width: 2rem;
-            display: flex;
-            justify-content: center;
+
+    /* Miniaturas otras notas */
+
+    .miniaturas{
+        height: 90rem;
+        display: grid;
+        margin-bottom: 6rem;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 48% 48%;
+        row-gap: 2%;
+        grid-area: 
+        "auto";
+        .miniaturaboxizq1{
+            width: 33.5rem;
+            height: 42rem;
+            transition: box-shadow 0.2s, background-color 0.2s;
+            .imgminiaturas2{   
+                @include imgminiaturas;
+                background-image: url(../multimedia/arqueo1.jpg);
+            }
+            .miniaturatext{
+                @include miniaturatext;
+            }
             &:hover{
+                @include hoverminiaturabox;
+            }
+        }
+        .miniaturaboxcenter1{
+            width: 33.5rem;
+            height: 42rem;
+            transition: box-shadow 0.2s, background-color 0.2s;
+            justify-self: center;
+            .imgminiaturas3{   
+                @include imgminiaturas;
+                background-image: url(../multimedia/espantapajaros.webp);
+            }
+            .miniaturatext{
+                @include miniaturatext;
+            }
+            &:hover{
+                @include hoverminiaturabox;
+            }
+        }
+        .miniaturaboxder1{
+            width: 33.5rem;
+            height: 42rem;
+            transition: box-shadow 0.2s, background-color 0.2s;
+            justify-self: flex-end;
+            .imgminiaturas4{   
+                @include imgminiaturas;
+                background-image: url(../multimedia/inuit.jpg);
+            }
+            .miniaturatext{
+                @include miniaturatext;
+            }
+            &:hover{
+                @include hoverminiaturabox;
+            }
+        }
+        .miniaturaboxizq2{
+            width: 33.5rem;
+            height: 42rem;
+            transition: box-shadow 0.2s, background-color 0.2s;
+            .imgminiaturas5{   
+                @include imgminiaturas;
+                background-image: url(../multimedia/jose.jpg);
+            }
+            .miniaturatext{
+                @include miniaturatext;
+            }
+            &:hover{
+                @include hoverminiaturabox;
+            }
+        }
+        .miniaturaboxcenter2{
+            width: 33.5rem;
+            height: 42rem;
+            transition: box-shadow 0.2s, background-color 0.2s;
+            justify-self: center;
+            .imgminiaturas6{   
+                @include imgminiaturas;
+                background-image: url(../multimedia/mtdibujo.jpeg);
+            }
+            .miniaturatext{
+                @include miniaturatext;
+            }
+            &:hover{
+                @include hoverminiaturabox;
+            }
+        }
+        .miniaturaboxder2{
+            width: 33.5rem;
+            height: 42rem;
+            transition: box-shadow 0.2s, background-color 0.2s;
+            justify-self: flex-end;
+            .imgminiaturas7{   
+                @include imgminiaturas;
+                background-image: url(../multimedia/ceramistas.jpg);
+            }
+            .miniaturatext{
+                @include miniaturatext;
+            }
+            &:hover{
+                @include hoverminiaturabox;
+            }
+        }
+    }
+    
+    .paginas{
+        display: flex;
+        justify-content: center;
+        font-size: medium;
+        .paginasinf{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-direction: row;
+            background-color: #55694a;
+            width: 20rem;
+            height: 3rem;
+            border-radius: 1rem;
+            .numpagina{
                 width: 2rem;
                 display: flex;
                 justify-content: center;
-                background-color:#738467;
-                border-radius: 1rem;
+                &:hover{
+                    width: 2rem;
+                    display: flex;
+                    justify-content: center;
+                    background-color:#738467;
+                    border-radius: 1rem;
+                }
             }
-        }
-        #puntitos{
-            color: #cdbdaa;
+            #puntitos{
+                color: #cdbdaa;
+            }
         }
     }
 }
 
+/* 1024px -1260px */
 
+@media screen and (min-width: 1024px) and (max-width: 1260px){
+    .mainarchivo{
+        padding-left: 10rem;
+        padding-right: 10rem;
+        .miniaturas{
+            display: grid;
+            height: auto;
+            margin-bottom: 6rem;
+            padding-left: 3.6rem;
+            padding-right: 3.6rem;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: 32% 32%  32%;
+            row-gap: 2%;
+            grid-area: 
+            "auto";
+            .miniaturaboxizq1{
+                justify-self: flex-start;
+                margin-bottom: 3rem;
+            }
+            .miniaturaboxcenter1{
+                justify-self: flex-end;
+                margin-bottom: 3rem;
+            }
+            .miniaturaboxder1{
+                justify-self: flex-start;
+                margin-bottom: 3rem;
+            }
+            .miniaturaboxizq2{
+                justify-self: flex-end;
+                margin-bottom: 3rem;
+            }
+            .miniaturaboxcenter2{
+                justify-self: flex-start;
+                margin-bottom: 3rem;
+            }
+            .miniaturaboxder2{
+                justify-self: flex-end;
+                margin-bottom: 3rem;
+            }
+        }
+    }
+}
+
+/* Tablet */
+
+@media screen and (min-width: 900px) and (max-width: 1023px){
+    .mainarchivo{
+        padding-left: 6rem;
+        padding-right: 6rem;
+        .miniaturas{
+            display: grid;
+            height: auto;
+            margin-bottom: 6rem;
+            padding-left: 3rem;
+            padding-right: 3rem;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: 32% 32%  32%;
+            row-gap: 2%;
+            grid-area: 
+            "auto";
+            .miniaturaboxizq1{
+                justify-self: flex-start;
+                margin-bottom: 3rem;
+            }
+            .miniaturaboxcenter1{
+                justify-self: flex-end;
+                margin-bottom: 3rem;
+            }
+            .miniaturaboxder1{
+                justify-self: flex-start;
+                margin-bottom: 3rem;
+            }
+            .miniaturaboxizq2{
+                justify-self: flex-end;
+                margin-bottom: 3rem;
+            }
+            .miniaturaboxcenter2{
+                justify-self: flex-start;
+                margin-bottom: 3rem;
+            }
+            .miniaturaboxder2{
+                justify-self: flex-end;
+                margin-bottom: 3rem;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 899px){
+    .mainarchivo{
+        display: flex;
+        flex-direction: column;
+        padding-top: 18rem;
+        padding-left: 6rem;
+        padding-right: 6rem;
+        height: auto;
+        .notaprincipal{
+            display: flex;
+            flex-direction: column-reverse;
+            width: 100%;
+            margin-bottom: 6rem;
+            .ultimanota{
+                display: flex;
+                flex-direction: column;
+                margin: 2.4rem;
+                justify-content:space-between;
+                .autor1{
+                    display: inline-block;
+                    padding-bottom: 1.2rem;
+                }
+                .linkultimanota{
+                    margin-top: 4rem;
+                    margin-bottom: 0rem;
+                }
+            }
+            .imgnota1{
+                height: 40rem;
+                width: auto;
+                border-radius: 10px;
+                margin: 2.4rem;
+            }
+        }
+        .miniaturas{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            margin-bottom: 4rem;
+            height: fit-content;
+            .miniaturaboxizq1{
+                width: 100%;
+                height: auto;
+                margin-bottom: 6rem;
+                background-color: #c0b19d;
+                padding: 2.4rem;
+                border-radius: 1rem;
+                .imgminiaturas2{
+                    width: 100%;
+                    height: 40rem;
+                    margin-bottom: 4.8rem;
+                }
+                .miniaturatext{
+                    height: auto;
+                    .miniaturadesc{
+                        height: auto;
+                        .titulomini{
+                            font-weight: bold;
+                            font-size: xx-large;
+                            margin-bottom: 0.5rem;
+                        }
+                        .autormini{
+                            font-weight: bold;
+                            font-size: medium;
+                            margin-bottom: 1.7rem;
+                        }
+                        p{
+                            overflow: hidden;
+                            display: -webkit-box;
+                            -webkit-box-orient: vertical;
+                            -webkit-line-clamp: 4; 
+                        }
+                    }
+                    .linkminiatura{
+                        margin-top: 4rem;
+                    }
+                }
+            }
+            .miniaturaboxcenter1{
+                width: 100%;
+                height: auto;
+                margin-bottom: 6rem;
+                background-color: #c0b19d;
+                padding: 2.4rem;
+                border-radius: 1rem;
+                .imgminiaturas3{
+                    width: 100%;
+                    height: 40rem;
+                    margin-bottom: 4.8rem;
+                }
+                .miniaturatext{
+                    height: auto;
+                    .miniaturadesc{
+                        height: auto;
+                        .titulomini{
+                            font-weight: bold;
+                            font-size: xx-large;
+                            margin-bottom: 0.5rem;
+                        }
+                        .autormini{
+                            font-weight: bold;
+                            font-size: medium;
+                            margin-bottom: 1.7rem;
+                        }
+                        p{
+                            overflow: hidden;
+                            display: -webkit-box;
+                            -webkit-box-orient: vertical;
+                            -webkit-line-clamp: 4; 
+                        }
+                    }
+                    .linkminiatura{
+                        margin-top: 4rem;
+                    }
+                }
+            }
+            .miniaturaboxder1{
+                width: 100%;
+                height: auto;
+                margin-bottom: 6rem;
+                background-color: #c0b19d;
+                padding: 2.4rem;
+                border-radius: 1rem;
+                .imgminiaturas4{
+                    width: 100%;
+                    height: 40rem;
+                    margin-bottom: 4.8rem;
+                }
+                .miniaturatext{
+                    height: auto;
+                    .miniaturadesc{
+                        height: auto;
+                        .titulomini{
+                            font-weight: bold;
+                            font-size: xx-large;
+                            margin-bottom: 0.5rem;
+                        }
+                        .autormini{
+                            font-weight: bold;
+                            font-size: medium;
+                            margin-bottom: 1.7rem;
+                        }
+                        p{
+                            overflow: hidden;
+                            display: -webkit-box;
+                            -webkit-box-orient: vertical;
+                            -webkit-line-clamp: 4; 
+                        }
+                    }
+                    .linkminiatura{
+                        margin-top: 4rem;
+                    }
+                }
+            }
+            .miniaturaboxizq2{
+                width: 100%;
+                height: auto;
+                margin-bottom: 6rem;
+                background-color: #c0b19d;
+                padding: 2.4rem;
+                border-radius: 1rem;
+                .imgminiaturas5{
+                    width: 100%;
+                    height: 40rem;
+                    margin-bottom: 4.8rem;
+                }
+                .miniaturatext{
+                    height: auto;
+                    .miniaturadesc{
+                        height: auto;
+                        .titulomini{
+                            font-weight: bold;
+                            font-size: xx-large;
+                            margin-bottom: 0.5rem;
+                        }
+                        .autormini{
+                            font-weight: bold;
+                            font-size: medium;
+                            margin-bottom: 1.7rem;
+                        }
+                        p{
+                            overflow: hidden;
+                            display: -webkit-box;
+                            -webkit-box-orient: vertical;
+                            -webkit-line-clamp: 4; 
+                        }
+                    }
+                    .linkminiatura{
+                        margin-top: 4rem;
+                    }
+                }
+            }
+            .miniaturaboxcenter2{
+                width: 100%;
+                height: auto;
+                margin-bottom: 6rem;
+                background-color: #c0b19d;
+                padding: 2.4rem;
+                border-radius: 1rem;
+                .imgminiaturas6{
+                    width: 100%;
+                    height: 40rem;
+                    margin-bottom: 4.8rem;
+                }
+                .miniaturatext{
+                    height: auto;
+                    .miniaturadesc{
+                        height: auto;
+                        .titulomini{
+                            font-weight: bold;
+                            font-size: xx-large;
+                            margin-bottom: 0.5rem;
+                        }
+                        .autormini{
+                            font-weight: bold;
+                            font-size: medium;
+                            margin-bottom: 1.7rem;
+                        }
+                        p{
+                            overflow: hidden;
+                            display: -webkit-box;
+                            -webkit-box-orient: vertical;
+                            -webkit-line-clamp: 4; 
+                        }
+                    }
+                    .linkminiatura{
+                        margin-top: 4rem;
+                    }
+                }
+            }
+            .miniaturaboxder2{
+                width: 100%;
+                height: auto;
+                margin-bottom: 6rem;
+                background-color: #c0b19d;
+                padding: 2.4rem;
+                border-radius: 1rem;
+                .imgminiaturas7{
+                    width: 100%;
+                    height: 40rem;
+                    margin-bottom: 4.8rem;
+                }
+                .miniaturatext{
+                    height: auto;
+                    .miniaturadesc{
+                        height: auto;
+                        .titulomini{
+                            font-weight: bold;
+                            font-size: xx-large;
+                            margin-bottom: 0.5rem;
+                        }
+                        .autormini{
+                            font-weight: bold;
+                            font-size: medium;
+                            margin-bottom: 1.7rem;
+                        }
+                        p{
+                            overflow: hidden;
+                            display: -webkit-box;
+                            -webkit-box-orient: vertical;
+                            -webkit-line-clamp: 4; 
+                        }
+                    }
+                    .linkminiatura{
+                        margin-top: 4rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Mobile */
+
+@media screen and (min-width: 425px) and (max-width: 599px){
+    .mainarchivo{
+        padding-top: 15rem;
+        padding-left: 3rem;
+        padding-right: 3rem;
+        .notaprincipal{
+            display: flex;
+            flex-direction: column-reverse;
+            width: 100%;
+            margin-bottom: 6rem;
+            .ultimanota{
+                display: flex;
+                flex-direction: column;
+                margin: 2.4rem;
+                justify-content:space-between;
+                .autor1{
+                    display: inline-block;
+                    padding-bottom: 1.2rem;
+                }
+                .linkultimanota{
+                    margin-top: 4rem;
+                    margin-bottom: 0rem;
+                }
+            }
+            .imgnota1{
+                height: 40rem;
+                width: auto;
+                border-radius: 10px;
+                margin: 2.4rem;
+            }
+        }
+        .miniaturas{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            margin-bottom: 4rem;
+            height: fit-content;
+            .miniaturaboxizq1{
+                width: 100%;
+                height: auto;
+                margin-bottom: 6rem;
+                background-color: #c0b19d;
+                padding: 2.4rem;
+                border-radius: 1rem;
+                .imgminiaturas2{
+                    width: 100%;
+                    height: 40rem;
+                    margin-bottom: 4.8rem;
+                }
+                .miniaturatext{
+                    height: auto;
+                    .miniaturadesc{
+                        height: auto;
+                        .titulomini{
+                            font-weight: bold;
+                            font-size: xx-large;
+                            margin-bottom: 0.5rem;
+                        }
+                        .autormini{
+                            font-weight: bold;
+                            font-size: medium;
+                            margin-bottom: 1.7rem;
+                        }
+                        p{
+                            overflow: hidden;
+                            display: -webkit-box;
+                            -webkit-box-orient: vertical;
+                            -webkit-line-clamp: 4; 
+                        }
+                    }
+                    .linkminiatura{
+                        margin-top: 4rem;
+                    }
+                }
+            }
+            .miniaturaboxcenter1{
+                width: 100%;
+                height: auto;
+                margin-bottom: 6rem;
+                background-color: #c0b19d;
+                padding: 2.4rem;
+                border-radius: 1rem;
+                .imgminiaturas3{
+                    width: 100%;
+                    height: 40rem;
+                    margin-bottom: 4.8rem;
+                }
+                .miniaturatext{
+                    height: auto;
+                    .miniaturadesc{
+                        height: auto;
+                        .titulomini{
+                            font-weight: bold;
+                            font-size: xx-large;
+                            margin-bottom: 0.5rem;
+                        }
+                        .autormini{
+                            font-weight: bold;
+                            font-size: medium;
+                            margin-bottom: 1.7rem;
+                        }
+                        p{
+                            overflow: hidden;
+                            display: -webkit-box;
+                            -webkit-box-orient: vertical;
+                            -webkit-line-clamp: 4; 
+                        }
+                    }
+                    .linkminiatura{
+                        margin-top: 4rem;
+                    }
+                }
+            }
+            .miniaturaboxder1{
+                width: 100%;
+                height: auto;
+                margin-bottom: 6rem;
+                background-color: #c0b19d;
+                padding: 2.4rem;
+                border-radius: 1rem;
+                .imgminiaturas4{
+                    width: 100%;
+                    height: 40rem;
+                    margin-bottom: 4.8rem;
+                }
+                .miniaturatext{
+                    height: auto;
+                    .miniaturadesc{
+                        height: auto;
+                        .titulomini{
+                            font-weight: bold;
+                            font-size: xx-large;
+                            margin-bottom: 0.5rem;
+                        }
+                        .autormini{
+                            font-weight: bold;
+                            font-size: medium;
+                            margin-bottom: 1.7rem;
+                        }
+                        p{
+                            overflow: hidden;
+                            display: -webkit-box;
+                            -webkit-box-orient: vertical;
+                            -webkit-line-clamp: 4; 
+                        }
+                    }
+                    .linkminiatura{
+                        margin-top: 4rem;
+                    }
+                }
+            }
+            .miniaturaboxizq2{
+                width: 100%;
+                height: auto;
+                margin-bottom: 6rem;
+                background-color: #c0b19d;
+                padding: 2.4rem;
+                border-radius: 1rem;
+                .imgminiaturas5{
+                    width: 100%;
+                    height: 40rem;
+                    margin-bottom: 4.8rem;
+                }
+                .miniaturatext{
+                    height: auto;
+                    .miniaturadesc{
+                        height: auto;
+                        .titulomini{
+                            font-weight: bold;
+                            font-size: xx-large;
+                            margin-bottom: 0.5rem;
+                        }
+                        .autormini{
+                            font-weight: bold;
+                            font-size: medium;
+                            margin-bottom: 1.7rem;
+                        }
+                        p{
+                            overflow: hidden;
+                            display: -webkit-box;
+                            -webkit-box-orient: vertical;
+                            -webkit-line-clamp: 4; 
+                        }
+                    }
+                    .linkminiatura{
+                        margin-top: 4rem;
+                    }
+                }
+            }
+            .miniaturaboxcenter2{
+                width: 100%;
+                height: auto;
+                margin-bottom: 6rem;
+                background-color: #c0b19d;
+                padding: 2.4rem;
+                border-radius: 1rem;
+                .imgminiaturas6{
+                    width: 100%;
+                    height: 40rem;
+                    margin-bottom: 4.8rem;
+                }
+                .miniaturatext{
+                    height: auto;
+                    .miniaturadesc{
+                        height: auto;
+                        .titulomini{
+                            font-weight: bold;
+                            font-size: xx-large;
+                            margin-bottom: 0.5rem;
+                        }
+                        .autormini{
+                            font-weight: bold;
+                            font-size: medium;
+                            margin-bottom: 1.7rem;
+                        }
+                        p{
+                            overflow: hidden;
+                            display: -webkit-box;
+                            -webkit-box-orient: vertical;
+                            -webkit-line-clamp: 4; 
+                        }
+                    }
+                    .linkminiatura{
+                        margin-top: 4rem;
+                    }
+                }
+            }
+            .miniaturaboxder2{
+                width: 100%;
+                height: auto;
+                margin-bottom: 6rem;
+                background-color: #c0b19d;
+                padding: 2.4rem;
+                border-radius: 1rem;
+                .imgminiaturas7{
+                    width: 100%;
+                    height: 40rem;
+                    margin-bottom: 4.8rem;
+                }
+                .miniaturatext{
+                    height: auto;
+                    .miniaturadesc{
+                        height: auto;
+                        .titulomini{
+                            font-weight: bold;
+                            font-size: xx-large;
+                            margin-bottom: 0.5rem;
+                        }
+                        .autormini{
+                            font-weight: bold;
+                            font-size: medium;
+                            margin-bottom: 1.7rem;
+                        }
+                        p{
+                            overflow: hidden;
+                            display: -webkit-box;
+                            -webkit-box-orient: vertical;
+                            -webkit-line-clamp: 4; 
+                        }
+                    }
+                    .linkminiatura{
+                        margin-top: 4rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width:320px) and (max-width:424px){
+    .mainarchivo{
+        padding-top: 15rem;
+        padding-left: 1.6rem;
+        padding-right: 1.6rem;
+        .notaprincipal{
+            display: flex;
+            flex-direction: column-reverse;
+            width: 100%;
+            margin-bottom: 6rem;
+            .ultimanota{
+                display: flex;
+                flex-direction: column;
+                margin: 2.4rem;
+                justify-content:space-between;
+                h2{
+                    font-size: 30px;
+                }
+                .autor1{
+                    display: inline-block;
+                    padding-bottom: 1.2rem;
+                }
+                .linkultimanota{
+                    margin-top: 4rem;
+                    margin-bottom: 0rem;
+                }
+            }
+            .imgnota1{
+                height: 25rem;
+                width: auto;
+                border-radius: 10px;
+                margin: 2.4rem 2.4rem 0.4rem 2.4rem;
+            }
+        }
+        .miniaturas{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            margin-bottom: 4rem;
+            height: fit-content;
+            .miniaturaboxizq1{
+                width: 100%;
+                height: auto;
+                margin-bottom: 6rem;
+                background-color: #c0b19d;
+                padding: 2.4rem;
+                border-radius: 1rem;
+                .imgminiaturas2{
+                    width: 100%;
+                    height: 25rem;
+                    margin-bottom: 2.8rem;
+                }
+                .miniaturatext{
+                    height: auto;
+                    .miniaturadesc{
+                        height: auto;
+                        .titulomini{
+                            font-weight: bold;
+                            font-size: 30px;
+                            margin-bottom: 0.5rem;
+                        }
+                        .autormini{
+                            font-weight: bold;
+                            font-size: medium;
+                            margin-bottom: 1.7rem;
+                        }
+                        p{
+                            overflow: hidden;
+                            display: -webkit-box;
+                            -webkit-box-orient: vertical;
+                            -webkit-line-clamp: 4; 
+                        }
+                    }
+                    .linkminiatura{
+                        margin-top: 4rem;
+                    }
+                }
+            }
+            .miniaturaboxcenter1{
+                width: 100%;
+                height: auto;
+                margin-bottom: 6rem;
+                background-color: #c0b19d;
+                padding: 2.4rem;
+                border-radius: 1rem;
+                .imgminiaturas3{
+                    width: 100%;
+                    height: 25rem;
+                    margin-bottom: 2.8rem;
+                }
+                .miniaturatext{
+                    height: auto;
+                    .miniaturadesc{
+                        height: auto;
+                        .titulomini{
+                            font-weight: bold;
+                            font-size: 30px;
+                            margin-bottom: 0.5rem;
+                        }
+                        .autormini{
+                            font-weight: bold;
+                            font-size: medium;
+                            margin-bottom: 1.7rem;
+                        }
+                        p{
+                            overflow: hidden;
+                            display: -webkit-box;
+                            -webkit-box-orient: vertical;
+                            -webkit-line-clamp: 4; 
+                        }
+                    }
+                    .linkminiatura{
+                        margin-top: 4rem;
+                    }
+                }
+            }
+            .miniaturaboxder1{
+                width: 100%;
+                height: auto;
+                margin-bottom: 6rem;
+                background-color: #c0b19d;
+                padding: 2.4rem;
+                border-radius: 1rem;
+                .imgminiaturas4{
+                    width: 100%;
+                    height: 25rem;
+                    margin-bottom: 2.8rem;
+                }
+                .miniaturatext{
+                    height: auto;
+                    .miniaturadesc{
+                        height: auto;
+                        .titulomini{
+                            font-weight: bold;
+                            font-size: 30px;
+                            margin-bottom: 0.5rem;
+                        }
+                        .autormini{
+                            font-weight: bold;
+                            font-size: medium;
+                            margin-bottom: 1.7rem;
+                        }
+                        p{
+                            overflow: hidden;
+                            display: -webkit-box;
+                            -webkit-box-orient: vertical;
+                            -webkit-line-clamp: 4; 
+                        }
+                    }
+                    .linkminiatura{
+                        margin-top: 4rem;
+                    }
+                }
+            }
+            .miniaturaboxizq2{
+                width: 100%;
+                height: auto;
+                margin-bottom: 6rem;
+                background-color: #c0b19d;
+                padding: 2.4rem;
+                border-radius: 1rem;
+                .imgminiaturas5{
+                    width: 100%;
+                    height: 25rem;
+                    margin-bottom: 2.8rem;
+                }
+                .miniaturatext{
+                    height: auto;
+                    .miniaturadesc{
+                        height: auto;
+                        .titulomini{
+                            font-weight: bold;
+                            font-size: 30px;
+                            margin-bottom: 0.5rem;
+                        }
+                        .autormini{
+                            font-weight: bold;
+                            font-size: medium;
+                            margin-bottom: 1.7rem;
+                        }
+                        p{
+                            overflow: hidden;
+                            display: -webkit-box;
+                            -webkit-box-orient: vertical;
+                            -webkit-line-clamp: 4; 
+                        }
+                    }
+                    .linkminiatura{
+                        margin-top: 4rem;
+                    }
+                }
+            }
+            .miniaturaboxcenter2{
+                width: 100%;
+                height: auto;
+                margin-bottom: 6rem;
+                background-color: #c0b19d;
+                padding: 2.4rem;
+                border-radius: 1rem;
+                .imgminiaturas6{
+                    width: 100%;
+                    height: 25rem;
+                    margin-bottom: 2.8rem;
+                }
+                .miniaturatext{
+                    height: auto;
+                    .miniaturadesc{
+                        height: auto;
+                        .titulomini{
+                            font-weight: bold;
+                            font-size: 30px;
+                            margin-bottom: 0.5rem;
+                        }
+                        .autormini{
+                            font-weight: bold;
+                            font-size: medium;
+                            margin-bottom: 1.7rem;
+                        }
+                        p{
+                            overflow: hidden;
+                            display: -webkit-box;
+                            -webkit-box-orient: vertical;
+                            -webkit-line-clamp: 4; 
+                        }
+                    }
+                    .linkminiatura{
+                        margin-top: 4rem;
+                    }
+                }
+            }
+            .miniaturaboxder2{
+                width: 100%;
+                height: auto;
+                margin-bottom: 6rem;
+                background-color: #c0b19d;
+                padding: 2.4rem;
+                border-radius: 1rem;
+                .imgminiaturas7{
+                    width: 100%;
+                    height: 25rem;
+                    margin-bottom: 2.8rem;
+                }
+                .miniaturatext{
+                    height: auto;
+                    .miniaturadesc{
+                        height: auto;
+                        .titulomini{
+                            font-weight: bold;
+                            font-size: 30px;
+                            margin-bottom: 0.5rem;
+                        }
+                        .autormini{
+                            font-weight: bold;
+                            font-size: medium;
+                            margin-bottom: 1.7rem;
+                        }
+                        p{
+                            overflow: hidden;
+                            display: -webkit-box;
+                            -webkit-box-orient: vertical;
+                            -webkit-line-clamp: 4; 
+                        }
+                    }
+                    .linkminiatura{
+                        margin-top: 4rem;
+                    }
+                }
+            }
+        }
+    }
+}

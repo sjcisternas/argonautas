@@ -1,4 +1,4 @@
-@charset "UTF-8";
+/* Cards del archivo */
 /* CONFIG PARA TODAS LAS PAGINAS */
 * {
   margin: 0;
@@ -107,7 +107,7 @@ header .headergral nav .mainul .mainli .selected::after {
 /* Main */
 main {
   background-color: #cdbdaa;
-  padding: 12rem 6rem 6rem 12rem;
+  padding: 12rem 12rem 6rem 12rem;
 }
 
 /* Footer */
@@ -213,7 +213,7 @@ footer .imgfooter .imgf2 {
   }
 }
 /* Mobile S-M-L */
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@media screen and (min-width: 375px) and (max-width: 767px) {
   /* Header */
   .headergral {
     padding: 0rem;
@@ -236,6 +236,54 @@ footer .imgfooter .imgf2 {
     border-style: none;
   }
   .headergral .navbar .collapse .mainul {
+    margin-bottom: 1rem;
+    padding: 0rem;
+  }
+  /* Main */
+  main {
+    padding: 2.4rem;
+  }
+  /* Footer */
+  footer {
+    padding: 0rem 3rem;
+  }
+  footer .pfooter {
+    width: fit-content;
+    font-size: 10px;
+  }
+  footer .imgfooter {
+    width: fit-content;
+  }
+}
+/* 320px -374px */
+@media screen and (min-width: 320px) and (max-width: 374px) {
+  /* Header */
+  header .headergral {
+    padding: 0rem;
+    display: flex;
+    flex-direction: column;
+  }
+  header .headergral .argonautas1 {
+    width: fit-content;
+    grid-area: logo;
+  }
+  header .headergral .argonautas1 .logo {
+    margin-bottom: 0rem;
+  }
+  header .headergral .argonautas1 h1 {
+    display: none;
+  }
+  header .headergral .navbar {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+  }
+  header .headergral .navbar .navbar-toggler {
+    border-style: none;
+  }
+  header .headergral .navbar .collapse .mainul {
+    display: flex;
+    flex-direction: column;
     margin-bottom: 1rem;
     padding: 0rem;
   }
@@ -1943,8 +1991,10 @@ footer .imgfooter .imgf2 {
     margin: 0rem 2rem 1.6rem 2rem;
   }
 }
-/* Última nota */
-.notaprincipal {
+.mainarchivo {
+  /* Miniaturas otras notas */
+}
+.mainarchivo .notaprincipal {
   display: flex;
   flex-direction: row;
   width: 100%;
@@ -1952,174 +2002,484 @@ footer .imgfooter .imgf2 {
   margin-bottom: 8rem;
   background-color: #c0b19d;
 }
-.notaprincipal .ultimanota {
+.mainarchivo .notaprincipal .ultimanota {
   display: flex;
   flex-direction: column;
   margin: 2.4rem;
   justify-content: space-between;
 }
-.notaprincipal .ultimanota .autor1 {
+.mainarchivo .notaprincipal .ultimanota .autor1 {
   display: inline-block;
   padding-bottom: 1.2rem;
 }
-.notaprincipal .ultimanota p {
+.mainarchivo .notaprincipal .ultimanota p {
   overflow: hidden;
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 4;
 }
-.notaprincipal .ultimanota .linkultimanota {
+.mainarchivo .notaprincipal .ultimanota .linkultimanota {
   display: flex;
   justify-content: end;
   color: #55694a;
   margin-bottom: 3rem;
   transition: font-size 0.3s;
 }
-.notaprincipal .ultimanota .linkultimanota:hover {
+.mainarchivo .notaprincipal .ultimanota .linkultimanota:hover {
   font-weight: bold;
   font-size: 10.5px;
 }
-.notaprincipal .imgnota1 {
+.mainarchivo .notaprincipal .imgnota1 {
   height: 25.4rem;
   width: 55rem;
   border-radius: 10px;
   margin: 2.4rem;
 }
-
-/* Miniaturas otras notas */
-.miniaturas {
-  display: flex;
-  margin-bottom: 8rem;
-  justify-content: space-between;
+.mainarchivo .miniaturas {
+  height: 90rem;
+  display: grid;
+  margin-bottom: 6rem;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 48% 48%;
+  row-gap: 2%;
+  grid-area: "auto";
 }
-.miniaturas .miniaturabox {
+.mainarchivo .miniaturas .miniaturaboxizq1 {
   width: 33.5rem;
-  height: 43rem;
+  height: 42rem;
   transition: box-shadow 0.2s, background-color 0.2s;
 }
-.miniaturas .miniaturabox .imgminiaturas2 {
+.mainarchivo .miniaturas .miniaturaboxizq1 .imgminiaturas2 {
   width: 33.5rem;
-  height: 20.4rem;
+  height: 20rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 0.8rem;
+  transition: border-radius 0.2s;
   background-image: url(../multimedia/arqueo1.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-radius: 0.8rem;
-  transition: border-radius 0.2s;
 }
-.miniaturas .miniaturabox .imgminiaturas3 {
-  width: 33.5rem;
-  height: 20.4rem;
-  background-image: url(../multimedia/espantapajaros.webp);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-radius: 0.8rem;
-  transition: border-radius 0.2s;
-}
-.miniaturas .miniaturabox .imgminiaturas4 {
-  width: 33.5rem;
-  height: 20.4rem;
-  background-image: url(../multimedia/inuit.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-radius: 0.8rem;
-  transition: border-radius 0.2s;
-}
-.miniaturas .miniaturabox .imgminiaturas5 {
-  width: 33.5rem;
-  height: 20.4rem;
-  background-image: url(../multimedia/jose.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-radius: 0.8rem;
-  transition: border-radius 0.2s;
-}
-.miniaturas .miniaturabox .imgminiaturas6 {
-  width: 33.5rem;
-  height: 20.4rem;
-  background-image: url(../multimedia/mtdibujo.jpeg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-radius: 0.8rem;
-  transition: border-radius 0.2s;
-}
-.miniaturas .miniaturabox .imgminiaturas7 {
-  width: 33.5rem;
-  height: 20.4rem;
-  background-image: url(../multimedia/ceramistas.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-radius: 0.8rem;
-  transition: border-radius 0.2s;
-}
-.miniaturas .miniaturabox .miniaturatext {
+.mainarchivo .miniaturas .miniaturaboxizq1 .miniaturatext {
+  height: 20rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 20rem;
   margin: 1rem 1rem 0rem 1rem;
   padding: 1rem 0.5rem 0rem 0.5rem;
 }
-.miniaturas .miniaturabox .miniaturatext .miniaturadesc {
+.mainarchivo .miniaturas .miniaturaboxizq1 .miniaturatext .miniaturadesc {
   height: 14.5rem;
   overflow: hidden;
 }
-.miniaturas .miniaturabox .miniaturatext .miniaturadesc .titulomini {
+.mainarchivo .miniaturas .miniaturaboxizq1 .miniaturatext .miniaturadesc .titulomini {
   font-size: medium;
 }
-.miniaturas .miniaturabox .miniaturatext .miniaturadesc .autormini {
+.mainarchivo .miniaturas .miniaturaboxizq1 .miniaturatext .miniaturadesc .autormini {
   padding: 0.2rem 0rem;
   font-weight: 100;
   font-size: 1.4rem;
 }
-.miniaturas .miniaturabox .miniaturatext .miniaturadesc p {
+.mainarchivo .miniaturas .miniaturaboxizq1 .miniaturatext .miniaturadesc p {
   overflow: hidden;
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 3;
 }
-.miniaturas .miniaturabox .miniaturatext .linkminiatura {
+.mainarchivo .miniaturas .miniaturaboxizq1 .miniaturatext .linkminiatura {
   display: flex;
   justify-content: end;
   color: #55694a;
 }
-.miniaturas .miniaturabox:hover {
+.mainarchivo .miniaturas .miniaturaboxizq1:hover {
   width: 33.5rem;
-  height: 43rem;
+  height: 42rem;
   background-color: #beaf9c;
   border-radius: 1rem;
   box-shadow: 0px 0px 15px rgb(135, 134, 134);
 }
-.miniaturas .miniaturabox:hover .imgminiaturas2 {
+.mainarchivo .miniaturas .miniaturaboxizq1:hover .imgminiaturas2 {
   border-radius: 0.8rem 0.8rem 0rem 0rem;
 }
-.miniaturas .miniaturabox:hover .imgminiaturas3 {
+.mainarchivo .miniaturas .miniaturaboxizq1:hover .imgminiaturas3 {
   border-radius: 0.8rem 0.8rem 0rem 0rem;
 }
-.miniaturas .miniaturabox:hover .imgminiaturas4 {
+.mainarchivo .miniaturas .miniaturaboxizq1:hover .imgminiaturas4 {
   border-radius: 0.8rem 0.8rem 0rem 0rem;
 }
-.miniaturas .miniaturabox:hover .imgminiaturas5 {
+.mainarchivo .miniaturas .miniaturaboxizq1:hover .imgminiaturas5 {
   border-radius: 0.8rem 0.8rem 0rem 0rem;
 }
-.miniaturas .miniaturabox:hover .imgminiaturas6 {
+.mainarchivo .miniaturas .miniaturaboxizq1:hover .imgminiaturas6 {
   border-radius: 0.8rem 0.8rem 0rem 0rem;
 }
-.miniaturas .miniaturabox:hover .imgminiaturas7 {
+.mainarchivo .miniaturas .miniaturaboxizq1:hover .imgminiaturas7 {
   border-radius: 0.8rem 0.8rem 0rem 0rem;
 }
-
-.paginas {
+.mainarchivo .miniaturas .miniaturaboxcenter1 {
+  width: 33.5rem;
+  height: 42rem;
+  transition: box-shadow 0.2s, background-color 0.2s;
+  justify-self: center;
+}
+.mainarchivo .miniaturas .miniaturaboxcenter1 .imgminiaturas3 {
+  width: 33.5rem;
+  height: 20rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 0.8rem;
+  transition: border-radius 0.2s;
+  background-image: url(../multimedia/espantapajaros.webp);
+}
+.mainarchivo .miniaturas .miniaturaboxcenter1 .miniaturatext {
+  height: 20rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 1rem 1rem 0rem 1rem;
+  padding: 1rem 0.5rem 0rem 0.5rem;
+}
+.mainarchivo .miniaturas .miniaturaboxcenter1 .miniaturatext .miniaturadesc {
+  height: 14.5rem;
+  overflow: hidden;
+}
+.mainarchivo .miniaturas .miniaturaboxcenter1 .miniaturatext .miniaturadesc .titulomini {
+  font-size: medium;
+}
+.mainarchivo .miniaturas .miniaturaboxcenter1 .miniaturatext .miniaturadesc .autormini {
+  padding: 0.2rem 0rem;
+  font-weight: 100;
+  font-size: 1.4rem;
+}
+.mainarchivo .miniaturas .miniaturaboxcenter1 .miniaturatext .miniaturadesc p {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
+.mainarchivo .miniaturas .miniaturaboxcenter1 .miniaturatext .linkminiatura {
+  display: flex;
+  justify-content: end;
+  color: #55694a;
+}
+.mainarchivo .miniaturas .miniaturaboxcenter1:hover {
+  width: 33.5rem;
+  height: 42rem;
+  background-color: #beaf9c;
+  border-radius: 1rem;
+  box-shadow: 0px 0px 15px rgb(135, 134, 134);
+}
+.mainarchivo .miniaturas .miniaturaboxcenter1:hover .imgminiaturas2 {
+  border-radius: 0.8rem 0.8rem 0rem 0rem;
+}
+.mainarchivo .miniaturas .miniaturaboxcenter1:hover .imgminiaturas3 {
+  border-radius: 0.8rem 0.8rem 0rem 0rem;
+}
+.mainarchivo .miniaturas .miniaturaboxcenter1:hover .imgminiaturas4 {
+  border-radius: 0.8rem 0.8rem 0rem 0rem;
+}
+.mainarchivo .miniaturas .miniaturaboxcenter1:hover .imgminiaturas5 {
+  border-radius: 0.8rem 0.8rem 0rem 0rem;
+}
+.mainarchivo .miniaturas .miniaturaboxcenter1:hover .imgminiaturas6 {
+  border-radius: 0.8rem 0.8rem 0rem 0rem;
+}
+.mainarchivo .miniaturas .miniaturaboxcenter1:hover .imgminiaturas7 {
+  border-radius: 0.8rem 0.8rem 0rem 0rem;
+}
+.mainarchivo .miniaturas .miniaturaboxder1 {
+  width: 33.5rem;
+  height: 42rem;
+  transition: box-shadow 0.2s, background-color 0.2s;
+  justify-self: flex-end;
+}
+.mainarchivo .miniaturas .miniaturaboxder1 .imgminiaturas4 {
+  width: 33.5rem;
+  height: 20rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 0.8rem;
+  transition: border-radius 0.2s;
+  background-image: url(../multimedia/inuit.jpg);
+}
+.mainarchivo .miniaturas .miniaturaboxder1 .miniaturatext {
+  height: 20rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 1rem 1rem 0rem 1rem;
+  padding: 1rem 0.5rem 0rem 0.5rem;
+}
+.mainarchivo .miniaturas .miniaturaboxder1 .miniaturatext .miniaturadesc {
+  height: 14.5rem;
+  overflow: hidden;
+}
+.mainarchivo .miniaturas .miniaturaboxder1 .miniaturatext .miniaturadesc .titulomini {
+  font-size: medium;
+}
+.mainarchivo .miniaturas .miniaturaboxder1 .miniaturatext .miniaturadesc .autormini {
+  padding: 0.2rem 0rem;
+  font-weight: 100;
+  font-size: 1.4rem;
+}
+.mainarchivo .miniaturas .miniaturaboxder1 .miniaturatext .miniaturadesc p {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
+.mainarchivo .miniaturas .miniaturaboxder1 .miniaturatext .linkminiatura {
+  display: flex;
+  justify-content: end;
+  color: #55694a;
+}
+.mainarchivo .miniaturas .miniaturaboxder1:hover {
+  width: 33.5rem;
+  height: 42rem;
+  background-color: #beaf9c;
+  border-radius: 1rem;
+  box-shadow: 0px 0px 15px rgb(135, 134, 134);
+}
+.mainarchivo .miniaturas .miniaturaboxder1:hover .imgminiaturas2 {
+  border-radius: 0.8rem 0.8rem 0rem 0rem;
+}
+.mainarchivo .miniaturas .miniaturaboxder1:hover .imgminiaturas3 {
+  border-radius: 0.8rem 0.8rem 0rem 0rem;
+}
+.mainarchivo .miniaturas .miniaturaboxder1:hover .imgminiaturas4 {
+  border-radius: 0.8rem 0.8rem 0rem 0rem;
+}
+.mainarchivo .miniaturas .miniaturaboxder1:hover .imgminiaturas5 {
+  border-radius: 0.8rem 0.8rem 0rem 0rem;
+}
+.mainarchivo .miniaturas .miniaturaboxder1:hover .imgminiaturas6 {
+  border-radius: 0.8rem 0.8rem 0rem 0rem;
+}
+.mainarchivo .miniaturas .miniaturaboxder1:hover .imgminiaturas7 {
+  border-radius: 0.8rem 0.8rem 0rem 0rem;
+}
+.mainarchivo .miniaturas .miniaturaboxizq2 {
+  width: 33.5rem;
+  height: 42rem;
+  transition: box-shadow 0.2s, background-color 0.2s;
+}
+.mainarchivo .miniaturas .miniaturaboxizq2 .imgminiaturas5 {
+  width: 33.5rem;
+  height: 20rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 0.8rem;
+  transition: border-radius 0.2s;
+  background-image: url(../multimedia/jose.jpg);
+}
+.mainarchivo .miniaturas .miniaturaboxizq2 .miniaturatext {
+  height: 20rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 1rem 1rem 0rem 1rem;
+  padding: 1rem 0.5rem 0rem 0.5rem;
+}
+.mainarchivo .miniaturas .miniaturaboxizq2 .miniaturatext .miniaturadesc {
+  height: 14.5rem;
+  overflow: hidden;
+}
+.mainarchivo .miniaturas .miniaturaboxizq2 .miniaturatext .miniaturadesc .titulomini {
+  font-size: medium;
+}
+.mainarchivo .miniaturas .miniaturaboxizq2 .miniaturatext .miniaturadesc .autormini {
+  padding: 0.2rem 0rem;
+  font-weight: 100;
+  font-size: 1.4rem;
+}
+.mainarchivo .miniaturas .miniaturaboxizq2 .miniaturatext .miniaturadesc p {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
+.mainarchivo .miniaturas .miniaturaboxizq2 .miniaturatext .linkminiatura {
+  display: flex;
+  justify-content: end;
+  color: #55694a;
+}
+.mainarchivo .miniaturas .miniaturaboxizq2:hover {
+  width: 33.5rem;
+  height: 42rem;
+  background-color: #beaf9c;
+  border-radius: 1rem;
+  box-shadow: 0px 0px 15px rgb(135, 134, 134);
+}
+.mainarchivo .miniaturas .miniaturaboxizq2:hover .imgminiaturas2 {
+  border-radius: 0.8rem 0.8rem 0rem 0rem;
+}
+.mainarchivo .miniaturas .miniaturaboxizq2:hover .imgminiaturas3 {
+  border-radius: 0.8rem 0.8rem 0rem 0rem;
+}
+.mainarchivo .miniaturas .miniaturaboxizq2:hover .imgminiaturas4 {
+  border-radius: 0.8rem 0.8rem 0rem 0rem;
+}
+.mainarchivo .miniaturas .miniaturaboxizq2:hover .imgminiaturas5 {
+  border-radius: 0.8rem 0.8rem 0rem 0rem;
+}
+.mainarchivo .miniaturas .miniaturaboxizq2:hover .imgminiaturas6 {
+  border-radius: 0.8rem 0.8rem 0rem 0rem;
+}
+.mainarchivo .miniaturas .miniaturaboxizq2:hover .imgminiaturas7 {
+  border-radius: 0.8rem 0.8rem 0rem 0rem;
+}
+.mainarchivo .miniaturas .miniaturaboxcenter2 {
+  width: 33.5rem;
+  height: 42rem;
+  transition: box-shadow 0.2s, background-color 0.2s;
+  justify-self: center;
+}
+.mainarchivo .miniaturas .miniaturaboxcenter2 .imgminiaturas6 {
+  width: 33.5rem;
+  height: 20rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 0.8rem;
+  transition: border-radius 0.2s;
+  background-image: url(../multimedia/mtdibujo.jpeg);
+}
+.mainarchivo .miniaturas .miniaturaboxcenter2 .miniaturatext {
+  height: 20rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 1rem 1rem 0rem 1rem;
+  padding: 1rem 0.5rem 0rem 0.5rem;
+}
+.mainarchivo .miniaturas .miniaturaboxcenter2 .miniaturatext .miniaturadesc {
+  height: 14.5rem;
+  overflow: hidden;
+}
+.mainarchivo .miniaturas .miniaturaboxcenter2 .miniaturatext .miniaturadesc .titulomini {
+  font-size: medium;
+}
+.mainarchivo .miniaturas .miniaturaboxcenter2 .miniaturatext .miniaturadesc .autormini {
+  padding: 0.2rem 0rem;
+  font-weight: 100;
+  font-size: 1.4rem;
+}
+.mainarchivo .miniaturas .miniaturaboxcenter2 .miniaturatext .miniaturadesc p {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
+.mainarchivo .miniaturas .miniaturaboxcenter2 .miniaturatext .linkminiatura {
+  display: flex;
+  justify-content: end;
+  color: #55694a;
+}
+.mainarchivo .miniaturas .miniaturaboxcenter2:hover {
+  width: 33.5rem;
+  height: 42rem;
+  background-color: #beaf9c;
+  border-radius: 1rem;
+  box-shadow: 0px 0px 15px rgb(135, 134, 134);
+}
+.mainarchivo .miniaturas .miniaturaboxcenter2:hover .imgminiaturas2 {
+  border-radius: 0.8rem 0.8rem 0rem 0rem;
+}
+.mainarchivo .miniaturas .miniaturaboxcenter2:hover .imgminiaturas3 {
+  border-radius: 0.8rem 0.8rem 0rem 0rem;
+}
+.mainarchivo .miniaturas .miniaturaboxcenter2:hover .imgminiaturas4 {
+  border-radius: 0.8rem 0.8rem 0rem 0rem;
+}
+.mainarchivo .miniaturas .miniaturaboxcenter2:hover .imgminiaturas5 {
+  border-radius: 0.8rem 0.8rem 0rem 0rem;
+}
+.mainarchivo .miniaturas .miniaturaboxcenter2:hover .imgminiaturas6 {
+  border-radius: 0.8rem 0.8rem 0rem 0rem;
+}
+.mainarchivo .miniaturas .miniaturaboxcenter2:hover .imgminiaturas7 {
+  border-radius: 0.8rem 0.8rem 0rem 0rem;
+}
+.mainarchivo .miniaturas .miniaturaboxder2 {
+  width: 33.5rem;
+  height: 42rem;
+  transition: box-shadow 0.2s, background-color 0.2s;
+  justify-self: flex-end;
+}
+.mainarchivo .miniaturas .miniaturaboxder2 .imgminiaturas7 {
+  width: 33.5rem;
+  height: 20rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 0.8rem;
+  transition: border-radius 0.2s;
+  background-image: url(../multimedia/ceramistas.jpg);
+}
+.mainarchivo .miniaturas .miniaturaboxder2 .miniaturatext {
+  height: 20rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 1rem 1rem 0rem 1rem;
+  padding: 1rem 0.5rem 0rem 0.5rem;
+}
+.mainarchivo .miniaturas .miniaturaboxder2 .miniaturatext .miniaturadesc {
+  height: 14.5rem;
+  overflow: hidden;
+}
+.mainarchivo .miniaturas .miniaturaboxder2 .miniaturatext .miniaturadesc .titulomini {
+  font-size: medium;
+}
+.mainarchivo .miniaturas .miniaturaboxder2 .miniaturatext .miniaturadesc .autormini {
+  padding: 0.2rem 0rem;
+  font-weight: 100;
+  font-size: 1.4rem;
+}
+.mainarchivo .miniaturas .miniaturaboxder2 .miniaturatext .miniaturadesc p {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
+.mainarchivo .miniaturas .miniaturaboxder2 .miniaturatext .linkminiatura {
+  display: flex;
+  justify-content: end;
+  color: #55694a;
+}
+.mainarchivo .miniaturas .miniaturaboxder2:hover {
+  width: 33.5rem;
+  height: 42rem;
+  background-color: #beaf9c;
+  border-radius: 1rem;
+  box-shadow: 0px 0px 15px rgb(135, 134, 134);
+}
+.mainarchivo .miniaturas .miniaturaboxder2:hover .imgminiaturas2 {
+  border-radius: 0.8rem 0.8rem 0rem 0rem;
+}
+.mainarchivo .miniaturas .miniaturaboxder2:hover .imgminiaturas3 {
+  border-radius: 0.8rem 0.8rem 0rem 0rem;
+}
+.mainarchivo .miniaturas .miniaturaboxder2:hover .imgminiaturas4 {
+  border-radius: 0.8rem 0.8rem 0rem 0rem;
+}
+.mainarchivo .miniaturas .miniaturaboxder2:hover .imgminiaturas5 {
+  border-radius: 0.8rem 0.8rem 0rem 0rem;
+}
+.mainarchivo .miniaturas .miniaturaboxder2:hover .imgminiaturas6 {
+  border-radius: 0.8rem 0.8rem 0rem 0rem;
+}
+.mainarchivo .miniaturas .miniaturaboxder2:hover .imgminiaturas7 {
+  border-radius: 0.8rem 0.8rem 0rem 0rem;
+}
+.mainarchivo .paginas {
   display: flex;
   justify-content: center;
   font-size: medium;
 }
-.paginas .paginasinf {
+.mainarchivo .paginas .paginasinf {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -2129,22 +2489,917 @@ footer .imgfooter .imgf2 {
   height: 3rem;
   border-radius: 1rem;
 }
-.paginas .paginasinf .numpagina {
+.mainarchivo .paginas .paginasinf .numpagina {
   width: 2rem;
   display: flex;
   justify-content: center;
 }
-.paginas .paginasinf .numpagina:hover {
+.mainarchivo .paginas .paginasinf .numpagina:hover {
   width: 2rem;
   display: flex;
   justify-content: center;
   background-color: #738467;
   border-radius: 1rem;
 }
-.paginas .paginasinf #puntitos {
+.mainarchivo .paginas .paginasinf #puntitos {
   color: #cdbdaa;
 }
 
+/* 1024px -1260px */
+@media screen and (min-width: 1024px) and (max-width: 1260px) {
+  .mainarchivo {
+    padding-left: 10rem;
+    padding-right: 10rem;
+  }
+  .mainarchivo .miniaturas {
+    display: grid;
+    height: auto;
+    margin-bottom: 6rem;
+    padding-left: 3.6rem;
+    padding-right: 3.6rem;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 32% 32% 32%;
+    row-gap: 2%;
+    grid-area: "auto";
+  }
+  .mainarchivo .miniaturas .miniaturaboxizq1 {
+    justify-self: flex-start;
+    margin-bottom: 3rem;
+  }
+  .mainarchivo .miniaturas .miniaturaboxcenter1 {
+    justify-self: flex-end;
+    margin-bottom: 3rem;
+  }
+  .mainarchivo .miniaturas .miniaturaboxder1 {
+    justify-self: flex-start;
+    margin-bottom: 3rem;
+  }
+  .mainarchivo .miniaturas .miniaturaboxizq2 {
+    justify-self: flex-end;
+    margin-bottom: 3rem;
+  }
+  .mainarchivo .miniaturas .miniaturaboxcenter2 {
+    justify-self: flex-start;
+    margin-bottom: 3rem;
+  }
+  .mainarchivo .miniaturas .miniaturaboxder2 {
+    justify-self: flex-end;
+    margin-bottom: 3rem;
+  }
+}
+/* Tablet */
+@media screen and (min-width: 900px) and (max-width: 1023px) {
+  .mainarchivo {
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+  .mainarchivo .miniaturas {
+    display: grid;
+    height: auto;
+    margin-bottom: 6rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 32% 32% 32%;
+    row-gap: 2%;
+    grid-area: "auto";
+  }
+  .mainarchivo .miniaturas .miniaturaboxizq1 {
+    justify-self: flex-start;
+    margin-bottom: 3rem;
+  }
+  .mainarchivo .miniaturas .miniaturaboxcenter1 {
+    justify-self: flex-end;
+    margin-bottom: 3rem;
+  }
+  .mainarchivo .miniaturas .miniaturaboxder1 {
+    justify-self: flex-start;
+    margin-bottom: 3rem;
+  }
+  .mainarchivo .miniaturas .miniaturaboxizq2 {
+    justify-self: flex-end;
+    margin-bottom: 3rem;
+  }
+  .mainarchivo .miniaturas .miniaturaboxcenter2 {
+    justify-self: flex-start;
+    margin-bottom: 3rem;
+  }
+  .mainarchivo .miniaturas .miniaturaboxder2 {
+    justify-self: flex-end;
+    margin-bottom: 3rem;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 899px) {
+  .mainarchivo {
+    display: flex;
+    flex-direction: column;
+    padding-top: 18rem;
+    padding-left: 6rem;
+    padding-right: 6rem;
+    height: auto;
+  }
+  .mainarchivo .notaprincipal {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+    margin-bottom: 6rem;
+  }
+  .mainarchivo .notaprincipal .ultimanota {
+    display: flex;
+    flex-direction: column;
+    margin: 2.4rem;
+    justify-content: space-between;
+  }
+  .mainarchivo .notaprincipal .ultimanota .autor1 {
+    display: inline-block;
+    padding-bottom: 1.2rem;
+  }
+  .mainarchivo .notaprincipal .ultimanota .linkultimanota {
+    margin-top: 4rem;
+    margin-bottom: 0rem;
+  }
+  .mainarchivo .notaprincipal .imgnota1 {
+    height: 40rem;
+    width: auto;
+    border-radius: 10px;
+    margin: 2.4rem;
+  }
+  .mainarchivo .miniaturas {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 4rem;
+    height: fit-content;
+  }
+  .mainarchivo .miniaturas .miniaturaboxizq1 {
+    width: 100%;
+    height: auto;
+    margin-bottom: 6rem;
+    background-color: #c0b19d;
+    padding: 2.4rem;
+    border-radius: 1rem;
+  }
+  .mainarchivo .miniaturas .miniaturaboxizq1 .imgminiaturas2 {
+    width: 100%;
+    height: 40rem;
+    margin-bottom: 4.8rem;
+  }
+  .mainarchivo .miniaturas .miniaturaboxizq1 .miniaturatext {
+    height: auto;
+  }
+  .mainarchivo .miniaturas .miniaturaboxizq1 .miniaturatext .miniaturadesc {
+    height: auto;
+  }
+  .mainarchivo .miniaturas .miniaturaboxizq1 .miniaturatext .miniaturadesc .titulomini {
+    font-weight: bold;
+    font-size: xx-large;
+    margin-bottom: 0.5rem;
+  }
+  .mainarchivo .miniaturas .miniaturaboxizq1 .miniaturatext .miniaturadesc .autormini {
+    font-weight: bold;
+    font-size: medium;
+    margin-bottom: 1.7rem;
+  }
+  .mainarchivo .miniaturas .miniaturaboxizq1 .miniaturatext .miniaturadesc p {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+  }
+  .mainarchivo .miniaturas .miniaturaboxizq1 .miniaturatext .linkminiatura {
+    margin-top: 4rem;
+  }
+  .mainarchivo .miniaturas .miniaturaboxcenter1 {
+    width: 100%;
+    height: auto;
+    margin-bottom: 6rem;
+    background-color: #c0b19d;
+    padding: 2.4rem;
+    border-radius: 1rem;
+  }
+  .mainarchivo .miniaturas .miniaturaboxcenter1 .imgminiaturas3 {
+    width: 100%;
+    height: 40rem;
+    margin-bottom: 4.8rem;
+  }
+  .mainarchivo .miniaturas .miniaturaboxcenter1 .miniaturatext {
+    height: auto;
+  }
+  .mainarchivo .miniaturas .miniaturaboxcenter1 .miniaturatext .miniaturadesc {
+    height: auto;
+  }
+  .mainarchivo .miniaturas .miniaturaboxcenter1 .miniaturatext .miniaturadesc .titulomini {
+    font-weight: bold;
+    font-size: xx-large;
+    margin-bottom: 0.5rem;
+  }
+  .mainarchivo .miniaturas .miniaturaboxcenter1 .miniaturatext .miniaturadesc .autormini {
+    font-weight: bold;
+    font-size: medium;
+    margin-bottom: 1.7rem;
+  }
+  .mainarchivo .miniaturas .miniaturaboxcenter1 .miniaturatext .miniaturadesc p {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+  }
+  .mainarchivo .miniaturas .miniaturaboxcenter1 .miniaturatext .linkminiatura {
+    margin-top: 4rem;
+  }
+  .mainarchivo .miniaturas .miniaturaboxder1 {
+    width: 100%;
+    height: auto;
+    margin-bottom: 6rem;
+    background-color: #c0b19d;
+    padding: 2.4rem;
+    border-radius: 1rem;
+  }
+  .mainarchivo .miniaturas .miniaturaboxder1 .imgminiaturas4 {
+    width: 100%;
+    height: 40rem;
+    margin-bottom: 4.8rem;
+  }
+  .mainarchivo .miniaturas .miniaturaboxder1 .miniaturatext {
+    height: auto;
+  }
+  .mainarchivo .miniaturas .miniaturaboxder1 .miniaturatext .miniaturadesc {
+    height: auto;
+  }
+  .mainarchivo .miniaturas .miniaturaboxder1 .miniaturatext .miniaturadesc .titulomini {
+    font-weight: bold;
+    font-size: xx-large;
+    margin-bottom: 0.5rem;
+  }
+  .mainarchivo .miniaturas .miniaturaboxder1 .miniaturatext .miniaturadesc .autormini {
+    font-weight: bold;
+    font-size: medium;
+    margin-bottom: 1.7rem;
+  }
+  .mainarchivo .miniaturas .miniaturaboxder1 .miniaturatext .miniaturadesc p {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+  }
+  .mainarchivo .miniaturas .miniaturaboxder1 .miniaturatext .linkminiatura {
+    margin-top: 4rem;
+  }
+  .mainarchivo .miniaturas .miniaturaboxizq2 {
+    width: 100%;
+    height: auto;
+    margin-bottom: 6rem;
+    background-color: #c0b19d;
+    padding: 2.4rem;
+    border-radius: 1rem;
+  }
+  .mainarchivo .miniaturas .miniaturaboxizq2 .imgminiaturas5 {
+    width: 100%;
+    height: 40rem;
+    margin-bottom: 4.8rem;
+  }
+  .mainarchivo .miniaturas .miniaturaboxizq2 .miniaturatext {
+    height: auto;
+  }
+  .mainarchivo .miniaturas .miniaturaboxizq2 .miniaturatext .miniaturadesc {
+    height: auto;
+  }
+  .mainarchivo .miniaturas .miniaturaboxizq2 .miniaturatext .miniaturadesc .titulomini {
+    font-weight: bold;
+    font-size: xx-large;
+    margin-bottom: 0.5rem;
+  }
+  .mainarchivo .miniaturas .miniaturaboxizq2 .miniaturatext .miniaturadesc .autormini {
+    font-weight: bold;
+    font-size: medium;
+    margin-bottom: 1.7rem;
+  }
+  .mainarchivo .miniaturas .miniaturaboxizq2 .miniaturatext .miniaturadesc p {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+  }
+  .mainarchivo .miniaturas .miniaturaboxizq2 .miniaturatext .linkminiatura {
+    margin-top: 4rem;
+  }
+  .mainarchivo .miniaturas .miniaturaboxcenter2 {
+    width: 100%;
+    height: auto;
+    margin-bottom: 6rem;
+    background-color: #c0b19d;
+    padding: 2.4rem;
+    border-radius: 1rem;
+  }
+  .mainarchivo .miniaturas .miniaturaboxcenter2 .imgminiaturas6 {
+    width: 100%;
+    height: 40rem;
+    margin-bottom: 4.8rem;
+  }
+  .mainarchivo .miniaturas .miniaturaboxcenter2 .miniaturatext {
+    height: auto;
+  }
+  .mainarchivo .miniaturas .miniaturaboxcenter2 .miniaturatext .miniaturadesc {
+    height: auto;
+  }
+  .mainarchivo .miniaturas .miniaturaboxcenter2 .miniaturatext .miniaturadesc .titulomini {
+    font-weight: bold;
+    font-size: xx-large;
+    margin-bottom: 0.5rem;
+  }
+  .mainarchivo .miniaturas .miniaturaboxcenter2 .miniaturatext .miniaturadesc .autormini {
+    font-weight: bold;
+    font-size: medium;
+    margin-bottom: 1.7rem;
+  }
+  .mainarchivo .miniaturas .miniaturaboxcenter2 .miniaturatext .miniaturadesc p {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+  }
+  .mainarchivo .miniaturas .miniaturaboxcenter2 .miniaturatext .linkminiatura {
+    margin-top: 4rem;
+  }
+  .mainarchivo .miniaturas .miniaturaboxder2 {
+    width: 100%;
+    height: auto;
+    margin-bottom: 6rem;
+    background-color: #c0b19d;
+    padding: 2.4rem;
+    border-radius: 1rem;
+  }
+  .mainarchivo .miniaturas .miniaturaboxder2 .imgminiaturas7 {
+    width: 100%;
+    height: 40rem;
+    margin-bottom: 4.8rem;
+  }
+  .mainarchivo .miniaturas .miniaturaboxder2 .miniaturatext {
+    height: auto;
+  }
+  .mainarchivo .miniaturas .miniaturaboxder2 .miniaturatext .miniaturadesc {
+    height: auto;
+  }
+  .mainarchivo .miniaturas .miniaturaboxder2 .miniaturatext .miniaturadesc .titulomini {
+    font-weight: bold;
+    font-size: xx-large;
+    margin-bottom: 0.5rem;
+  }
+  .mainarchivo .miniaturas .miniaturaboxder2 .miniaturatext .miniaturadesc .autormini {
+    font-weight: bold;
+    font-size: medium;
+    margin-bottom: 1.7rem;
+  }
+  .mainarchivo .miniaturas .miniaturaboxder2 .miniaturatext .miniaturadesc p {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+  }
+  .mainarchivo .miniaturas .miniaturaboxder2 .miniaturatext .linkminiatura {
+    margin-top: 4rem;
+  }
+}
+/* Mobile */
+@media screen and (min-width: 425px) and (max-width: 599px) {
+  .mainarchivo {
+    padding-top: 15rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+  .mainarchivo .notaprincipal {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+    margin-bottom: 6rem;
+  }
+  .mainarchivo .notaprincipal .ultimanota {
+    display: flex;
+    flex-direction: column;
+    margin: 2.4rem;
+    justify-content: space-between;
+  }
+  .mainarchivo .notaprincipal .ultimanota .autor1 {
+    display: inline-block;
+    padding-bottom: 1.2rem;
+  }
+  .mainarchivo .notaprincipal .ultimanota .linkultimanota {
+    margin-top: 4rem;
+    margin-bottom: 0rem;
+  }
+  .mainarchivo .notaprincipal .imgnota1 {
+    height: 40rem;
+    width: auto;
+    border-radius: 10px;
+    margin: 2.4rem;
+  }
+  .mainarchivo .miniaturas {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 4rem;
+    height: fit-content;
+  }
+  .mainarchivo .miniaturas .miniaturaboxizq1 {
+    width: 100%;
+    height: auto;
+    margin-bottom: 6rem;
+    background-color: #c0b19d;
+    padding: 2.4rem;
+    border-radius: 1rem;
+  }
+  .mainarchivo .miniaturas .miniaturaboxizq1 .imgminiaturas2 {
+    width: 100%;
+    height: 40rem;
+    margin-bottom: 4.8rem;
+  }
+  .mainarchivo .miniaturas .miniaturaboxizq1 .miniaturatext {
+    height: auto;
+  }
+  .mainarchivo .miniaturas .miniaturaboxizq1 .miniaturatext .miniaturadesc {
+    height: auto;
+  }
+  .mainarchivo .miniaturas .miniaturaboxizq1 .miniaturatext .miniaturadesc .titulomini {
+    font-weight: bold;
+    font-size: xx-large;
+    margin-bottom: 0.5rem;
+  }
+  .mainarchivo .miniaturas .miniaturaboxizq1 .miniaturatext .miniaturadesc .autormini {
+    font-weight: bold;
+    font-size: medium;
+    margin-bottom: 1.7rem;
+  }
+  .mainarchivo .miniaturas .miniaturaboxizq1 .miniaturatext .miniaturadesc p {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+  }
+  .mainarchivo .miniaturas .miniaturaboxizq1 .miniaturatext .linkminiatura {
+    margin-top: 4rem;
+  }
+  .mainarchivo .miniaturas .miniaturaboxcenter1 {
+    width: 100%;
+    height: auto;
+    margin-bottom: 6rem;
+    background-color: #c0b19d;
+    padding: 2.4rem;
+    border-radius: 1rem;
+  }
+  .mainarchivo .miniaturas .miniaturaboxcenter1 .imgminiaturas3 {
+    width: 100%;
+    height: 40rem;
+    margin-bottom: 4.8rem;
+  }
+  .mainarchivo .miniaturas .miniaturaboxcenter1 .miniaturatext {
+    height: auto;
+  }
+  .mainarchivo .miniaturas .miniaturaboxcenter1 .miniaturatext .miniaturadesc {
+    height: auto;
+  }
+  .mainarchivo .miniaturas .miniaturaboxcenter1 .miniaturatext .miniaturadesc .titulomini {
+    font-weight: bold;
+    font-size: xx-large;
+    margin-bottom: 0.5rem;
+  }
+  .mainarchivo .miniaturas .miniaturaboxcenter1 .miniaturatext .miniaturadesc .autormini {
+    font-weight: bold;
+    font-size: medium;
+    margin-bottom: 1.7rem;
+  }
+  .mainarchivo .miniaturas .miniaturaboxcenter1 .miniaturatext .miniaturadesc p {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+  }
+  .mainarchivo .miniaturas .miniaturaboxcenter1 .miniaturatext .linkminiatura {
+    margin-top: 4rem;
+  }
+  .mainarchivo .miniaturas .miniaturaboxder1 {
+    width: 100%;
+    height: auto;
+    margin-bottom: 6rem;
+    background-color: #c0b19d;
+    padding: 2.4rem;
+    border-radius: 1rem;
+  }
+  .mainarchivo .miniaturas .miniaturaboxder1 .imgminiaturas4 {
+    width: 100%;
+    height: 40rem;
+    margin-bottom: 4.8rem;
+  }
+  .mainarchivo .miniaturas .miniaturaboxder1 .miniaturatext {
+    height: auto;
+  }
+  .mainarchivo .miniaturas .miniaturaboxder1 .miniaturatext .miniaturadesc {
+    height: auto;
+  }
+  .mainarchivo .miniaturas .miniaturaboxder1 .miniaturatext .miniaturadesc .titulomini {
+    font-weight: bold;
+    font-size: xx-large;
+    margin-bottom: 0.5rem;
+  }
+  .mainarchivo .miniaturas .miniaturaboxder1 .miniaturatext .miniaturadesc .autormini {
+    font-weight: bold;
+    font-size: medium;
+    margin-bottom: 1.7rem;
+  }
+  .mainarchivo .miniaturas .miniaturaboxder1 .miniaturatext .miniaturadesc p {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+  }
+  .mainarchivo .miniaturas .miniaturaboxder1 .miniaturatext .linkminiatura {
+    margin-top: 4rem;
+  }
+  .mainarchivo .miniaturas .miniaturaboxizq2 {
+    width: 100%;
+    height: auto;
+    margin-bottom: 6rem;
+    background-color: #c0b19d;
+    padding: 2.4rem;
+    border-radius: 1rem;
+  }
+  .mainarchivo .miniaturas .miniaturaboxizq2 .imgminiaturas5 {
+    width: 100%;
+    height: 40rem;
+    margin-bottom: 4.8rem;
+  }
+  .mainarchivo .miniaturas .miniaturaboxizq2 .miniaturatext {
+    height: auto;
+  }
+  .mainarchivo .miniaturas .miniaturaboxizq2 .miniaturatext .miniaturadesc {
+    height: auto;
+  }
+  .mainarchivo .miniaturas .miniaturaboxizq2 .miniaturatext .miniaturadesc .titulomini {
+    font-weight: bold;
+    font-size: xx-large;
+    margin-bottom: 0.5rem;
+  }
+  .mainarchivo .miniaturas .miniaturaboxizq2 .miniaturatext .miniaturadesc .autormini {
+    font-weight: bold;
+    font-size: medium;
+    margin-bottom: 1.7rem;
+  }
+  .mainarchivo .miniaturas .miniaturaboxizq2 .miniaturatext .miniaturadesc p {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+  }
+  .mainarchivo .miniaturas .miniaturaboxizq2 .miniaturatext .linkminiatura {
+    margin-top: 4rem;
+  }
+  .mainarchivo .miniaturas .miniaturaboxcenter2 {
+    width: 100%;
+    height: auto;
+    margin-bottom: 6rem;
+    background-color: #c0b19d;
+    padding: 2.4rem;
+    border-radius: 1rem;
+  }
+  .mainarchivo .miniaturas .miniaturaboxcenter2 .imgminiaturas6 {
+    width: 100%;
+    height: 40rem;
+    margin-bottom: 4.8rem;
+  }
+  .mainarchivo .miniaturas .miniaturaboxcenter2 .miniaturatext {
+    height: auto;
+  }
+  .mainarchivo .miniaturas .miniaturaboxcenter2 .miniaturatext .miniaturadesc {
+    height: auto;
+  }
+  .mainarchivo .miniaturas .miniaturaboxcenter2 .miniaturatext .miniaturadesc .titulomini {
+    font-weight: bold;
+    font-size: xx-large;
+    margin-bottom: 0.5rem;
+  }
+  .mainarchivo .miniaturas .miniaturaboxcenter2 .miniaturatext .miniaturadesc .autormini {
+    font-weight: bold;
+    font-size: medium;
+    margin-bottom: 1.7rem;
+  }
+  .mainarchivo .miniaturas .miniaturaboxcenter2 .miniaturatext .miniaturadesc p {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+  }
+  .mainarchivo .miniaturas .miniaturaboxcenter2 .miniaturatext .linkminiatura {
+    margin-top: 4rem;
+  }
+  .mainarchivo .miniaturas .miniaturaboxder2 {
+    width: 100%;
+    height: auto;
+    margin-bottom: 6rem;
+    background-color: #c0b19d;
+    padding: 2.4rem;
+    border-radius: 1rem;
+  }
+  .mainarchivo .miniaturas .miniaturaboxder2 .imgminiaturas7 {
+    width: 100%;
+    height: 40rem;
+    margin-bottom: 4.8rem;
+  }
+  .mainarchivo .miniaturas .miniaturaboxder2 .miniaturatext {
+    height: auto;
+  }
+  .mainarchivo .miniaturas .miniaturaboxder2 .miniaturatext .miniaturadesc {
+    height: auto;
+  }
+  .mainarchivo .miniaturas .miniaturaboxder2 .miniaturatext .miniaturadesc .titulomini {
+    font-weight: bold;
+    font-size: xx-large;
+    margin-bottom: 0.5rem;
+  }
+  .mainarchivo .miniaturas .miniaturaboxder2 .miniaturatext .miniaturadesc .autormini {
+    font-weight: bold;
+    font-size: medium;
+    margin-bottom: 1.7rem;
+  }
+  .mainarchivo .miniaturas .miniaturaboxder2 .miniaturatext .miniaturadesc p {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+  }
+  .mainarchivo .miniaturas .miniaturaboxder2 .miniaturatext .linkminiatura {
+    margin-top: 4rem;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 424px) {
+  .mainarchivo {
+    padding-top: 15rem;
+    padding-left: 1.6rem;
+    padding-right: 1.6rem;
+  }
+  .mainarchivo .notaprincipal {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+    margin-bottom: 6rem;
+  }
+  .mainarchivo .notaprincipal .ultimanota {
+    display: flex;
+    flex-direction: column;
+    margin: 2.4rem;
+    justify-content: space-between;
+  }
+  .mainarchivo .notaprincipal .ultimanota h2 {
+    font-size: 30px;
+  }
+  .mainarchivo .notaprincipal .ultimanota .autor1 {
+    display: inline-block;
+    padding-bottom: 1.2rem;
+  }
+  .mainarchivo .notaprincipal .ultimanota .linkultimanota {
+    margin-top: 4rem;
+    margin-bottom: 0rem;
+  }
+  .mainarchivo .notaprincipal .imgnota1 {
+    height: 25rem;
+    width: auto;
+    border-radius: 10px;
+    margin: 2.4rem 2.4rem 0.4rem 2.4rem;
+  }
+  .mainarchivo .miniaturas {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 4rem;
+    height: fit-content;
+  }
+  .mainarchivo .miniaturas .miniaturaboxizq1 {
+    width: 100%;
+    height: auto;
+    margin-bottom: 6rem;
+    background-color: #c0b19d;
+    padding: 2.4rem;
+    border-radius: 1rem;
+  }
+  .mainarchivo .miniaturas .miniaturaboxizq1 .imgminiaturas2 {
+    width: 100%;
+    height: 25rem;
+    margin-bottom: 2.8rem;
+  }
+  .mainarchivo .miniaturas .miniaturaboxizq1 .miniaturatext {
+    height: auto;
+  }
+  .mainarchivo .miniaturas .miniaturaboxizq1 .miniaturatext .miniaturadesc {
+    height: auto;
+  }
+  .mainarchivo .miniaturas .miniaturaboxizq1 .miniaturatext .miniaturadesc .titulomini {
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 0.5rem;
+  }
+  .mainarchivo .miniaturas .miniaturaboxizq1 .miniaturatext .miniaturadesc .autormini {
+    font-weight: bold;
+    font-size: medium;
+    margin-bottom: 1.7rem;
+  }
+  .mainarchivo .miniaturas .miniaturaboxizq1 .miniaturatext .miniaturadesc p {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+  }
+  .mainarchivo .miniaturas .miniaturaboxizq1 .miniaturatext .linkminiatura {
+    margin-top: 4rem;
+  }
+  .mainarchivo .miniaturas .miniaturaboxcenter1 {
+    width: 100%;
+    height: auto;
+    margin-bottom: 6rem;
+    background-color: #c0b19d;
+    padding: 2.4rem;
+    border-radius: 1rem;
+  }
+  .mainarchivo .miniaturas .miniaturaboxcenter1 .imgminiaturas3 {
+    width: 100%;
+    height: 25rem;
+    margin-bottom: 2.8rem;
+  }
+  .mainarchivo .miniaturas .miniaturaboxcenter1 .miniaturatext {
+    height: auto;
+  }
+  .mainarchivo .miniaturas .miniaturaboxcenter1 .miniaturatext .miniaturadesc {
+    height: auto;
+  }
+  .mainarchivo .miniaturas .miniaturaboxcenter1 .miniaturatext .miniaturadesc .titulomini {
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 0.5rem;
+  }
+  .mainarchivo .miniaturas .miniaturaboxcenter1 .miniaturatext .miniaturadesc .autormini {
+    font-weight: bold;
+    font-size: medium;
+    margin-bottom: 1.7rem;
+  }
+  .mainarchivo .miniaturas .miniaturaboxcenter1 .miniaturatext .miniaturadesc p {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+  }
+  .mainarchivo .miniaturas .miniaturaboxcenter1 .miniaturatext .linkminiatura {
+    margin-top: 4rem;
+  }
+  .mainarchivo .miniaturas .miniaturaboxder1 {
+    width: 100%;
+    height: auto;
+    margin-bottom: 6rem;
+    background-color: #c0b19d;
+    padding: 2.4rem;
+    border-radius: 1rem;
+  }
+  .mainarchivo .miniaturas .miniaturaboxder1 .imgminiaturas4 {
+    width: 100%;
+    height: 25rem;
+    margin-bottom: 2.8rem;
+  }
+  .mainarchivo .miniaturas .miniaturaboxder1 .miniaturatext {
+    height: auto;
+  }
+  .mainarchivo .miniaturas .miniaturaboxder1 .miniaturatext .miniaturadesc {
+    height: auto;
+  }
+  .mainarchivo .miniaturas .miniaturaboxder1 .miniaturatext .miniaturadesc .titulomini {
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 0.5rem;
+  }
+  .mainarchivo .miniaturas .miniaturaboxder1 .miniaturatext .miniaturadesc .autormini {
+    font-weight: bold;
+    font-size: medium;
+    margin-bottom: 1.7rem;
+  }
+  .mainarchivo .miniaturas .miniaturaboxder1 .miniaturatext .miniaturadesc p {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+  }
+  .mainarchivo .miniaturas .miniaturaboxder1 .miniaturatext .linkminiatura {
+    margin-top: 4rem;
+  }
+  .mainarchivo .miniaturas .miniaturaboxizq2 {
+    width: 100%;
+    height: auto;
+    margin-bottom: 6rem;
+    background-color: #c0b19d;
+    padding: 2.4rem;
+    border-radius: 1rem;
+  }
+  .mainarchivo .miniaturas .miniaturaboxizq2 .imgminiaturas5 {
+    width: 100%;
+    height: 25rem;
+    margin-bottom: 2.8rem;
+  }
+  .mainarchivo .miniaturas .miniaturaboxizq2 .miniaturatext {
+    height: auto;
+  }
+  .mainarchivo .miniaturas .miniaturaboxizq2 .miniaturatext .miniaturadesc {
+    height: auto;
+  }
+  .mainarchivo .miniaturas .miniaturaboxizq2 .miniaturatext .miniaturadesc .titulomini {
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 0.5rem;
+  }
+  .mainarchivo .miniaturas .miniaturaboxizq2 .miniaturatext .miniaturadesc .autormini {
+    font-weight: bold;
+    font-size: medium;
+    margin-bottom: 1.7rem;
+  }
+  .mainarchivo .miniaturas .miniaturaboxizq2 .miniaturatext .miniaturadesc p {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+  }
+  .mainarchivo .miniaturas .miniaturaboxizq2 .miniaturatext .linkminiatura {
+    margin-top: 4rem;
+  }
+  .mainarchivo .miniaturas .miniaturaboxcenter2 {
+    width: 100%;
+    height: auto;
+    margin-bottom: 6rem;
+    background-color: #c0b19d;
+    padding: 2.4rem;
+    border-radius: 1rem;
+  }
+  .mainarchivo .miniaturas .miniaturaboxcenter2 .imgminiaturas6 {
+    width: 100%;
+    height: 25rem;
+    margin-bottom: 2.8rem;
+  }
+  .mainarchivo .miniaturas .miniaturaboxcenter2 .miniaturatext {
+    height: auto;
+  }
+  .mainarchivo .miniaturas .miniaturaboxcenter2 .miniaturatext .miniaturadesc {
+    height: auto;
+  }
+  .mainarchivo .miniaturas .miniaturaboxcenter2 .miniaturatext .miniaturadesc .titulomini {
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 0.5rem;
+  }
+  .mainarchivo .miniaturas .miniaturaboxcenter2 .miniaturatext .miniaturadesc .autormini {
+    font-weight: bold;
+    font-size: medium;
+    margin-bottom: 1.7rem;
+  }
+  .mainarchivo .miniaturas .miniaturaboxcenter2 .miniaturatext .miniaturadesc p {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+  }
+  .mainarchivo .miniaturas .miniaturaboxcenter2 .miniaturatext .linkminiatura {
+    margin-top: 4rem;
+  }
+  .mainarchivo .miniaturas .miniaturaboxder2 {
+    width: 100%;
+    height: auto;
+    margin-bottom: 6rem;
+    background-color: #c0b19d;
+    padding: 2.4rem;
+    border-radius: 1rem;
+  }
+  .mainarchivo .miniaturas .miniaturaboxder2 .imgminiaturas7 {
+    width: 100%;
+    height: 25rem;
+    margin-bottom: 2.8rem;
+  }
+  .mainarchivo .miniaturas .miniaturaboxder2 .miniaturatext {
+    height: auto;
+  }
+  .mainarchivo .miniaturas .miniaturaboxder2 .miniaturatext .miniaturadesc {
+    height: auto;
+  }
+  .mainarchivo .miniaturas .miniaturaboxder2 .miniaturatext .miniaturadesc .titulomini {
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 0.5rem;
+  }
+  .mainarchivo .miniaturas .miniaturaboxder2 .miniaturatext .miniaturadesc .autormini {
+    font-weight: bold;
+    font-size: medium;
+    margin-bottom: 1.7rem;
+  }
+  .mainarchivo .miniaturas .miniaturaboxder2 .miniaturatext .miniaturadesc p {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+  }
+  .mainarchivo .miniaturas .miniaturaboxder2 .miniaturatext .linkminiatura {
+    margin-top: 4rem;
+  }
+}
 .mainsumate {
   padding-left: 0rem;
   padding-right: 0rem;
@@ -2240,6 +3495,64 @@ footer .imgfooter .imgf2 {
 }
 .mainsumate .botonMP .MercP:hover {
   background-color: #2a481b;
+}
+
+/* Tablet */
+@media screen and (min-width: 900px) and (max-width: 1024px) {
+  .mainsumate {
+    padding-top: 12rem;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 899px) {
+  .mainsumate {
+    padding-top: 18rem;
+  }
+  .mainsumate .mision {
+    padding: 5rem 8rem;
+  }
+  .mainsumate .mision .misionP {
+    width: 50rem;
+  }
+  .mainsumate .botonMP {
+    justify-content: center;
+    margin-bottom: 6rem;
+    padding: 0rem;
+  }
+}
+/* Mobile */
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .mainsumate {
+    padding-top: 18rem;
+  }
+  .mainsumate .accion1 {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+  .mainsumate .mision {
+    padding: 5rem 3rem;
+    margin-bottom: 0rem;
+  }
+  .mainsumate .mision .misiontitulo {
+    margin-bottom: 5rem;
+  }
+  .mainsumate .mision .misionP {
+    background-color: #c0b19d;
+    box-shadow: none;
+    width: auto;
+    position: initial;
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+  .mainsumate .beneficios {
+    margin-top: 0rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+  .mainsumate .botonMP {
+    justify-content: center;
+    margin-bottom: 6rem;
+    padding: 0rem;
+  }
 }
 
 /*# sourceMappingURL=estilos.css.map */
