@@ -2344,7 +2344,7 @@ footer .imgfooter .imgf2 {
   background-size: cover;
   border-radius: 0.8rem;
   transition: border-radius 0.2s;
-  background-image: url(../multimedia/mtdibujo.jpeg);
+  background-image: url(../multimedia/notas/nota6/chimpance.jpg);
 }
 .mainarchivo .miniaturas .miniaturaboxcenter2 .miniaturatext {
   height: 20rem;
@@ -3553,6 +3553,135 @@ footer .imgfooter .imgf2 {
     margin-bottom: 6rem;
     padding: 0rem;
   }
+}
+.headnota {
+  z-index: 3;
+}
+
+.mainnotas {
+  padding-top: 14rem;
+}
+.mainnotas section {
+  display: flex;
+  padding: 0rem 5rem;
+}
+.mainnotas section div {
+  margin-top: 0rem;
+}
+.mainnotas section div .volver {
+  display: flex;
+  margin-bottom: 3rem;
+  padding: 1rem 2rem 1rem 1rem;
+  width: fit-content;
+  border-radius: 10rem;
+  transition: background-color 0.3s;
+}
+.mainnotas section div .volver img {
+  height: 3rem;
+}
+.mainnotas section div .volver p {
+  margin: 0rem;
+  align-self: center;
+}
+.mainnotas section div .volver:hover {
+  background-color: #c0b19d;
+}
+.mainnotas section .logodelfondo {
+  height: 35rem;
+  width: auto;
+  align-self: center;
+  position: relative;
+  left: 17rem;
+  opacity: 0.2;
+}
+.mainnotas section .portada {
+  width: 58rem;
+  border-radius: 1rem;
+  z-index: 2;
+}
+.mainnotas .contenido {
+  padding: 14rem 22rem;
+}
+.mainnotas .contenido p {
+  margin-bottom: 3.6rem;
+  line-height: 2.6rem;
+}
+.mainnotas .contenido .ultexto .litexto {
+  font-size: medium;
+  font-family: "Helvetica";
+  color: #271702;
+  margin-bottom: 3.6rem;
+  line-height: 2.6rem;
+}
+.mainnotas .contenido img {
+  width: 100%;
+  border-radius: 1rem;
+  margin-bottom: 1.6rem;
+}
+.mainnotas .contenido h4 {
+  margin-bottom: 4.6rem;
+  margin-left: 1rem;
+  color: rgb(99, 99, 99);
+  font-weight: normal;
+}
+.mainnotas .contenido h5 {
+  margin-bottom: 2.6rem;
+  font-style: italic;
+  font-size: large;
+  font-family: "Georgia";
+  font-weight: bold;
+}
+.mainnotas .contenido h6 {
+  margin: 3rem 0rem 2rem 0rem;
+  font-size: medium;
+}
+.mainnotas .contenido ul li a {
+  color: #55694a;
+}
+.mainnotas .arriba {
+  display: flex;
+  justify-content: flex-end;
+}
+.mainnotas .arriba a {
+  width: fit-content;
+}
+.mainnotas .arriba a img {
+  height: 8rem;
+  opacity: 0.5;
+}
+
+.nav404 .selected {
+  display: inline-block;
+}
+.nav404 .selected::after {
+  content: "";
+  height: 3px;
+  background: #ecd4b5;
+  border-radius: 10px;
+  display: block;
+  opacity: 0;
+}
+
+.main404 {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "error imagen";
+  height: 67.7rem;
+}
+.main404 div {
+  grid-area: error;
+}
+.main404 div h2 {
+  justify-self: center;
+  margin-bottom: 5rem;
+  font-size: 46px;
+}
+.main404 img {
+  grid-area: imagen;
+  width: 55rem;
+  border-radius: 5rem;
+  justify-self: center;
 }
 
 /*# sourceMappingURL=estilos.css.map */

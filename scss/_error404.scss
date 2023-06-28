@@ -1,0 +1,36 @@
+.nav404{
+    .selected{
+        display: inline-block;
+        &::after{
+            content: '';
+            height: 3px;
+            background:$color-principal;
+            border-radius: 10px;
+            display: block;
+            opacity: 0;
+        }
+    }
+}
+
+.main404{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "error imagen";
+    height:67.7rem;
+    div{
+        grid-area: error;
+        h2{
+            justify-self: center;
+            margin-bottom: 5rem;
+            font-size: 46px;
+        }
+    }
+    img{
+        grid-area: imagen;
+        width: 55rem;
+        border-radius: 5rem;
+        justify-self: center;
+    }
+}
