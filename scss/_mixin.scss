@@ -68,3 +68,12 @@
         border-radius: 0.8rem 0.8rem 0rem 0rem;
     }
 }
+
+@mixin hoverMQ{
+    width: 100%;
+    height: auto;
+    margin-bottom: 6rem;
+    background-color: #c0b19d;
+    padding: 2.4rem;
+    border-radius: 1rem;
+}
