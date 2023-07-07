@@ -54,6 +54,11 @@
             box-shadow: 0px 10px 100px rgb(85, 85, 85);
             .misioncolor{
                 color:$color-secundario1;
+                font-weight: bold;
+            }
+            ul{
+                font-size: medium;
+                color: $color-secundario1;
             }
         }
     }
@@ -65,7 +70,7 @@
             margin-bottom:3rem;   
         }
         .ulaportantes{
-            list-style-type:decimal;
+            list-style-image: url("../multimedia/check1.png");
             font-size: large;
             color:$color-secundario1;
             font-family: 'Helvetica';
