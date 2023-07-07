@@ -8,8 +8,14 @@
     section{
         display: flex;
         padding: 0rem 5rem;
+        display: flex;
+        justify-content: space-between;
         div{
             margin-top: 0rem;
+            z-index: 2;
+            h2{
+                width: 40rem;
+            }
             .volver{
                 display: flex;
                 margin-bottom: 3rem;
@@ -33,9 +39,10 @@
             height: 35rem;
             width: auto;
             align-self: center;
-            position: relative;
-            left: 17rem;
+            position: absolute;
+            right: 55rem;
             opacity: 0.2;
+            z-index: 0;
         }
         .portada{
             width: 58rem;
@@ -101,9 +108,40 @@
     }
 }
 
+/* 1250 -1440 */
+
+@media screen and (min-width: 1200px) and (max-width: 1440px){
+    .mainnotas{
+        section{
+            .logodelfondo{
+                right: 49rem;
+            }
+        }
+    }
+}
+
+/* 1024px - 1249px */
+
+@media screen and (min-width: 1024px) and (max-width: 1199px){
+    .mainnotas{
+        section{
+            padding: 0rem;
+            justify-content: space-evenly; 
+            .logodelfondo{
+                display: none;
+            }
+            div{
+                h2{
+                    width: 30rem;
+                }
+            }
+        }
+    }
+}
+
 /* 880px - 1439px */
 
-@media screen and (min-width:880px) and (max-width:1439px) {
+@media screen and (min-width:880px) and (max-width:1024px) {
     .mainnotas{
         padding-top: 0rem;
         padding-left: 0rem;
@@ -115,6 +153,9 @@
             flex-direction: column-reverse;
             div{
                 padding: 4rem 10rem 0rem 10rem;
+                h2{
+                    width: fit-content;
+                }
             }
             .logodelfondo{
                 display: none;
@@ -147,6 +188,9 @@
             flex-direction: column-reverse;
             div{
                 padding: 4rem 10rem 0rem 10rem;
+                h2{
+                    width: fit-content;
+                }
             }
             .logodelfondo{
                 display: none;
@@ -179,6 +223,9 @@
             flex-direction: column-reverse;
             div{
                 padding: 2rem 3rem 0rem 3rem;
+                h2{
+                    width: fit-content;
+                }
             }
             .logodelfondo{
                 display: none;

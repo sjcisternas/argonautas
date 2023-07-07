@@ -973,7 +973,7 @@ footer .imgfooter .imgf2 {
 /* Mobile L */
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .mainproyectos {
-    padding: 14rem 6rem 6rem 6rem;
+    padding: 14rem 2rem 6rem 2rem;
   }
   .mainproyectos .MyT {
     display: flex;
@@ -987,7 +987,7 @@ footer .imgfooter .imgf2 {
 /* Mobile S */
 @media screen and (min-width: 320px) and (max-width: 375px) {
   .mainproyectos {
-    padding: 12rem 4rem 6rem 4rem;
+    padding: 12rem 2rem 6rem 2rem;
   }
   .mainproyectos .proyectospreviostitulo {
     padding: 0rem;
@@ -3708,9 +3708,15 @@ footer .imgfooter .imgf2 {
 .mainnotas section {
   display: flex;
   padding: 0rem 5rem;
+  display: flex;
+  justify-content: space-between;
 }
 .mainnotas section div {
   margin-top: 0rem;
+  z-index: 2;
+}
+.mainnotas section div h2 {
+  width: 40rem;
 }
 .mainnotas section div .volver {
   display: flex;
@@ -3734,9 +3740,10 @@ footer .imgfooter .imgf2 {
   height: 35rem;
   width: auto;
   align-self: center;
-  position: relative;
-  left: 17rem;
+  position: absolute;
+  right: 55rem;
   opacity: 0.2;
+  z-index: 0;
 }
 .mainnotas section .portada {
   width: 58rem;
@@ -3794,8 +3801,27 @@ footer .imgfooter .imgf2 {
   opacity: 0.5;
 }
 
+/* 1250 -1440 */
+@media screen and (min-width: 1200px) and (max-width: 1440px) {
+  .mainnotas section .logodelfondo {
+    right: 49rem;
+  }
+}
+/* 1024px - 1249px */
+@media screen and (min-width: 1024px) and (max-width: 1199px) {
+  .mainnotas section {
+    padding: 0rem;
+    justify-content: space-evenly;
+  }
+  .mainnotas section .logodelfondo {
+    display: none;
+  }
+  .mainnotas section div h2 {
+    width: 30rem;
+  }
+}
 /* 880px - 1439px */
-@media screen and (min-width: 880px) and (max-width: 1439px) {
+@media screen and (min-width: 880px) and (max-width: 1024px) {
   .mainnotas {
     padding-top: 0rem;
     padding-left: 0rem;
@@ -3809,6 +3835,9 @@ footer .imgfooter .imgf2 {
   }
   .mainnotas section div {
     padding: 4rem 10rem 0rem 10rem;
+  }
+  .mainnotas section div h2 {
+    width: fit-content;
   }
   .mainnotas section .logodelfondo {
     display: none;
@@ -3840,6 +3869,9 @@ footer .imgfooter .imgf2 {
   .mainnotas section div {
     padding: 4rem 10rem 0rem 10rem;
   }
+  .mainnotas section div h2 {
+    width: fit-content;
+  }
   .mainnotas section .logodelfondo {
     display: none;
   }
@@ -3869,6 +3901,9 @@ footer .imgfooter .imgf2 {
   }
   .mainnotas section div {
     padding: 2rem 3rem 0rem 3rem;
+  }
+  .mainnotas section div h2 {
+    width: fit-content;
   }
   .mainnotas section .logodelfondo {
     display: none;
