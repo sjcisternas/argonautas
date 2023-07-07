@@ -7,6 +7,7 @@
         .acciontitulo{
             display: block;
             margin-bottom:3rem;
+            font-style: italic;
         }
         .botoncolab{
             display: flex;
@@ -42,6 +43,7 @@
         .misiontitulo{
             display: flex;
             justify-content: end;
+            font-style: italic;
         }
         .misionP{
             background-color:$color-terciario1;
@@ -67,7 +69,8 @@
         margin-top: 5rem;
         .beneficiostitulo{
             display: block;
-            margin-bottom:3rem;   
+            margin-bottom:3rem;
+            font-style: italic;   
         }
         .ulaportantes{
             list-style-image: url("../multimedia/check1.png");

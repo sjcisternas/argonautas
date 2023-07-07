@@ -15,6 +15,10 @@
         grid-area:quienes;
         padding: 2rem 7rem;
         margin-bottom: 14rem;
+        .acciontitulo{
+            font-style: italic;
+            margin-bottom: 3rem;
+        }
     }
     .miembro{
         display: flex;

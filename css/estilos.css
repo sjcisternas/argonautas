@@ -1007,6 +1007,10 @@ footer .imgfooter .imgf2 {
   padding: 2rem 7rem;
   margin-bottom: 14rem;
 }
+.mainnosotros .quienes .acciontitulo {
+  font-style: italic;
+  margin-bottom: 3rem;
+}
 .mainnosotros .miembro {
   display: flex;
   justify-content: center;
@@ -3555,6 +3559,7 @@ footer .imgfooter .imgf2 {
 .mainsumate .accion1 .acciontitulo {
   display: block;
   margin-bottom: 3rem;
+  font-style: italic;
 }
 .mainsumate .accion1 .botoncolab {
   display: flex;
@@ -3590,6 +3595,7 @@ footer .imgfooter .imgf2 {
 .mainsumate .mision .misiontitulo {
   display: flex;
   justify-content: end;
+  font-style: italic;
 }
 .mainsumate .mision .misionP {
   background-color: #c0b19d;
@@ -3616,6 +3622,7 @@ footer .imgfooter .imgf2 {
 .mainsumate .beneficios .beneficiostitulo {
   display: block;
   margin-bottom: 3rem;
+  font-style: italic;
 }
 .mainsumate .beneficios .ulaportantes {
   list-style-image: url("../multimedia/check1.png");
